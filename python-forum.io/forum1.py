@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 import sys
 import json
 import time
@@ -36,8 +37,12 @@ def parse_questions():
 
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
     question_tag = soup.find('div', {'id': 'content'})
-    for i in question_tag.findAll('table'):
-        print i
+    table_array = question_tag.findAll('table')
+    
+    for i, dt in enumerate(table_array[:-1]):
+        data = dt.tbody.find_all('tr')
+        for i, dt in enumerate(data):
+            print str(i)+') \n\n', dt.find_all('td', { "class" : re.compile("trow\d") }) #.prettify()
 
 if __name__ == '__main__':
     parse_questions()
