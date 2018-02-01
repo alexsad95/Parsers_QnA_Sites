@@ -23,26 +23,34 @@ user_agent = {'User-Agent': user_agents}
 def parse_questions():
     time_sleep = uniform(1,3) 
     time.sleep(time_sleep)
+    url = 'https://python-forum.io/index.php'
+    page = requests.get(url, headers=user_agent)
 
-    page = requests.get('https://python-forum.io/index.php', headers=user_agent)
-
-    if page.status_code == 404: 
+    if page.status_code == 404:
         print 'Error 404'
 
     if (page.status_code == 429):
         print u"Сайт заблокирован. Нужно подождать..."
         while (page.status_code == 429):
             time.sleep(60)
-            page = requests.get(dt[1], headers=user_agent)
+            page = requests.get(url, headers=user_agent)
 
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
     question_tag = soup.find('div', {'id': 'content'})
     table_array = question_tag.findAll('table')
-    
-    for i, dt in enumerate(table_array[:-1]):
+    mass_td = []
+    for i, dt in enumerate(table_array):
         data = dt.tbody.find_all('tr')
         for i, dt in enumerate(data):
-            print str(i)+') \n\n', dt.find_all('td', { "class" : re.compile("trow\d") }) #.prettify()
+            data = dt.find_all('td', { "class" : re.compile("trow\d") })
+            mass_td.append(data)
+            
+    for i, mass in enumerate(mass_td):
+        if mass == []:
+            del mass_td[i]
+        else: 
+            # print str(i) + ') \n\n'
+            print mass[1].strong.text
 
 if __name__ == '__main__':
     parse_questions()
