@@ -5,7 +5,7 @@ import time
 import pickle
 import psycopg2
 import requests
-from random import uniform
+from random import uniform, choice 
 from bs4 import BeautifulSoup 
 from log import *
 sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
@@ -21,7 +21,7 @@ end = 0
 name = ''
 
 # настройка user-agent
-f = open('files/user-agents.txt', 'r')
+f = open('../files/user-agents.txt', 'r')
 l = [line.strip() for line in f]
 
 user_agents = choice(l)
@@ -60,7 +60,7 @@ def update_question(string, id):
 
 
 # Главная функция выполняющая парсинг 
-def main(data, json_or_db):
+def parse_questions(data, json_or_db):
     time.clock()
 
     question = {}
@@ -165,7 +165,7 @@ if __name__ == '__main__':
                 data = pickle.load(f)
             json_or_db = raw_input("Write to Json or DB: ")
 
-            main(data[int(start):int(end)], json_or_db)
+            parse_questions(data[int(start):int(end)], json_or_db)
 
         elif line == 'quit':
             sys.exit(1)
@@ -173,7 +173,7 @@ if __name__ == '__main__':
         else:
             with open("files/questions.txt", "rb") as f:
                 data = pickle.load(f)
-            main(data)
+            parse_questions(data)
 
         raw_input()
 
