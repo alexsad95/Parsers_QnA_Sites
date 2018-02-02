@@ -45,16 +45,21 @@ def parse_questions():
         for i, dt in enumerate(data):
             data = dt.find_all('td', { "class" : re.compile("trow\d") })
             td_list_orig.append(data)
-            
+
     for i, td_list in enumerate(td_list_orig):
         if td_list == []:
             del td_list_orig[i]
 
-
-    print '--'*8 + '\n'
+    url_for_category = []
     for i, td in enumerate(td_list_orig):
-        print str(i) + '\n', td
+        url_for_category.append('https://python-forum.io/' + str(td[1].a.get('href')))
 
+    category_url = []
+    for i, td_list in enumerate(td_list_orig):
+        category_url.append([str(td_list[1].strong.text), str(url_for_category[i])])
+
+    for data in category_url:
+        print data
 
 if __name__ == '__main__':
     parse_questions()
