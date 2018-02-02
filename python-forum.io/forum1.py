@@ -36,7 +36,7 @@ def parse_questions():
             page = requests.get(url, headers=user_agent)
 
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
-    div_wrapper = soup.find('div', {'id': 'content'}).findAll('table')
+    div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     td_list_orig = []
     for i, dt in enumerate(div_wrapper[:-1]):
