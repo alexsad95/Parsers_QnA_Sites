@@ -38,19 +38,23 @@ def parse_questions():
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
     question_tag = soup.find('div', {'id': 'content'})
     table_array = question_tag.findAll('table')
-    mass_td = []
-    for i, dt in enumerate(table_array):
+    td_list_orig = []
+
+    for i, dt in enumerate(table_array[:-1]):
         data = dt.tbody.find_all('tr')
         for i, dt in enumerate(data):
             data = dt.find_all('td', { "class" : re.compile("trow\d") })
-            mass_td.append(data)
+            td_list_orig.append(data)
             
-    for i, mass in enumerate(mass_td):
-        if mass == []:
-            del mass_td[i]
-        else: 
-            # print str(i) + ') \n\n'
-            print mass[1].strong.text
+    for i, td_list in enumerate(td_list_orig):
+        if td_list == []:
+            del td_list_orig[i]
+
+
+    print '--'*8 + '\n'
+    for i, td in enumerate(td_list_orig):
+        print str(i) + '\n', td
+
 
 if __name__ == '__main__':
     parse_questions()
