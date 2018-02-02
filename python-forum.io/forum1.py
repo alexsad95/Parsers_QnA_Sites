@@ -36,11 +36,10 @@ def parse_questions():
             page = requests.get(url, headers=user_agent)
 
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
-    question_tag = soup.find('div', {'id': 'content'})
-    table_array = question_tag.findAll('table')
-    td_list_orig = []
+    div_wrapper = soup.find('div', {'id': 'content'}).findAll('table')
 
-    for i, dt in enumerate(table_array[:-1]):
+    td_list_orig = []
+    for i, dt in enumerate(div_wrapper[:-1]):
         data = dt.tbody.find_all('tr')
         for i, dt in enumerate(data):
             data = dt.find_all('td', { "class" : re.compile("trow\d") })
@@ -58,8 +57,7 @@ def parse_questions():
     for i, td_list in enumerate(td_list_orig):
         category_url.append([str(td_list[1].strong.text), str(url_for_category[i])])
 
-    for data in category_url:
-        print data
+    for i in category_url: print i
 
 if __name__ == '__main__':
     parse_questions()
