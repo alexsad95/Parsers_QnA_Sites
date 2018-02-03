@@ -20,7 +20,7 @@ l = [line.strip() for line in f]
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
 
-def parse_questions():
+def out_category_question():
     time_sleep = uniform(1,3) 
     time.sleep(time_sleep)
     url = 'https://python-forum.io/index.php'
@@ -59,5 +59,64 @@ def parse_questions():
 
     for i in category_url: print i
 
+
+# TODO -> данные которые нужно извлечь
+# - title - заголовок вопроса
+# - answer - кол-во ответов
+# - views - кол-во просмотров
+# - date - дата и время публикования
+# - question - текст вопроса
+# - href - ссылка
+
+
+def parse_question_info(url):
+    time_sleep = uniform(1,3) 
+    time.sleep(time_sleep)
+
+    page = requests.get(url, headers=user_agent)
+
+    if page.status_code == 404:
+        print 'Error 404'
+
+    if (page.status_code == 429):
+        print u"Сайт заблокирован. Нужно подождать..."
+        while (page.status_code == 429):
+            time.sleep(60)
+            page = requests.get(url, headers=user_agent)
+
+    soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
+    div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
+
+    full_info = []
+
+    tr_list = div_wrapper[1].find_all('tr')
+    for i,dt in enumerate(tr_list[2:]):
+        # print i
+        td_list = dt.find_all('td')
+
+        short_questions = td_list[2].get('title')
+        # print short_questions
+        if td_list[2].div.span == None:
+            td_list[2].div.decompose()
+            # title = .span.span.a.text
+            # print title
+        title = td_list[2].div.span.span.a.text.encode('utf-8')
+        href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
+        answer = td_list[3].a.text
+        views = td_list[4].text
+        last_date = td_list[6].span.text[:22]
+
+        info = []
+        info.append(str(title))
+        info.append(str(short_questions))
+        info.append(str(href))
+        info.append(str(answer))
+        info.append(str(views))
+        info.append(str(last_date))
+        # print info
+        full_info.append(info)
+    print full_info
+
 if __name__ == '__main__':
-    parse_questions()
+    # out_category_question()
+    parse_question_info('https://python-forum.io/Forum-Board')
