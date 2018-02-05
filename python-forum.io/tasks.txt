@@ -16,5 +16,3 @@
 Нам нужны td с класом trow1/trow2 в них содеожатся названия категорий, ссылка и информация.
 
 find_all tbody class re(trow0-9)
-
-скриптинг flask web network python2.7/3.5
