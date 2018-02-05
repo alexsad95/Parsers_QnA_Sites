@@ -6,7 +6,7 @@ import time
 import pickle
 import requests
 from random import uniform, choice
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, UnicodeDammit
 sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
 import ParserQuestions
 
@@ -36,6 +36,7 @@ def out_category_question():
             page = requests.get(url, headers=user_agent)
 
     soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
+    
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     td_list_orig = []
@@ -60,14 +61,7 @@ def out_category_question():
     for i in category_url: print i
 
 
-# TODO -> данные которые нужно извлечь
-# - title - заголовок вопроса
-# - answer - кол-во ответов
-# - views - кол-во просмотров
-# - date - дата и время публикования
-# - question - текст вопроса
-# - href - ссылка
-
+# TODO -> исправить ошибку в кодировке, вывести данные, сохранить в списке
 
 def parse_question_info(url):
     time_sleep = uniform(1,3) 
@@ -84,39 +78,88 @@ def parse_question_info(url):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
+    soup = BeautifulSoup(page.text, "html.parser")
+
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     full_info = []
 
     tr_list = div_wrapper[1].find_all('tr')
-    for i,dt in enumerate(tr_list[2:]):
-        # print i
+    
+    print len(tr_list)
+    for i, dt in enumerate(tr_list[2:]):
         td_list = dt.find_all('td')
+        print i,') ', td_list
 
-        short_questions = td_list[2].get('title')
-        # print short_questions
-        if td_list[2].div.span == None:
-            td_list[2].div.decompose()
-            # title = .span.span.a.text
-            # print title
-        title = td_list[2].div.span.span.a.text.encode('utf-8')
-        href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
-        answer = td_list[3].a.text
-        views = td_list[4].text
-        last_date = td_list[6].span.text[:22]
+    # for i, dt in enumerate(tr_list[2:]):
+    #     td_list = dt.find_all('td')
+    #     print i
+    #     short_questions = td_list[2].get('title').encode('utf-8')
+    #     if td_list[2].div.span == None:
+    #         td_list[2].div.decompose()
 
-        info = []
-        info.append(str(title))
-        info.append(str(short_questions))
-        info.append(str(href))
-        info.append(str(answer))
-        info.append(str(views))
-        info.append(str(last_date))
-        # print info
-        full_info.append(info)
-    print full_info
+    #     title = td_list[2].div.span.span.a.text.encode('utf-8')
+    #     href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
+    #     answer = td_list[3].a.text
+    #     views = td_list[4].text
+    #     last_date = td_list[6].span.text[:22]
+
+
+    #     print title
+    #     print href
+    #     print short_questions
+    #     print last_date
+
+        # info = []
+        # info.append(title)
+        # info.append(short_questions)
+        # info.append(str(href))
+        # info.append(str(answer))
+        # info.append(str(views))
+        # info.append(str(last_date))
+        # # print info
+        # full_info.append(info)
+
+    # print full_info    # tr_list = div_wrapper[1].find_all('tr')
+    # for i,dt in enumerate(tr_list[2:]):
+    #     # print i
+    #     td_list = dt.find_all('td')
+
+    #     print td_list[0],td_list[2]
+    #     # print short_questions
+    #     if td_list[2].div.span == None:
+    #         td_list[2].div.decompose()
+    #         # title = .span.span.a.text
+    #         # print title
+    #     title = td_list[2].div.span.span.a.text.encode('utf-8')
+    #     short_questions = td_list[2].get('title')
+    #     href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
+    #     answer = td_list[3].a.text
+    #     views = td_list[4].text
+    #     last_date = td_list[6].span.text[:22]
+
+    #     info = []
+    #     info.append(title)
+    #     info.append(short_questions)
+    #     info.append(str(href))
+    #     info.append(str(answer))
+    #     info.append(str(views))
+    #     info.append(str(last_date))
+    #     # print info
+    #     full_info.append(info)
+    # print full_info
 
 if __name__ == '__main__':
     # out_category_question()
     parse_question_info('https://python-forum.io/Forum-Board')
+
+    # import sys
+    # import cgi
+    # import codecs
+    # sys.stdout = codecs.getwriter("cp850")(sys.stdout, 'xmlcharrefreplace')
+    # print u"Stöcker"                # works
+    # print "Stöcker".decode("utf-8") # works
+    # print repr("Stöcker")
+
+    # _, params = cgi.parse_header('text/html; charset=utf-8')
+    # print params['charset'] 
