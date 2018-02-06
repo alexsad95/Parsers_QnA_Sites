@@ -91,16 +91,18 @@ def parse_question_info(url):
 
         if td_list[2].div.span == None:
             td_list[2].div.decompose()
+
         title = td_list[2].div.span.span.a.text.encode('utf-8')
         short_questions = td_list[2].get('title').encode('utf-8')
         href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
+        div_content = parse_question(str(href))
         answer = td_list[3].a.text
         views = td_list[4].text
         last_date = td_list[6].span.text[:22]
 
         info = []
         info.append(title)
-        info.append(short_questions)
+        info.append(div_content)
         info.append(str(href))
         info.append(str(answer))
         info.append(str(views))
@@ -109,18 +111,45 @@ def parse_question_info(url):
 
     print full_info
 
+def parse_question(url):
+    page = requests.get(url, headers=user_agent)
+
+    if page.status_code == 404:
+        print 'Error 404'
+
+    if (page.status_code == 429):
+        print u"Сайт заблокирован. Нужно подождать..."
+        while (page.status_code == 429):
+            time.sleep(60)
+            page = requests.get(url, headers=user_agent)
+
+    soup = BeautifulSoup(page.text, "html.parser")
+    div_content = soup.find('div', {'class': 'post_content'})
+    post_text = div_content.find('div', {'class': 'post_body scaleimages'})
+    question = post_text.text
+    return question
+
+def parse_count_pages(url):
+    page = requests.get(url, headers=user_agent)
+
+    if page.status_code == 404:
+        print 'Error 404'
+
+    if (page.status_code == 429):
+        print u"Сайт заблокирован. Нужно подождать..."
+        while (page.status_code == 429):
+            time.sleep(60)
+            page = requests.get(url, headers=user_agent)
+
+    soup = BeautifulSoup(page.text, "html.parser")
+    div_pagination = soup.find('div', {'class': 'pagination'})
+    count = re.findall('\d+', str(div_pagination.span.text))
+    return int(count[0])
+
 
 if __name__ == '__main__':
     # out_category_question()
-    parse_question_info('https://python-forum.io/Forum-Board')
-
-    # import sys
-    # import cgi
-    # import codecs
-    # sys.stdout = codecs.getwriter("cp850")(sys.stdout, 'xmlcharrefreplace')
-    # print u"Stöcker"                # works
-    # print "Stöcker".decode("utf-8") # works
-    # print repr("Stöcker")
-
-    # _, params = cgi.parse_header('text/html; charset=utf-8')
-    # print params['charset'] 
+    for i in range(parse_count_pages('https://python-forum.io/Forum-Board')):
+        print i
+        parse_question_info('https://python-forum.io/Forum-Board?page=' + str(i+1))
+    # ('https://python-forum.io/Forum-Board?page=13')
