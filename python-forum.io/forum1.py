@@ -86,29 +86,31 @@ def parse_question_info(url):
 
     tr_list = div_wrapper[1].find_all('tr')
     
-    print len(tr_list)
-    for i, dt in enumerate(tr_list[2:]):
-        td_list = dt.find_all('td')
-        print i,') ', td_list
-
+    # print len(tr_list)
     # for i, dt in enumerate(tr_list[2:]):
     #     td_list = dt.find_all('td')
-    #     print i
-    #     short_questions = td_list[2].get('title').encode('utf-8')
-    #     if td_list[2].div.span == None:
-    #         td_list[2].div.decompose()
+    #     print i,') ', td_list
 
-    #     title = td_list[2].div.span.span.a.text.encode('utf-8')
-    #     href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
-    #     answer = td_list[3].a.text
-    #     views = td_list[4].text
-    #     last_date = td_list[6].span.text[:22]
+    for i, dt in enumerate(tr_list[2:]):
+        td_list = dt.find_all('td')
 
+        if len(td_list) == 1:
+            break
 
-    #     print title
-    #     print href
-    #     print short_questions
-    #     print last_date
+        if td_list[2].div.span == None:
+            td_list[2].div.decompose()
+        title = td_list[2].div.span.span.a.text.encode('utf-8')
+        short_questions = td_list[2].get('title').encode('utf-8')
+        href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
+        answer = td_list[3].a.text
+        views = td_list[4].text
+        last_date = td_list[6].span.text[:22]
+
+        print title
+        print href
+        print short_questions
+        print last_date
+            
 
         # info = []
         # info.append(title)
