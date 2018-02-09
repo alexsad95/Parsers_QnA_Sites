@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import re
 import sys
 import json
@@ -18,6 +19,7 @@ l = [line.strip() for line in f]
 
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
+
 
 def out_category_question():
     time_sleep = uniform(1,3) 
@@ -59,8 +61,6 @@ def out_category_question():
 
     for i in category_url: print i
 
-
-# TODO -> переходы по страницам, парсинг всей категории
 
 def parse_question_info(url):
     time_sleep = uniform(1,3) 
@@ -147,9 +147,11 @@ def parse_count_pages(url):
     return int(count[0])
 
 
+# TODO -> добавить сохранение через pickle
+
 if __name__ == '__main__':
+
     # out_category_question()
     for i in range(parse_count_pages('https://python-forum.io/Forum-Board')):
-        print i
+        print u'Страница №',int(i) + 1 
         parse_question_info('https://python-forum.io/Forum-Board?page=' + str(i+1))
-    # ('https://python-forum.io/Forum-Board?page=13')
