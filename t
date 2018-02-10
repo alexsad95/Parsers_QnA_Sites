@@ -1,0 +1,181 @@
+[33mcommit 5462fbfef457a903effd720cd7b73049907f15a4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Sat Feb 10 13:34:30 2018 +0200
+
+    Добавил task_diplom.md
+
+[33mcommit a0671424e13f9d2d924a2ad483dfdb75de2d0c6f[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Sat Feb 10 13:00:26 2018 +0200
+
+    правка tasks.txt
+
+[33mcommit 4bf583b0502c91d67cff973813e4a24f3889a4f0[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 9 16:57:13 2018 +0200
+
+    исправил task.txt
+
+[33mcommit eb3984ebb57b65195ac879637d00763642da16bb[m[33m ([m[1;31mParseQuestions/master[m[33m)[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 9 15:00:33 2018 +0200
+
+    вывод списка с вопросами и переходы по страницам
+
+[33mcommit 9d5b31d2f91345a80d0fb7d46d0a3617de3413ba[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 9 14:56:03 2018 +0200
+
+    паланы на реалиацию диплома
+
+[33mcommit 227084c4e3345c04ea7c53857acacc5484c5d0c3[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Feb 6 16:35:52 2018 +0200
+
+    вывод вопросов, парсинг по страницам
+
+[33mcommit 62207c9eb989b4e49a9925ba24c7f554c767f2c7[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Feb 6 11:06:50 2018 +0200
+
+    сохранение и вывод списка
+
+[33mcommit 81ab96098fc4317e15b4e6c5aaaf5ecb1638a425[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Feb 6 11:01:23 2018 +0200
+
+    правельный вывод, исправил ошибки
+
+[33mcommit 55260828ef1563d49265b1a9113d23a18e3fe80a[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Feb 6 01:46:35 2018 +0200
+
+    вывод с кодировкой utf-8, вызовом удалённых элементов списка
+
+[33mcommit d4a4274abb654a83f4e982bdb4311118fac43866[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Mon Feb 5 23:59:14 2018 +0200
+
+    изменил tasks.txt
+
+[33mcommit a8fa542126edcaf08ef9090634ed3c82de540f64[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Mon Feb 5 23:56:27 2018 +0200
+
+    изменил tasks
+
+[33mcommit e5c87791a63402bc556ce106eb6f6ee11bab0274[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Sat Feb 3 17:23:12 2018 +0200
+
+    вывод всех данных, ошибка с кодировкой
+
+[33mcommit 96b8f1096dbb699cc51419d6373eaeae0d341c6c[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:52:16 2018 +0200
+
+    Task save
+
+[33mcommit a9962f02a07504d21017fba02f9e6f3fa11213d9[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:50:32 2018 +0200
+
+    Изменил файл README.md
+
+[33mcommit 49da5ef5d70af2c56545cd9af8ca24621cb853dd[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:48:57 2018 +0200
+
+    Изменил файл README.md
+
+[33mcommit 9dd26fa7a207dab5b28ca1043c30c5d3aec4bf8c[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:45:21 2018 +0200
+
+    Изменил файл README.md
+
+[33mcommit 8b4595ac27f6d65fc0bfb62a70a6592125a00c4d[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:43:07 2018 +0200
+
+    Добавил инфы в README.md
+
+[33mcommit 56dc035570eb43d86789ec05e5086542a768486e[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 20:41:20 2018 +0200
+
+    Добавил инфы в README.md
+
+[33mcommit b60a7eceae3238e9b5497ae3f8e5e5ac806f7bec[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 16:17:29 2018 +0200
+
+    Список с заголовками и ссылками
+
+[33mcommit 8dd06abd8d1f11e2b063fad65bbce49488bce6a5[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 14:30:45 2018 +0200
+
+    Список -> [['заколовок','ссылка'],...]
+
+[33mcommit a1fa422fa30caf285c8df6fd6caf87057c110e1a[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 13:57:40 2018 +0200
+
+    исправил вывод категорий
+
+[33mcommit ff30878631517e4b6b4a0c217c6bd3642c1bb1fd[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Fri Feb 2 01:40:45 2018 +0200
+
+    вывод заголоков категорий, не вывелись первые
+
+[33mcommit 06ebcb3a9c92da25e63e68bf6cb9b68b0ebe026f[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Thu Feb 1 17:13:55 2018 +0200
+
+    вывод столбцов trow1,trow2
+
+[33mcommit 9cc0470fde88a6131c8cbfacfe7e52e51a6907d2[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Thu Feb 1 16:26:22 2018 +0200
+
+    План как распарсить. User-agent
+
+[33mcommit d055ce42d8d651af17eeb077e3a51780050a4ace[m
+Merge: 0f94478 4747970
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Jan 30 17:09:50 2018 +0200
+
+    Merge branch 'master' of https://github.com/AAleksandria/ParserQuestions
+
+[33mcommit 0f9447837fec09d30c92eae13176c71df45b8e31[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Jan 30 16:43:30 2018 +0200
+
+    Пакет ParserQuestions. Модуль log. Добавление и измененеие скриптов
+
+[33mcommit 4747970bfc64b8cde99728e84f7c4c775ce11b1b[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Jan 30 16:43:30 2018 +0200
+
+    Пакет log, добавление файлов и изменение под log
+
+[33mcommit d61f6323b6eee4da48a36f492648fd1e0c514114[m
+Merge: 7668843 629183b
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Jan 30 00:28:09 2018 +0200
+
+    Merge branch 'master' of https://github.com/AAleksandria/ParserQuestions
+
+[33mcommit 629183bfe53b9b2894e92c0a0f2a31d30e1353f5[m
+Author: Александр Садчиков <aleksandrsadchikov.17@gmail.com>
+Date:   Tue Jan 30 00:01:28 2018 +0200
+
+    Initial commit
+
+[33mcommit 766884387f9867ba432c0cca68889d7f5e0bc550[m
+Author: AAleksandria <aleksandrsadchikov.17@gmail.com>
+Date:   Mon Jan 29 23:56:37 2018 +0200
+
+    "Предыдущие результаты"
