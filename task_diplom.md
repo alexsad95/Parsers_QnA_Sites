@@ -17,13 +17,13 @@
 
 1. Парсер
 * Написать парсеры на все возможные сайты
-   - Форум сообщества языка программирования Python (https://python-forum.io/) (10-14 дней)
-   - Официальный форум сообщества Python (http://python.su/forum/)             (10-14 дней)
-   - Форум (http://www.cyberforum.ru/python/)                                  (10-14 дней)
-   - Toster (https://toster.ru/tag/python/questions)                           (10-14 дней)
-   - по возможности сайт автоматизации AtInfo (http://automated-testing.info/tags/python)  (10-14 дней)
-   - по возможности Quora (https://www.quora.com/topic/Python-programming-language-1)      (10-14 дней)
-   - русский stackoverflow (https://ru.stackoverflow.com/questions/tagged/python)          (10-14 дней)
+   - [Форум сообщества языка программирования Python](https://python-forum.io/) (10-14 дней)
+   - [Официальный форум сообщества Python](http://python.su/forum/)             (10-14 дней)
+   - [Форум](http://www.cyberforum.ru/python/)                                  (10-14 дней)
+   - [Toster](https://toster.ru/tag/python/questions)                           (10-14 дней)
+   - по возможности [сайт автоматизации AtInfo](http://automated-testing.info/tags/python)  (10-14 дней)
+   - по возможности [Quora](https://www.quora.com/topic/Python-programming-language-1)      (10-14 дней)
+   - русский [stackoverflow](https://ru.stackoverflow.com/questions/tagged/python)          (10-14 дней)
 * Соеденить все скрипты в одну программу    (4-6 дней)
 * Распарсить сайты написанными парсерами    (4 дня)
 * Создать таблицы БД под все сайты          (4 дня)
