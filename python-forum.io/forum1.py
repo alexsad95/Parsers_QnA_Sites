@@ -4,7 +4,8 @@ import re
 import sys
 import json
 import time
-import pickle
+# import pickle
+import psycopg2
 import requests
 from random import uniform, choice
 from bs4 import BeautifulSoup, UnicodeDammit
@@ -54,6 +55,7 @@ def out_category_question():
     url_for_category = []
     for i, td in enumerate(td_list_orig):
         url_for_category.append('https://python-forum.io/' + str(td[1].a.get('href')))
+        # print "URL: ", str(td[1].a.get('href'))
 
     category_url = []
     for i, td_list in enumerate(td_list_orig):
@@ -111,6 +113,7 @@ def parse_question_info(url):
 
     print full_info
 
+
 def parse_question(url):
     page = requests.get(url, headers=user_agent)
 
@@ -128,6 +131,7 @@ def parse_question(url):
     post_text = div_content.find('div', {'class': 'post_body scaleimages'})
     question = post_text.text
     return question
+
 
 def parse_count_pages(url):
     page = requests.get(url, headers=user_agent)
@@ -147,11 +151,24 @@ def parse_count_pages(url):
     return int(count[0])
 
 
-# TODO -> добавить сохранение через pickle
+# def save_to_db(data):
+def main_function(command):
+    out_category_question()
+    if command == 'p_category':
+        category = raw_input(u'Введите название категории: '.encode('cp866'))
+        url = 'https://python-forum.io/' + category
+        for i in range(parse_count_pages(url)):
+            print u'Страница №',int(i) + 1 
+            parse_question_info(url + '?page=' + str(i+1))
+
+
+# 1) [x] TODO -> Написать отдельную главную функцию с параметрами
+# 2) [ ] TODO -> Добавить исключения, логгирование
+# 3) [ ] TODO -> Создать таблицу с полями 
+# 4) [ ] TODO -> Сохранение в БД
+# 5) [ ] TODO -> Распарсить форум
+
 
 if __name__ == '__main__':
-
-    # out_category_question()
-    for i in range(parse_count_pages('https://python-forum.io/Forum-Board')):
-        print u'Страница №',int(i) + 1 
-        parse_question_info('https://python-forum.io/Forum-Board?page=' + str(i+1))
+    command = sys.argv[1] 
+    main_function(command)

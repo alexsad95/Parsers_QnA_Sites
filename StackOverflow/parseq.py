@@ -116,8 +116,6 @@ def parse_questions(data, json_or_db):
             rowcount = num+1
             dictionar[dt[0]] = string
 
-
-
     logger.info(u"Количество записаных вопросов: " + str(rowcount))
     logger.info(u"Время выпонения скрипта " +
                 unicode(round(time.clock(), 2)) + u" сек. или " +
@@ -128,7 +126,6 @@ def parse_questions(data, json_or_db):
 if __name__ == '__main__':
     try:
         json_or_db = ''
-
 
         #  записывать ли в БД?
         host = raw_input("Host: ")
