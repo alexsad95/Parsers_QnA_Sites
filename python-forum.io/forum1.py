@@ -20,17 +20,14 @@ user_agent = {'User-Agent': user_agents}
 
 
 def print_help():
-    print '-'*80
-
     print u'''
-    Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
-    Работает с аргументами:
-            -help           - вывод справки.
-            -count          - вывод количества сохранённых данных.
-            -p_category     - парсинг определённой категории.
-            -p_all          - парсинг всех категорий с последних сохранённых вопросов.'''
-
-    print '-'*80
+  Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
+  Для работы необходимо ввести команду: python forum1.py [аргументы]
+  Необходимаые аргументы и их обозначение:
+      -help           - вывод справки.
+      -count          - вывод количества сохранённых данных.
+      -p_category     - парсинг определённой категории.
+      -p_all          - парсинг всех категорий с последних сохранённых вопросов.'''
     sys.exit()
 
 
@@ -169,21 +166,22 @@ def parse_count_pages(url):
 
     return int(count[0])
 
-
+# сохраняет данные в БД
 # def save_to_db(data):
 
 # главная фукция 
 def main_function(command):
 
-    out_category_question()
 
     if command == '-p_category':
+        out_category_question()
         category = raw_input(u'Введите название категории: '.encode('cp866'))
         url = 'https://python-forum.io/' + category
 
         for i in range(parse_count_pages(url)):
             print u'Страница №',int(i) + 1 
             parse_question_info(url + '?page=' + str(i+1))
+
     elif command == '-help':
         print_help()
 
