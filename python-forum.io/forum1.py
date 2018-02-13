@@ -18,6 +18,22 @@ l = [line.strip() for line in f]
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
 
+
+def print_help():
+    print '-'*80
+
+    print u'''
+    Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
+    Работает с аргументами:
+            -help           - вывод справки.
+            -count          - вывод количества сохранённых данных.
+            -p_category     - парсинг определённой категории.
+            -p_all          - парсинг всех категорий с последних сохранённых вопросов.'''
+
+    print '-'*80
+    sys.exit()
+
+
 # парсинг и вывод категорий в списке с ссылкой 
 def out_category_question():
     time_sleep = uniform(1,3) 
@@ -161,14 +177,15 @@ def main_function(command):
 
     out_category_question()
 
-    if command == 'p_category':
+    if command == '-p_category':
         category = raw_input(u'Введите название категории: '.encode('cp866'))
         url = 'https://python-forum.io/' + category
 
         for i in range(parse_count_pages(url)):
             print u'Страница №',int(i) + 1 
             parse_question_info(url + '?page=' + str(i+1))
-
+    elif command == '-help':
+        print_help()
 
 # 1) [x] TODO -> Написать отдельную главную функцию с параметрами
 # 2) [ ] TODO -> Изменить список на словарь для удобства
