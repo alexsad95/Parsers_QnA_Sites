@@ -42,13 +42,11 @@ def print_help():
       -p_all          - парсинг всех категорий с последних сохранённых вопросов.'''
     sys.exit()
 
+# делает запрос на сайт и возвращает html объект
+def url_request(url):
+    # time_sleep = uniform(1,3)
+    # time.sleep(time_sleep)
 
-# парсинг и вывод категорий в списке с ссылкой 
-def out_category_question():
-    time_sleep = uniform(1,3) 
-    time.sleep(time_sleep)
-
-    url = 'https://python-forum.io/index.php'
     page = requests.get(url, headers=user_agent)
 
     # стандартная проверка на доступность сайта
@@ -61,6 +59,12 @@ def out_category_question():
             page = requests.get(url, headers=user_agent)
 
     soup = BeautifulSoup(page.text.encode('utf-8'), 'html.parser')
+    return soup
+
+
+# парсинг и вывод категорий в списке с ссылкой 
+def out_category_question():
+    soup = url_request('https://python-forum.io/index.php')
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     # ищем в таблицах столбцы с классами trow1 или trow2
@@ -91,20 +95,7 @@ def out_category_question():
 
 # парсинг основной информации
 def parse_question_info(url):
-    time_sleep = uniform(1,3)
-    time.sleep(time_sleep)
-
-    page = requests.get(url, headers=user_agent)
-
-    if page.status_code == 404:
-        print 'Error 404'
-    if (page.status_code == 429):
-        print u'Сайт заблокирован. Нужно подождать...'
-        while (page.status_code == 429):
-            time.sleep(60)
-            page = requests.get(url, headers=user_agent)
-
-    soup = BeautifulSoup(page.text, 'html.parser')
+    soup = url_request(url)
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     # основной список с информацией о вопросе
@@ -115,7 +106,7 @@ def parse_question_info(url):
     #     print '\n'+str(i)+') Tag.Name: ', tr.name
     #     print '   Tag.Attrs: ', tr.attrs
 
-    for i, dt in enumerate(tr_list[2:]):
+    for i, dt in enumerate(tr_list):
         td_list = dt.find_all('td')
         if len(td_list) == 1:
             break
@@ -149,17 +140,7 @@ def parse_question_info(url):
 
 # парсинг самого вопроса переходя на его страницу
 def parse_question(url):
-    page = requests.get(url, headers=user_agent)
-
-    if page.status_code == 404:
-        print 'Error 404'
-    if (page.status_code == 429):
-        print u'Сайт заблокирован. Нужно подождать...'
-        while (page.status_code == 429):
-            time.sleep(60)
-            page = requests.get(url, headers=user_agent)
-
-    soup = BeautifulSoup(page.text, 'html.parser')
+    soup = url_request(url)
     div_content = soup.find('div', {'class': 'post_content'})
 
     post_text = div_content.find('div', {'class': 'post_body scaleimages'})
@@ -170,17 +151,7 @@ def parse_question(url):
 
 # парсинг количества страниц с вопросами в категории
 def parse_count_pages(url):
-    page = requests.get(url, headers=user_agent)
-
-    if page.status_code == 404:
-        print 'Error 404'
-    if (page.status_code == 429):
-        print u'Сайт заблокирован. Нужно подождать...'
-        while (page.status_code == 429):
-            time.sleep(60)
-            page = requests.get(url, headers=user_agent)
-
-    soup = BeautifulSoup(page.text, 'html.parser')
+    soup = url_request(url)
     div_pagination = soup.find('div', {'class': 'pagination'})
     count = re.findall('\d+', str(div_pagination.span.text))
 
