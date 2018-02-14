@@ -1,4 +1,14 @@
 # -*- coding: utf-8 -*-
+
+#    [ ] TODO текущий -> Исправить ошибку tr в Forum-Bar 1 стр.
+
+# 1) [x] TODO -> Написать отдельную главную функцию с параметрами
+# 2) [x] TODO -> Изменить список на словарь для удобства
+# 3) [ ] TODO -> Добавить исключения, логгирование
+# 4) [ ] TODO -> Создать таблицу с полями 
+# 5) [ ] TODO -> Сохранение в БД
+# 6) [ ] TODO -> Распарсить форум
+
 import re
 import sys
 import json
@@ -97,7 +107,11 @@ def parse_question_info(url):
 
     # основной список с информацией о вопросе
     full_info = []
-    tr_list = div_wrapper[1].find_all('tr')
+    tr_list = div_wrapper[1].find_all('tr', { "class" : 'inline_row' })
+
+    for i in tr_list:
+        print '\nTag.Name: ', i.name
+        print 'Tag.Attrs: ', i.attrs
 
     for i, dt in enumerate(tr_list[2:]):
         td_list = dt.find_all('td')
@@ -115,15 +129,14 @@ def parse_question_info(url):
         views = td_list[4].text
         last_date = td_list[6].span.text[:22]
 
-        info = []
-        info.append(title)
-        info.append(div_content)
-        info.append(str(href))
-        info.append(str(answer))
-        info.append(str(views))
-        info.append(str(last_date))
+        info = {}
+        info.update({'title':  title})
+        info.update({'questions': div_content})
+        info.update({'href': str(href)})
+        info.update({'anser': str(answer)})
+        info.update({'views': str(views)})
+        info.update({'last_date': str(last_date)})
         full_info.append(info)
-
     print full_info
 
 
@@ -185,14 +198,12 @@ def main_function(command):
     elif command == '-help':
         print_help()
 
-# 1) [x] TODO -> Написать отдельную главную функцию с параметрами
-# 2) [ ] TODO -> Изменить список на словарь для удобства
-# 3) [ ] TODO -> Добавить исключения, логгирование
-# 4) [ ] TODO -> Создать таблицу с полями 
-# 5) [ ] TODO -> Сохранение в БД
-# 6) [ ] TODO -> Распарсить форум
-
 
 if __name__ == '__main__':
-    command = sys.argv[1]
-    main_function(command)
+    try:
+        command = sys.argv[1]
+        main_function(command)
+
+    except Exception as e:
+        e = sys.exc_info()
+        print '\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1])
