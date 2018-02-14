@@ -53,12 +53,12 @@ def out_category_question():
     if page.status_code == 404:
         print 'Error 404'
     if (page.status_code == 429):
-        print u"Сайт заблокирован. Нужно подождать..."
+        print u'Сайт заблокирован. Нужно подождать...'
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text.encode('utf-8'), "html.parser")
+    soup = BeautifulSoup(page.text.encode('utf-8'), 'html.parser')
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     # ищем в таблицах столбцы с классами trow1 или trow2
@@ -66,7 +66,7 @@ def out_category_question():
     for i, dt in enumerate(div_wrapper[:-1]):
         data = dt.tbody.find_all('tr')
         for i, dt in enumerate(data):
-            data = dt.find_all('td', { "class" : re.compile("trow\d") })
+            data = dt.find_all('td', { 'class' : re.compile('trow\d') })
             td_list_orig.append(data)
 
     # удаляем ненужные столбцы без контента
@@ -97,21 +97,21 @@ def parse_question_info(url):
     if page.status_code == 404:
         print 'Error 404'
     if (page.status_code == 429):
-        print u"Сайт заблокирован. Нужно подождать..."
+        print u'Сайт заблокирован. Нужно подождать...'
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text, "html.parser")
+    soup = BeautifulSoup(page.text, 'html.parser')
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
     # основной список с информацией о вопросе
     full_info = []
-    tr_list = div_wrapper[1].find_all('tr', { "class" : 'inline_row' })
+    tr_list = div_wrapper[1].find_all('tr', { 'class' : 'inline_row' })
 
-    for i in tr_list:
-        print '\nTag.Name: ', i.name
-        print 'Tag.Attrs: ', i.attrs
+    # for i,tr in enumerate(tr_list):
+    #     print '\n'+str(i)+') Tag.Name: ', tr.name
+    #     print '   Tag.Attrs: ', tr.attrs
 
     for i, dt in enumerate(tr_list[2:]):
         td_list = dt.find_all('td')
@@ -137,7 +137,12 @@ def parse_question_info(url):
         info.update({'views': str(views)})
         info.update({'last_date': str(last_date)})
         full_info.append(info)
-    print full_info
+
+    for i,info in enumerate(full_info):
+        print str(i+1)+'\n{'
+        for key, value in info.items():
+            print '{0}: {1}'.format(key, value)
+        print '}'
 
 
 # парсинг самого вопроса переходя на его страницу
@@ -147,12 +152,12 @@ def parse_question(url):
     if page.status_code == 404:
         print 'Error 404'
     if (page.status_code == 429):
-        print u"Сайт заблокирован. Нужно подождать..."
+        print u'Сайт заблокирован. Нужно подождать...'
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text, "html.parser")
+    soup = BeautifulSoup(page.text, 'html.parser')
     div_content = soup.find('div', {'class': 'post_content'})
 
     post_text = div_content.find('div', {'class': 'post_body scaleimages'})
@@ -168,12 +173,12 @@ def parse_count_pages(url):
     if page.status_code == 404:
         print 'Error 404'
     if (page.status_code == 429):
-        print u"Сайт заблокирован. Нужно подождать..."
+        print u'Сайт заблокирован. Нужно подождать...'
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text, "html.parser")
+    soup = BeautifulSoup(page.text, 'html.parser')
     div_pagination = soup.find('div', {'class': 'pagination'})
     count = re.findall('\d+', str(div_pagination.span.text))
 
