@@ -2,6 +2,7 @@
 
 #    [ ] TODO текущий -> Исправить ошибку UnicodeEncodeError 3 row "Funny English"
 #    [ ] TODO текущий -> Исправить "last_date: Yesterday, 04:01 AM La"
+#    [ ] TODO текущий -> Исправить views answer на int и убрать запятую
 
 # 1) [x] TODO -> Написать отдельную главную функцию с параметрами
 # 2) [x] TODO -> Изменить список на словарь для удобства
@@ -126,7 +127,7 @@ def parse_question_info(url):
         info.update({'title':  title})
         info.update({'questions': div_content})
         info.update({'href': str(href)})
-        info.update({'anser': str(answer)})
+        info.update({'answer': str(answer)})
         info.update({'views': str(views)})
         info.update({'last_date': str(last_date)})
         full_info.append(info)
