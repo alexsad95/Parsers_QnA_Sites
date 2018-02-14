@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 
-#    [ ] TODO текущий -> Исправить ошибку tr в Forum-Bar 1 стр.
+#    [ ] TODO текущий -> Исправить ошибку UnicodeEncodeError 3 row "Funny English"
+#    [ ] TODO текущий -> Исправить "last_date: Yesterday, 04:01 AM La"
 
 # 1) [x] TODO -> Написать отдельную главную функцию с параметрами
 # 2) [x] TODO -> Изменить список на словарь для удобства
-# 3) [ ] TODO -> Добавить исключения, логгирование
-# 4) [ ] TODO -> Создать таблицу с полями 
-# 5) [ ] TODO -> Сохранение в БД
-# 6) [ ] TODO -> Распарсить форум
+# 3) [x] TODO -> Исправить ошибку tr в Forum-Bar 1 стр
+# 4) [ ] TODO -> Добавить исключения, логгирование
+# 5) [ ] TODO -> Создать таблицу с полями 
+# 6) [ ] TODO -> Сохранение в БД
+# 7) [ ] TODO -> Распарсить форум
 
 import re
 import sys
@@ -16,7 +18,7 @@ import time
 import psycopg2
 import requests
 from random import uniform, choice
-from bs4 import BeautifulSoup, UnicodeDammit
+from bs4 import BeautifulSoup
 sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
 import ParserQuestions
 
