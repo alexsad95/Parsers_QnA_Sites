@@ -154,8 +154,28 @@ def parse_count_pages(url):
 
     return int(count[0])
 
-# сохраняет данные в БД
-# def save_to_db(data):
+# сохранение в БД полученных вопросов
+def save_to_db(questions):
+    count = 0
+    for i, items in enumerate(questions):
+        count = i+1
+        try:
+            curs.execute(
+                """ INSERT INTO forum1_questions
+                    VALUES (%s,%s,%s,%s,%s)""",
+                    items["title"],
+                    items["questions"],
+                    int(items["views"]),
+                    int(items["answer"]),
+                    items["href"])
+        except psycopg2.Error as err:
+            print("Query error: {}".format(err))
+    conn.commit()
+
+    # логирование в файл, вывод полученных результатов
+    logger.info(u"   Вопросы за данный диапазон: %s" % count)
+    logger.debug("\n")
+
 
 # главная фукция 
 def main_function(command):
