@@ -1,24 +1,25 @@
 #! python3
 # -*- coding: utf-8 -*-
+# ============================================================
+# [ ] TODO -> Создать таблицу с полями 
 
-# [ ] TODO <текущий> -> Исправить ошибку UnicodeEncodeError 3 row "Funny English"
-
-# [ ] TODO  -> Исправить "last_date: Yesterday, 04:01 AM La"(изменить при добавлении в БД в datetime)
-# [ ] TODO  -> Исправить views и answer на int и убрать запятую
-
-#    GLOBAL TODO и сделанные
+# ----------------GLOBAL TODO и сделанные---------------------
 # [x] TODO -> Написать отдельную главную функцию с параметрами
 # [x] TODO -> Изменить список на словарь для удобства
-# [x] TODO -> Исправить ошибку tr в Forum-Bar 1 стр
-# [ ] TODO -> Добавить исключения, логгирование
-# [ ] TODO -> Создать таблицу с полями 
-# [ ] TODO -> Сохранение в БД
-# [ ] TODO -> Распарсить форум
+# [x] TODO -> Исправить ошибку tr в Forum-Bar 1 стр (поиск tr по классу)
+# [x] TODO -> Исправить ошибку UnicodeEncodeError 3 row "Funny English" (python3 и папка py3parser)
+# [x] TODO -> Исправить views и answer на int и убрать запятую
+# [x] TODO -> Убрал lastdate т.к. не имеет смысл добавлять дату изменения вопросов, тем более нет точной даты создания
 
-import re, sys, json, time
-import requests
+# [ ] TODO -> Сохранение в БД
+# [ ] TODO -> Добавить исключения, логгирование
+# [ ] TODO -> Распарсить форум
+# ============================================================
+
+import re, sys, json, time, requests
 from random import uniform, choice
 from bs4 import BeautifulSoup
+
 sys.path.append(r'C:\Users\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT\ParserQuestions')
 import py3parser
 
@@ -36,10 +37,10 @@ def print_help():
   Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
   Для работы необходимо ввести команду: python forum1.py [аргументы]
   Необходимаые аргументы и их обозначение:
-      -help           - вывод справки.
-      -count          - вывод количества сохранённых данных.
-      -p_category     - парсинг определённой категории.
-      -p_all          - парсинг всех категорий с последних сохранённых вопросов.''')
+      -help                - вывод справки.
+      -count               - вывод количества сохранённых данных.
+      -p_category [num]    - парсинг определённой категории или определённой страницы.
+      -p_all               - парсинг всех категорий с последних сохранённых вопросов.''')
     sys.exit()
 
 # делает запрос на сайт и возвращает html объект
@@ -102,10 +103,6 @@ def parse_question_info(url):
     full_info = []
     tr_list = div_wrapper[1].find_all('tr', { 'class' : 'inline_row' })
 
-    # for i,tr in enumerate(tr_list):
-    #     print '\n'+str(i)+') Tag.Name: ', tr.name
-    #     print '   Tag.Attrs: ', tr.attrs
-
     for i, dt in enumerate(tr_list):
         td_list = dt.find_all('td')
         if len(td_list) == 1:
@@ -120,15 +117,15 @@ def parse_question_info(url):
         div_content = parse_question(str(href))
         answer = td_list[3].a.text
         views = td_list[4].text
-        last_date = td_list[6].span.text[:22]
+        # last_date = td_list[6].span.text[:22]
 
         info = {}
         info.update({'title':  title})
         info.update({'questions': div_content})
         info.update({'href': str(href)})
-        info.update({'answer': str(answer)})
-        info.update({'views': str(views)})
-        info.update({'last_date': str(last_date)})
+        info.update({'answer': int(answer.replace(",",""))})
+        info.update({'views': int(views.replace(",",""))})
+        # info.update({'last_date': str(last_date)})
         full_info.append(info)
 
     for i,info in enumerate(full_info):
@@ -163,15 +160,26 @@ def parse_count_pages(url):
 # главная фукция 
 def main_function(command):
 
-
+    # print(command)
     if command == '-p_category':
         out_category_question()
+        
+        # if command[1]:
         category = input('\nВведите название категории: ')
+        page = input('Введите номер страницы: ')
         url = 'https://python-forum.io/' + category
 
-        for i in range(parse_count_pages(url)):
-            print('Страница №',int(i) + 1)
-            parse_question_info(url + '?page=' + str(i+1))
+        if page:
+            page = [int(s.strip()) for s in page.split(',')]
+            for i in page:
+                print('Страница №', i)
+                print(url + '?page=' + str(i))
+                parse_question_info(url + '?page=' + str(i))
+
+        else:
+            for i in range(parse_count_pages(url)):
+                print('Страница №',int(i) + 1)
+                parse_question_info(url + '?page=' + str(i+1))
 
     elif command == '-help':
         print_help()
@@ -182,8 +190,8 @@ if __name__ == '__main__':
         if len(sys.argv) == 1:
             print_help()
             sys.exit(1)
-
-        command = sys.argv[1]
+        
+        command = sys.argv[1] #, [int(s.strip()) for s in sys.argv[2][1:-1].split(',')]]
         main_function(command)
 
     except Exception as e:
