@@ -1,4 +1,4 @@
-#! python
+#! python3
 # -*- coding: utf-8 -*-
 
 # [ ] TODO <текущий> -> Исправить ошибку UnicodeEncodeError 3 row "Funny English"
@@ -19,27 +19,27 @@ import re, sys, json, time
 import requests
 from random import uniform, choice
 from bs4 import BeautifulSoup
-sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
-import ParserQuestions
+sys.path.append(r'C:\Users\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT\ParserQuestions')
+import py3parser
 
-logger = ParserQuestions.save_log('../files/out_forum1.log')
+logger = py3parser.save_log('../py3parser/files/out_forum1.log')
 
 # настройка user-agent
-f = open('../files/user-agents.txt', 'r')
+f = open('../py3parser/files/user-agents.txt', 'r')
 l = [line.strip() for line in f]
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
 
 
 def print_help():
-    print u'''
+    print('''
   Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
   Для работы необходимо ввести команду: python forum1.py [аргументы]
   Необходимаые аргументы и их обозначение:
       -help           - вывод справки.
       -count          - вывод количества сохранённых данных.
       -p_category     - парсинг определённой категории.
-      -p_all          - парсинг всех категорий с последних сохранённых вопросов.'''
+      -p_all          - парсинг всех категорий с последних сохранённых вопросов.''')
     sys.exit()
 
 # делает запрос на сайт и возвращает html объект
@@ -51,14 +51,14 @@ def url_request(url):
 
     # стандартная проверка на доступность сайта
     if page.status_code == 404:
-        print 'Error 404'
+        print('Error 404')
     if (page.status_code == 429):
-        print u'Сайт заблокирован. Нужно подождать...'
+        print('Сайт заблокирован. Нужно подождать...')
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
 
-    soup = BeautifulSoup(page.text.encode('utf-8'), 'html.parser')
+    soup = BeautifulSoup(page.text, 'html.parser')
     return soup
 
 
@@ -90,7 +90,7 @@ def out_category_question():
     for i, td_list in enumerate(td_list_orig):
         category_url.append([str(td_list[1].strong.text), str(url_for_category[i])])
 
-    for i in category_url: print i
+    for i in category_url: print(i)
 
 
 # парсинг основной информации
@@ -114,8 +114,8 @@ def parse_question_info(url):
         if td_list[2].div.span == None:
             td_list[2].div.decompose()
 
-        title = td_list[2].div.span.span.a.text.encode('utf-8')
-        short_questions = td_list[2].get('title').encode('utf-8')
+        title = td_list[2].div.span.span.a.text
+        short_questions = td_list[2].get('title')
         href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
         div_content = parse_question(str(href))
         answer = td_list[3].a.text
@@ -124,7 +124,7 @@ def parse_question_info(url):
 
         info = {}
         info.update({'title':  title})
-        info.update({'questions': unicode(div_content)})
+        info.update({'questions': div_content})
         info.update({'href': str(href)})
         info.update({'answer': str(answer)})
         info.update({'views': str(views)})
@@ -166,11 +166,11 @@ def main_function(command):
 
     if command == '-p_category':
         out_category_question()
-        category = raw_input(u'Введите название категории: '.encode('cp866'))
+        category = input('\nВведите название категории: ')
         url = 'https://python-forum.io/' + category
 
         for i in range(parse_count_pages(url)):
-            print u'Страница №',int(i) + 1 
+            print('Страница №',int(i) + 1)
             parse_question_info(url + '?page=' + str(i+1))
 
     elif command == '-help':
@@ -181,10 +181,11 @@ if __name__ == '__main__':
     try:
         if len(sys.argv) == 1:
             print_help()
+            sys.exit(1)
 
         command = sys.argv[1]
         main_function(command)
 
     except Exception as e:
         e = sys.exc_info()
-        print '\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1])
+        print('\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1]))
