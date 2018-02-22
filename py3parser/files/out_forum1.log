@@ -8021,3 +8021,1103 @@ INFO    \ [02/19/2018 20:20:15] | answer: 5
 INFO    \ [02/19/2018 20:20:15] | views: 1856
 INFO    \ [02/19/2018 20:20:15] | last_date: Sep-16-2016, 03:22 PM 
 INFO    \ [02/19/2018 20:20:15] | }
+INFO    \ [02/22/2018 15:03:04] | 1
+{
+INFO    \ [02/22/2018 15:03:04] | id: 17148
+INFO    \ [02/22/2018 15:03:04] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 15:03:04] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 15:03:04] | answers: 171
+INFO    \ [02/22/2018 15:03:04] | views: 14904
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 2
+{
+INFO    \ [02/22/2018 15:03:04] | id: 27026
+INFO    \ [02/22/2018 15:03:04] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 15:03:04] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 15:03:04] | answers: 40
+INFO    \ [02/22/2018 15:03:04] | views: 1936
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 3
+{
+INFO    \ [02/22/2018 15:03:04] | id: 33045
+INFO    \ [02/22/2018 15:03:04] | title: Weird HTTP response
+INFO    \ [02/22/2018 15:03:04] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 15:03:04] | answers: 5
+INFO    \ [02/22/2018 15:03:04] | views: 55
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 4
+{
+INFO    \ [02/22/2018 15:03:04] | id: 67065
+INFO    \ [02/22/2018 15:03:04] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 15:03:04] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 15:03:04] | answers: 6
+INFO    \ [02/22/2018 15:03:04] | views: 88
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 5
+{
+INFO    \ [02/22/2018 15:03:04] | id: 98561
+INFO    \ [02/22/2018 15:03:04] | title: Fun for music experimenters
+INFO    \ [02/22/2018 15:03:04] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 15:03:04] | answers: 6
+INFO    \ [02/22/2018 15:03:04] | views: 107
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 6
+{
+INFO    \ [02/22/2018 15:03:04] | id: 12682
+INFO    \ [02/22/2018 15:03:04] | title: heavy up front web sites
+INFO    \ [02/22/2018 15:03:04] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 15:03:04] | answers: 0
+INFO    \ [02/22/2018 15:03:04] | views: 79
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 7
+{
+INFO    \ [02/22/2018 15:03:04] | id: 17623
+INFO    \ [02/22/2018 15:03:04] | title: Funny English
+INFO    \ [02/22/2018 15:03:04] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 15:03:04] | answers: 41
+INFO    \ [02/22/2018 15:03:04] | views: 3239
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 8
+{
+INFO    \ [02/22/2018 15:03:04] | id: 27408
+INFO    \ [02/22/2018 15:03:04] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 15:03:04] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 15:03:04] | answers: 1
+INFO    \ [02/22/2018 15:03:04] | views: 122
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 9
+{
+INFO    \ [02/22/2018 15:03:04] | id: 50932
+INFO    \ [02/22/2018 15:03:04] | title: a one line thing
+INFO    \ [02/22/2018 15:03:04] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 15:03:04] | answers: 2
+INFO    \ [02/22/2018 15:03:04] | views: 90
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 10
+{
+INFO    \ [02/22/2018 15:03:04] | id: 10405
+INFO    \ [02/22/2018 15:03:04] | title: I hate transponder keys
+INFO    \ [02/22/2018 15:03:04] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 15:03:04] | answers: 11
+INFO    \ [02/22/2018 15:03:04] | views: 1231
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 11
+{
+INFO    \ [02/22/2018 15:03:04] | id: 81871
+INFO    \ [02/22/2018 15:03:04] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 15:03:04] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 15:03:04] | answers: 3
+INFO    \ [02/22/2018 15:03:04] | views: 114
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 12
+{
+INFO    \ [02/22/2018 15:03:04] | id: 59777
+INFO    \ [02/22/2018 15:03:04] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 15:03:04] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 15:03:04] | answers: 6
+INFO    \ [02/22/2018 15:03:04] | views: 113
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 13
+{
+INFO    \ [02/22/2018 15:03:04] | id: 13175
+INFO    \ [02/22/2018 15:03:04] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 15:03:04] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 15:03:04] | answers: 2
+INFO    \ [02/22/2018 15:03:04] | views: 108
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 14
+{
+INFO    \ [02/22/2018 15:03:04] | id: 67035
+INFO    \ [02/22/2018 15:03:04] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 15:03:04] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 15:03:04] | answers: 0
+INFO    \ [02/22/2018 15:03:04] | views: 91
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 15
+{
+INFO    \ [02/22/2018 15:03:04] | id: 16490
+INFO    \ [02/22/2018 15:03:04] | title: http/https client
+INFO    \ [02/22/2018 15:03:04] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 15:03:04] | answers: 0
+INFO    \ [02/22/2018 15:03:04] | views: 78
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 16
+{
+INFO    \ [02/22/2018 15:03:04] | id: 66190
+INFO    \ [02/22/2018 15:03:04] | title: Learning Milestone
+INFO    \ [02/22/2018 15:03:04] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 15:03:04] | answers: 2
+INFO    \ [02/22/2018 15:03:04] | views: 89
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 17
+{
+INFO    \ [02/22/2018 15:03:04] | id: 12732
+INFO    \ [02/22/2018 15:03:04] | title: Restore Menu Bar
+INFO    \ [02/22/2018 15:03:04] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 15:03:04] | answers: 8
+INFO    \ [02/22/2018 15:03:04] | views: 202
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 18
+{
+INFO    \ [02/22/2018 15:03:04] | id: 10575
+INFO    \ [02/22/2018 15:03:04] | title: looking for email provider
+INFO    \ [02/22/2018 15:03:04] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 15:03:04] | answers: 2
+INFO    \ [02/22/2018 15:03:04] | views: 98
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 19
+{
+INFO    \ [02/22/2018 15:03:04] | id: 95226
+INFO    \ [02/22/2018 15:03:04] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 15:03:04] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 15:03:04] | answers: 1
+INFO    \ [02/22/2018 15:03:04] | views: 98
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:03:04] | 20
+{
+INFO    \ [02/22/2018 15:03:04] | id: 12698
+INFO    \ [02/22/2018 15:03:04] | title: Son's new music
+INFO    \ [02/22/2018 15:03:04] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 15:03:04] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 15:03:04] | answers: 5
+INFO    \ [02/22/2018 15:03:04] | views: 173
+INFO    \ [02/22/2018 15:03:04] | }
+INFO    \ [02/22/2018 15:05:19] | 1
+{
+INFO    \ [02/22/2018 15:05:19] | id: 530262a5-5d75-4692-ac42-a008ea4824ca
+INFO    \ [02/22/2018 15:05:19] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 15:05:19] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 15:05:19] | answers: 171
+INFO    \ [02/22/2018 15:05:19] | views: 14905
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 2
+{
+INFO    \ [02/22/2018 15:05:19] | id: a30d1227-e11e-4564-a3af-bbd16c1db48e
+INFO    \ [02/22/2018 15:05:19] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 15:05:19] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 15:05:19] | answers: 40
+INFO    \ [02/22/2018 15:05:19] | views: 1937
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 3
+{
+INFO    \ [02/22/2018 15:05:19] | id: bf420d52-e0cd-43c1-a3f5-c15a47b85396
+INFO    \ [02/22/2018 15:05:19] | title: Weird HTTP response
+INFO    \ [02/22/2018 15:05:19] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 15:05:19] | answers: 5
+INFO    \ [02/22/2018 15:05:19] | views: 56
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 4
+{
+INFO    \ [02/22/2018 15:05:19] | id: 4f08731b-084a-4170-afec-58e8525b3e43
+INFO    \ [02/22/2018 15:05:19] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 15:05:19] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 15:05:19] | answers: 6
+INFO    \ [02/22/2018 15:05:19] | views: 89
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 5
+{
+INFO    \ [02/22/2018 15:05:19] | id: e4e76030-f89c-4d04-a193-e916441796e2
+INFO    \ [02/22/2018 15:05:19] | title: Fun for music experimenters
+INFO    \ [02/22/2018 15:05:19] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 15:05:19] | answers: 6
+INFO    \ [02/22/2018 15:05:19] | views: 108
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 6
+{
+INFO    \ [02/22/2018 15:05:19] | id: 84e6de15-a895-4fbd-b8a4-116ada5824d3
+INFO    \ [02/22/2018 15:05:19] | title: heavy up front web sites
+INFO    \ [02/22/2018 15:05:19] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 15:05:19] | answers: 0
+INFO    \ [02/22/2018 15:05:19] | views: 80
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 7
+{
+INFO    \ [02/22/2018 15:05:19] | id: 8f0fe360-823b-4dd6-b59d-7ef5484e85f8
+INFO    \ [02/22/2018 15:05:19] | title: Funny English
+INFO    \ [02/22/2018 15:05:19] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 15:05:19] | answers: 41
+INFO    \ [02/22/2018 15:05:19] | views: 3240
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 8
+{
+INFO    \ [02/22/2018 15:05:19] | id: e6acb7a5-ddb3-4d9f-aa84-845fe66815af
+INFO    \ [02/22/2018 15:05:19] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 15:05:19] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 15:05:19] | answers: 1
+INFO    \ [02/22/2018 15:05:19] | views: 123
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 9
+{
+INFO    \ [02/22/2018 15:05:19] | id: 3b863a9d-3ba9-47d5-8dba-8089ad88abb2
+INFO    \ [02/22/2018 15:05:19] | title: a one line thing
+INFO    \ [02/22/2018 15:05:19] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 15:05:19] | answers: 2
+INFO    \ [02/22/2018 15:05:19] | views: 91
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 10
+{
+INFO    \ [02/22/2018 15:05:19] | id: 8c35ed2c-884f-4d26-b1eb-918764c763ef
+INFO    \ [02/22/2018 15:05:19] | title: I hate transponder keys
+INFO    \ [02/22/2018 15:05:19] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 15:05:19] | answers: 11
+INFO    \ [02/22/2018 15:05:19] | views: 1232
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 11
+{
+INFO    \ [02/22/2018 15:05:19] | id: 60dd1e94-6abf-4f45-a329-f64e5d6d3f7a
+INFO    \ [02/22/2018 15:05:19] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 15:05:19] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 15:05:19] | answers: 3
+INFO    \ [02/22/2018 15:05:19] | views: 115
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 12
+{
+INFO    \ [02/22/2018 15:05:19] | id: b3287b05-ee3b-4f4c-a44c-de7f49cad93b
+INFO    \ [02/22/2018 15:05:19] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 15:05:19] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 15:05:19] | answers: 6
+INFO    \ [02/22/2018 15:05:19] | views: 114
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 13
+{
+INFO    \ [02/22/2018 15:05:19] | id: 9e750a32-81b7-4a0c-8dd7-bc640fefdf90
+INFO    \ [02/22/2018 15:05:19] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 15:05:19] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 15:05:19] | answers: 2
+INFO    \ [02/22/2018 15:05:19] | views: 109
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 14
+{
+INFO    \ [02/22/2018 15:05:19] | id: f5a4205d-6fee-42ea-ac1f-95519080cc7e
+INFO    \ [02/22/2018 15:05:19] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 15:05:19] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 15:05:19] | answers: 0
+INFO    \ [02/22/2018 15:05:19] | views: 92
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 15
+{
+INFO    \ [02/22/2018 15:05:19] | id: 3af9d7d8-0e4b-453a-90bc-1f758a04df8a
+INFO    \ [02/22/2018 15:05:19] | title: http/https client
+INFO    \ [02/22/2018 15:05:19] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 15:05:19] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 15:05:19] | answers: 0
+INFO    \ [02/22/2018 15:05:19] | views: 79
+INFO    \ [02/22/2018 15:05:19] | }
+INFO    \ [02/22/2018 15:05:19] | 16
+{
+INFO    \ [02/22/2018 15:05:19] | id: ef8ad7c3-2454-45f8-b97f-542b84b51d1d
+INFO    \ [02/22/2018 15:05:19] | title: Learning Milestone
+INFO    \ [02/22/2018 15:05:20] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 15:05:20] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 15:05:20] | answers: 2
+INFO    \ [02/22/2018 15:05:20] | views: 90
+INFO    \ [02/22/2018 15:05:20] | }
+INFO    \ [02/22/2018 15:05:20] | 17
+{
+INFO    \ [02/22/2018 15:05:20] | id: f3e51c79-8d8d-4f75-9cb9-ef5475fd1478
+INFO    \ [02/22/2018 15:05:20] | title: Restore Menu Bar
+INFO    \ [02/22/2018 15:05:20] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 15:05:20] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 15:05:20] | answers: 8
+INFO    \ [02/22/2018 15:05:20] | views: 203
+INFO    \ [02/22/2018 15:05:20] | }
+INFO    \ [02/22/2018 15:05:20] | 18
+{
+INFO    \ [02/22/2018 15:05:20] | id: 04735632-ce9b-45a6-a2ea-46b04b7a3dad
+INFO    \ [02/22/2018 15:05:20] | title: looking for email provider
+INFO    \ [02/22/2018 15:05:20] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 15:05:20] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 15:05:20] | answers: 2
+INFO    \ [02/22/2018 15:05:20] | views: 99
+INFO    \ [02/22/2018 15:05:20] | }
+INFO    \ [02/22/2018 15:05:20] | 19
+{
+INFO    \ [02/22/2018 15:05:20] | id: 33167d82-44bf-471c-baae-f35e048e6bce
+INFO    \ [02/22/2018 15:05:20] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 15:05:20] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 15:05:20] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 15:05:20] | answers: 1
+INFO    \ [02/22/2018 15:05:20] | views: 99
+INFO    \ [02/22/2018 15:05:20] | }
+INFO    \ [02/22/2018 15:05:20] | 20
+{
+INFO    \ [02/22/2018 15:05:20] | id: 93a8c497-3201-458f-b110-5372ab6d495b
+INFO    \ [02/22/2018 15:05:20] | title: Son's new music
+INFO    \ [02/22/2018 15:05:20] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 15:05:20] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 15:05:20] | answers: 5
+INFO    \ [02/22/2018 15:05:20] | views: 174
+INFO    \ [02/22/2018 15:05:20] | }
+INFO    \ [02/22/2018 15:08:34] | 1
+{
+INFO    \ [02/22/2018 15:08:34] | id: 172174564122727
+INFO    \ [02/22/2018 15:08:34] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 15:08:34] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 15:08:34] | answers: 171
+INFO    \ [02/22/2018 15:08:34] | views: 14906
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 2
+{
+INFO    \ [02/22/2018 15:08:34] | id: 234547826284092
+INFO    \ [02/22/2018 15:08:34] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 15:08:34] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 15:08:34] | answers: 40
+INFO    \ [02/22/2018 15:08:34] | views: 1939
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 3
+{
+INFO    \ [02/22/2018 15:08:34] | id: 10620602172249
+INFO    \ [02/22/2018 15:08:34] | title: Weird HTTP response
+INFO    \ [02/22/2018 15:08:34] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 15:08:34] | answers: 5
+INFO    \ [02/22/2018 15:08:34] | views: 57
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 4
+{
+INFO    \ [02/22/2018 15:08:34] | id: 75772162049488
+INFO    \ [02/22/2018 15:08:34] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 15:08:34] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 15:08:34] | answers: 6
+INFO    \ [02/22/2018 15:08:34] | views: 90
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 5
+{
+INFO    \ [02/22/2018 15:08:34] | id: 108401761790528
+INFO    \ [02/22/2018 15:08:34] | title: Fun for music experimenters
+INFO    \ [02/22/2018 15:08:34] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 15:08:34] | answers: 6
+INFO    \ [02/22/2018 15:08:34] | views: 109
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 6
+{
+INFO    \ [02/22/2018 15:08:34] | id: 133230455390614
+INFO    \ [02/22/2018 15:08:34] | title: heavy up front web sites
+INFO    \ [02/22/2018 15:08:34] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 15:08:34] | answers: 0
+INFO    \ [02/22/2018 15:08:34] | views: 81
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 7
+{
+INFO    \ [02/22/2018 15:08:34] | id: 204345003279532
+INFO    \ [02/22/2018 15:08:34] | title: Funny English
+INFO    \ [02/22/2018 15:08:34] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 15:08:34] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 15:08:34] | answers: 41
+INFO    \ [02/22/2018 15:08:34] | views: 3241
+INFO    \ [02/22/2018 15:08:34] | }
+INFO    \ [02/22/2018 15:08:34] | 8
+{
+INFO    \ [02/22/2018 15:08:34] | id: 66573513871156
+INFO    \ [02/22/2018 15:08:34] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 15:08:35] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 15:08:35] | answers: 1
+INFO    \ [02/22/2018 15:08:35] | views: 124
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 9
+{
+INFO    \ [02/22/2018 15:08:35] | id: 248508766546620
+INFO    \ [02/22/2018 15:08:35] | title: a one line thing
+INFO    \ [02/22/2018 15:08:35] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 15:08:35] | answers: 2
+INFO    \ [02/22/2018 15:08:35] | views: 92
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 10
+{
+INFO    \ [02/22/2018 15:08:35] | id: 108588707640366
+INFO    \ [02/22/2018 15:08:35] | title: I hate transponder keys
+INFO    \ [02/22/2018 15:08:35] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 15:08:35] | answers: 11
+INFO    \ [02/22/2018 15:08:35] | views: 1233
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 11
+{
+INFO    \ [02/22/2018 15:08:35] | id: 215300227201472
+INFO    \ [02/22/2018 15:08:35] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 15:08:35] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 15:08:35] | answers: 3
+INFO    \ [02/22/2018 15:08:35] | views: 116
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 12
+{
+INFO    \ [02/22/2018 15:08:35] | id: 220212275884051
+INFO    \ [02/22/2018 15:08:35] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 15:08:35] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 15:08:35] | answers: 6
+INFO    \ [02/22/2018 15:08:35] | views: 115
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 13
+{
+INFO    \ [02/22/2018 15:08:35] | id: 52321817052711
+INFO    \ [02/22/2018 15:08:35] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 15:08:35] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 15:08:35] | answers: 2
+INFO    \ [02/22/2018 15:08:35] | views: 110
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 14
+{
+INFO    \ [02/22/2018 15:08:35] | id: 184578209513550
+INFO    \ [02/22/2018 15:08:35] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 15:08:35] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 15:08:35] | answers: 0
+INFO    \ [02/22/2018 15:08:35] | views: 93
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 15
+{
+INFO    \ [02/22/2018 15:08:35] | id: 255138773019936
+INFO    \ [02/22/2018 15:08:35] | title: http/https client
+INFO    \ [02/22/2018 15:08:35] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 15:08:35] | answers: 0
+INFO    \ [02/22/2018 15:08:35] | views: 80
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 16
+{
+INFO    \ [02/22/2018 15:08:35] | id: 171263035396237
+INFO    \ [02/22/2018 15:08:35] | title: Learning Milestone
+INFO    \ [02/22/2018 15:08:35] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 15:08:35] | answers: 2
+INFO    \ [02/22/2018 15:08:35] | views: 91
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 17
+{
+INFO    \ [02/22/2018 15:08:35] | id: 8288704372599
+INFO    \ [02/22/2018 15:08:35] | title: Restore Menu Bar
+INFO    \ [02/22/2018 15:08:35] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 15:08:35] | answers: 8
+INFO    \ [02/22/2018 15:08:35] | views: 204
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 18
+{
+INFO    \ [02/22/2018 15:08:35] | id: 276904120262536
+INFO    \ [02/22/2018 15:08:35] | title: looking for email provider
+INFO    \ [02/22/2018 15:08:35] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 15:08:35] | answers: 2
+INFO    \ [02/22/2018 15:08:35] | views: 100
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 19
+{
+INFO    \ [02/22/2018 15:08:35] | id: 81250140362496
+INFO    \ [02/22/2018 15:08:35] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 15:08:35] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 15:08:35] | answers: 1
+INFO    \ [02/22/2018 15:08:35] | views: 100
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:08:35] | 20
+{
+INFO    \ [02/22/2018 15:08:35] | id: 178946198395302
+INFO    \ [02/22/2018 15:08:35] | title: Son's new music
+INFO    \ [02/22/2018 15:08:35] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 15:08:35] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 15:08:35] | answers: 5
+INFO    \ [02/22/2018 15:08:35] | views: 175
+INFO    \ [02/22/2018 15:08:35] | }
+INFO    \ [02/22/2018 15:10:16] | 1
+{
+INFO    \ [02/22/2018 15:10:16] | id: 1267106078
+INFO    \ [02/22/2018 15:10:16] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 15:10:16] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 15:10:16] | answers: 171
+INFO    \ [02/22/2018 15:10:16] | views: 14907
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 2
+{
+INFO    \ [02/22/2018 15:10:16] | id: 2803426055
+INFO    \ [02/22/2018 15:10:16] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 15:10:16] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 15:10:16] | answers: 40
+INFO    \ [02/22/2018 15:10:16] | views: 1940
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 3
+{
+INFO    \ [02/22/2018 15:10:16] | id: 2823526486
+INFO    \ [02/22/2018 15:10:16] | title: Weird HTTP response
+INFO    \ [02/22/2018 15:10:16] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 15:10:16] | answers: 5
+INFO    \ [02/22/2018 15:10:16] | views: 58
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 4
+{
+INFO    \ [02/22/2018 15:10:16] | id: 4206201492
+INFO    \ [02/22/2018 15:10:16] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 15:10:16] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 15:10:16] | answers: 6
+INFO    \ [02/22/2018 15:10:16] | views: 91
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 5
+{
+INFO    \ [02/22/2018 15:10:16] | id: 1775899750
+INFO    \ [02/22/2018 15:10:16] | title: Fun for music experimenters
+INFO    \ [02/22/2018 15:10:16] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 15:10:16] | answers: 6
+INFO    \ [02/22/2018 15:10:16] | views: 110
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 6
+{
+INFO    \ [02/22/2018 15:10:16] | id: 802990780
+INFO    \ [02/22/2018 15:10:16] | title: heavy up front web sites
+INFO    \ [02/22/2018 15:10:16] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 15:10:16] | answers: 0
+INFO    \ [02/22/2018 15:10:16] | views: 82
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 7
+{
+INFO    \ [02/22/2018 15:10:16] | id: 2266771682
+INFO    \ [02/22/2018 15:10:16] | title: Funny English
+INFO    \ [02/22/2018 15:10:16] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 15:10:16] | answers: 41
+INFO    \ [02/22/2018 15:10:16] | views: 3242
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 8
+{
+INFO    \ [02/22/2018 15:10:16] | id: 732114587
+INFO    \ [02/22/2018 15:10:16] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 15:10:16] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 15:10:16] | answers: 1
+INFO    \ [02/22/2018 15:10:16] | views: 125
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 9
+{
+INFO    \ [02/22/2018 15:10:16] | id: 3053084082
+INFO    \ [02/22/2018 15:10:16] | title: a one line thing
+INFO    \ [02/22/2018 15:10:16] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 15:10:16] | answers: 2
+INFO    \ [02/22/2018 15:10:16] | views: 93
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 10
+{
+INFO    \ [02/22/2018 15:10:16] | id: 2512356781
+INFO    \ [02/22/2018 15:10:16] | title: I hate transponder keys
+INFO    \ [02/22/2018 15:10:16] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 15:10:16] | answers: 11
+INFO    \ [02/22/2018 15:10:16] | views: 1234
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 11
+{
+INFO    \ [02/22/2018 15:10:16] | id: 618058640
+INFO    \ [02/22/2018 15:10:16] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 15:10:16] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 15:10:16] | answers: 3
+INFO    \ [02/22/2018 15:10:16] | views: 117
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 12
+{
+INFO    \ [02/22/2018 15:10:16] | id: 429733895
+INFO    \ [02/22/2018 15:10:16] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 15:10:16] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 15:10:16] | answers: 6
+INFO    \ [02/22/2018 15:10:16] | views: 116
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 13
+{
+INFO    \ [02/22/2018 15:10:16] | id: 2680125805
+INFO    \ [02/22/2018 15:10:16] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 15:10:16] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 15:10:16] | answers: 2
+INFO    \ [02/22/2018 15:10:16] | views: 111
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 14
+{
+INFO    \ [02/22/2018 15:10:16] | id: 3076544826
+INFO    \ [02/22/2018 15:10:16] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 15:10:16] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 15:10:16] | answers: 0
+INFO    \ [02/22/2018 15:10:16] | views: 94
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 15
+{
+INFO    \ [02/22/2018 15:10:16] | id: 3399193627
+INFO    \ [02/22/2018 15:10:16] | title: http/https client
+INFO    \ [02/22/2018 15:10:16] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 15:10:16] | answers: 0
+INFO    \ [02/22/2018 15:10:16] | views: 81
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 16
+{
+INFO    \ [02/22/2018 15:10:16] | id: 348944902
+INFO    \ [02/22/2018 15:10:16] | title: Learning Milestone
+INFO    \ [02/22/2018 15:10:16] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 15:10:16] | answers: 2
+INFO    \ [02/22/2018 15:10:16] | views: 92
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 17
+{
+INFO    \ [02/22/2018 15:10:16] | id: 3342785456
+INFO    \ [02/22/2018 15:10:16] | title: Restore Menu Bar
+INFO    \ [02/22/2018 15:10:16] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 15:10:16] | answers: 8
+INFO    \ [02/22/2018 15:10:16] | views: 205
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 18
+{
+INFO    \ [02/22/2018 15:10:16] | id: 1562319585
+INFO    \ [02/22/2018 15:10:16] | title: looking for email provider
+INFO    \ [02/22/2018 15:10:16] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 15:10:16] | answers: 2
+INFO    \ [02/22/2018 15:10:16] | views: 101
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 19
+{
+INFO    \ [02/22/2018 15:10:16] | id: 3566231225
+INFO    \ [02/22/2018 15:10:16] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 15:10:16] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 15:10:16] | answers: 1
+INFO    \ [02/22/2018 15:10:16] | views: 101
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:10:16] | 20
+{
+INFO    \ [02/22/2018 15:10:16] | id: 17016983
+INFO    \ [02/22/2018 15:10:16] | title: Son's new music
+INFO    \ [02/22/2018 15:10:16] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 15:10:16] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 15:10:16] | answers: 5
+INFO    \ [02/22/2018 15:10:16] | views: 176
+INFO    \ [02/22/2018 15:10:16] | }
+INFO    \ [02/22/2018 15:13:19] | 1
+{
+INFO    \ [02/22/2018 15:13:19] | id: a3fdb107
+INFO    \ [02/22/2018 15:13:19] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 15:13:19] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 15:13:19] | answers: 171
+INFO    \ [02/22/2018 15:13:19] | views: 14909
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 2
+{
+INFO    \ [02/22/2018 15:13:19] | id: 9e0be945
+INFO    \ [02/22/2018 15:13:19] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 15:13:19] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 15:13:19] | answers: 40
+INFO    \ [02/22/2018 15:13:19] | views: 1941
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 3
+{
+INFO    \ [02/22/2018 15:13:19] | id: ea5607ff
+INFO    \ [02/22/2018 15:13:19] | title: Weird HTTP response
+INFO    \ [02/22/2018 15:13:19] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 15:13:19] | answers: 5
+INFO    \ [02/22/2018 15:13:19] | views: 59
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 4
+{
+INFO    \ [02/22/2018 15:13:19] | id: de8c6001
+INFO    \ [02/22/2018 15:13:19] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 15:13:19] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 15:13:19] | answers: 6
+INFO    \ [02/22/2018 15:13:19] | views: 92
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 5
+{
+INFO    \ [02/22/2018 15:13:19] | id: 3d12a5c4
+INFO    \ [02/22/2018 15:13:19] | title: Fun for music experimenters
+INFO    \ [02/22/2018 15:13:19] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 15:13:19] | answers: 6
+INFO    \ [02/22/2018 15:13:19] | views: 111
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 6
+{
+INFO    \ [02/22/2018 15:13:19] | id: a2cf3864
+INFO    \ [02/22/2018 15:13:19] | title: heavy up front web sites
+INFO    \ [02/22/2018 15:13:19] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 15:13:19] | answers: 0
+INFO    \ [02/22/2018 15:13:19] | views: 83
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 7
+{
+INFO    \ [02/22/2018 15:13:19] | id: 624c408e
+INFO    \ [02/22/2018 15:13:19] | title: Funny English
+INFO    \ [02/22/2018 15:13:19] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 15:13:19] | answers: 41
+INFO    \ [02/22/2018 15:13:19] | views: 3243
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 8
+{
+INFO    \ [02/22/2018 15:13:19] | id: bac6c9d3
+INFO    \ [02/22/2018 15:13:19] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 15:13:19] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 15:13:19] | answers: 1
+INFO    \ [02/22/2018 15:13:19] | views: 126
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 9
+{
+INFO    \ [02/22/2018 15:13:19] | id: bb1ee17e
+INFO    \ [02/22/2018 15:13:19] | title: a one line thing
+INFO    \ [02/22/2018 15:13:19] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 15:13:19] | answers: 2
+INFO    \ [02/22/2018 15:13:19] | views: 94
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 10
+{
+INFO    \ [02/22/2018 15:13:19] | id: e3f1cb55
+INFO    \ [02/22/2018 15:13:19] | title: I hate transponder keys
+INFO    \ [02/22/2018 15:13:19] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 15:13:19] | answers: 11
+INFO    \ [02/22/2018 15:13:19] | views: 1235
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 11
+{
+INFO    \ [02/22/2018 15:13:19] | id: 78e0d45e
+INFO    \ [02/22/2018 15:13:19] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 15:13:19] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 15:13:19] | answers: 3
+INFO    \ [02/22/2018 15:13:19] | views: 118
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 12
+{
+INFO    \ [02/22/2018 15:13:19] | id: 0c601c50
+INFO    \ [02/22/2018 15:13:19] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 15:13:19] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 15:13:19] | answers: 6
+INFO    \ [02/22/2018 15:13:19] | views: 117
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 13
+{
+INFO    \ [02/22/2018 15:13:19] | id: abee334d
+INFO    \ [02/22/2018 15:13:19] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 15:13:19] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 15:13:19] | answers: 2
+INFO    \ [02/22/2018 15:13:19] | views: 112
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 14
+{
+INFO    \ [02/22/2018 15:13:19] | id: a19b12c1
+INFO    \ [02/22/2018 15:13:19] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 15:13:19] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 15:13:19] | answers: 0
+INFO    \ [02/22/2018 15:13:19] | views: 95
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 15
+{
+INFO    \ [02/22/2018 15:13:19] | id: 266013b9
+INFO    \ [02/22/2018 15:13:19] | title: http/https client
+INFO    \ [02/22/2018 15:13:19] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 15:13:19] | answers: 0
+INFO    \ [02/22/2018 15:13:19] | views: 82
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 16
+{
+INFO    \ [02/22/2018 15:13:19] | id: dc47d1d2
+INFO    \ [02/22/2018 15:13:19] | title: Learning Milestone
+INFO    \ [02/22/2018 15:13:19] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 15:13:19] | answers: 2
+INFO    \ [02/22/2018 15:13:19] | views: 93
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 17
+{
+INFO    \ [02/22/2018 15:13:19] | id: c713b43d
+INFO    \ [02/22/2018 15:13:19] | title: Restore Menu Bar
+INFO    \ [02/22/2018 15:13:19] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 15:13:19] | answers: 8
+INFO    \ [02/22/2018 15:13:19] | views: 206
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 18
+{
+INFO    \ [02/22/2018 15:13:19] | id: f459b0e7
+INFO    \ [02/22/2018 15:13:19] | title: looking for email provider
+INFO    \ [02/22/2018 15:13:19] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 15:13:19] | answers: 2
+INFO    \ [02/22/2018 15:13:19] | views: 102
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 19
+{
+INFO    \ [02/22/2018 15:13:19] | id: c3174ce1
+INFO    \ [02/22/2018 15:13:19] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 15:13:19] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 15:13:19] | answers: 1
+INFO    \ [02/22/2018 15:13:19] | views: 102
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 15:13:19] | 20
+{
+INFO    \ [02/22/2018 15:13:19] | id: 0a22083e
+INFO    \ [02/22/2018 15:13:19] | title: Son's new music
+INFO    \ [02/22/2018 15:13:19] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 15:13:19] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 15:13:19] | answers: 5
+INFO    \ [02/22/2018 15:13:19] | views: 177
+INFO    \ [02/22/2018 15:13:19] | }
+INFO    \ [02/22/2018 16:11:25] | 1
+{
+INFO    \ [02/22/2018 16:11:25] | id: c6476398
+INFO    \ [02/22/2018 16:11:25] | title: New Users Introduce Yourself
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  Please feel welcome to use this thread to introduce yourself to the forum.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-New-Users-Introduce-Yourself
+INFO    \ [02/22/2018 16:11:25] | answers: 171
+INFO    \ [02/22/2018 16:11:25] | views: 14918
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 2
+{
+INFO    \ [02/22/2018 16:11:25] | id: c1b31f5b
+INFO    \ [02/22/2018 16:11:25] | title: Free Game Keys and Game Sales
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  This thread is for giving away game keys.   Euro Truck Simulator First person who responds gets the key  Note this is the first one, and the title states its for Steam http://store.steampowered.com/app/232010...Simulator/   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Free-Game-Keys-and-Game-Sales
+INFO    \ [02/22/2018 16:11:25] | answers: 40
+INFO    \ [02/22/2018 16:11:25] | views: 1942
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 3
+{
+INFO    \ [02/22/2018 16:11:25] | id: 3f9e772d
+INFO    \ [02/22/2018 16:11:25] | title: Weird HTTP response
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I'm putting this in Bar because it's not strictly Python-related, even though I used requests.get().  I got a HTTP Response Code 302 with the following Response.headers content:  'Accept-Ranges': 'bytes', 'Server': 'nginx', 'Vary': 'Accept-Encoding', 'Connection': 'keep-alive', 'X-Origin-Server': 'ocelot-green-2515826831-hwmdw__active_cache', 'Date': 'Wed, 21 Feb 2018 00:42:04 GMT', 'Cache-Control': 'private, max-age=60', 'Content-Length': '24416', 'x-cloud-trace-context': '8b9e248af83a6556acb78260c3b82e0a/15832939404520912928;o=0', 'Expires': 'Wed, 21 Feb 2018 00:43:04 GMT', 'Content-Encoding': 'gzip', 'Content-Type': 'text/html; charset=utf-8'}The Response.text renders as a perfectly normal-looking html webpage and displays fine in my browser, so it doesn't appear that the request was redirected.  What do you suppose happened here?   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Weird-HTTP-response
+INFO    \ [02/22/2018 16:11:25] | answers: 5
+INFO    \ [02/22/2018 16:11:25] | views: 60
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 4
+{
+INFO    \ [02/22/2018 16:11:25] | id: acee7143
+INFO    \ [02/22/2018 16:11:25] | title: Bitconnect and cryptocurrency
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I have just look quick into this marked sometimes. Now is Bitconnect is closed was a Ponzi-scheme   I have help several with installing modules that Python has for navigate in this marked. Maybe i will be more reticent in future.   From a Bitconnect meeting with Carlos Matos,yes i want to invest in Bitconnet after this   I guess there will be lawsuit after the Bitconnect scam, and YouTubers like Trevon James and CryptoNick(gone missing) can be in trouble.  So have you guys look at this marked,it's look like a mess    
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Bitconnect-and-cryptocurrency
+INFO    \ [02/22/2018 16:11:25] | answers: 6
+INFO    \ [02/22/2018 16:11:25] | views: 93
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 5
+{
+INFO    \ [02/22/2018 16:11:25] | id: 2aafbd8f
+INFO    \ [02/22/2018 16:11:25] | title: Fun for music experimenters
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  All for fun, for those who love music and can't afford propeller reason (which, howvere is worth the $400).  This has probably been around since Adam, but new to me: Open-source virtual modular synthesizer  download: https://vcvrack.com/  noobie tutorial: https://www.youtube.com/watch?v=LaMxS5-4U-c many others on youtube  written in cpp ... please forgive.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Fun-for-music-experimenters
+INFO    \ [02/22/2018 16:11:25] | answers: 6
+INFO    \ [02/22/2018 16:11:25] | views: 112
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 6
+{
+INFO    \ [02/22/2018 16:11:25] | id: b9235d10
+INFO    \ [02/22/2018 16:11:25] | title: heavy up front web sites
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  more and more web sites are doing more things up front, in the client side. and since with things like brython, this can all be done in python. so i am looking for a combined programming forum. something at first in python+javascript. later it would be in python+brython.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-heavy-up-front-web-sites
+INFO    \ [02/22/2018 16:11:25] | answers: 0
+INFO    \ [02/22/2018 16:11:25] | views: 84
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 7
+{
+INFO    \ [02/22/2018 16:11:25] | id: b27b3385
+INFO    \ [02/22/2018 16:11:25] | title: Funny English
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  So I learned the language when I was a kid still but nowadays use it quite well, I hope. Anyways, I always find it extremely funny when I find native speakers using English in a way which my teachers would have certainly marked as an error and commented as "nobody would ever use it like that". Well, there is formal language, and then there's the rest. I am not sure if they'd understand, or admit it while teaching. Anyways, this thread is for listing instances I found funny, not to offend anyone (I hope)   (Oct-29-2016, 05:08 PM)Larz60+ Wrote:  Kind if like letting you neighbor take care of you're Gold (if your lucky enough to have any).   OK so anybody can miss a letter and type I where O was meant, no big deal. Then there's the utterly common error of confusing your and you're, which I know from younger people mostly. The youngsters (myself included graciously) also often tend to write everything small our of lazyness, but here it is switched, where gold is written with a capital g instead. This we do a lot in German, so it happens a lot to novices here, but it's funny seeing it from a native speaker. But all is topped by the same your/you're switch again, only the other way around this time. Yeee!    
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Funny-English
+INFO    \ [02/22/2018 16:11:25] | answers: 41
+INFO    \ [02/22/2018 16:11:25] | views: 3244
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 8
+{
+INFO    \ [02/22/2018 16:11:25] | id: 4b9fb2f2
+INFO    \ [02/22/2018 16:11:25] | title: the principle of writing program menus for Linux
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  Hi there.  I'm doing a little bit in the Blender Game Engine - as long as a hobby.  Studied Python, at the level of BGE. Here are some of my results: - example 1 - example 2 - example 3 - example 4 - example 5 - I closed the reference to the example of the game itself - I am remaking it in a new way.  And that's what I thought of. This topic I myself will not do (If the link does not work, let me know and I will fix it.) ... and I wanted to invite everyone who is interested in this - and even completely give the idea for the Python community (if it is interesting for many).  For beginning, I wanted to write a simple program menu, like in the Elementary OS, but not as a plug-in for the panel, but as a completely independent program, with the launch in the center of the screen, with the function of switching to the full screen. Prompt please with what to start correctly (I do not speak English - I'm Ukrainian, ), you can also join this topic - the license will be GPL - i.e., for all. Of course it's not good to speculate on brands, but the theme from the Blender Artists, is a good promotion for Python, as well as the way to self-fulfilling.  Thank you for your attention and patience.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-the-principle-of-writing-program-menus-for-Linux
+INFO    \ [02/22/2018 16:11:25] | answers: 1
+INFO    \ [02/22/2018 16:11:25] | views: 127
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 9
+{
+INFO    \ [02/22/2018 16:11:25] | id: 7dfccd03
+INFO    \ [02/22/2018 16:11:25] | title: a one line thing
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  for fun, a challenge (but don't spill any beer): define 2 functions, a() and b() where a() calls b() and b() prints out "hello world", and call a(). not very challenging? do it in the python command line -c option.  * Skaperen predicts wavic will be the winner   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-a-one-line-thing
+INFO    \ [02/22/2018 16:11:25] | answers: 2
+INFO    \ [02/22/2018 16:11:25] | views: 95
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 10
+{
+INFO    \ [02/22/2018 16:11:25] | id: dadaa0f4
+INFO    \ [02/22/2018 16:11:25] | title: I hate transponder keys
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I own a crappy 2005 chrysler town and country for $700. The thing has parts all over from the junk yard. The guy gave me 2 transponder keys. He said he lost his and had to buy more for 100 each key. Since buying this van 2 months ago, i just lost one of the transponder keys.   I started researching how to disable the magnetic coil for the alarm that needs the key chip. But i couldnt find a solid method that would work.   This was my method. I bought three $1 dollar keys at walmart, and ripped the chip out and taped it to the ignition coil. Looks dumb, but i dont care, i will never have to buy their dumb expensive key. I had to fight with the person at walmart to make the keys. She refused saying she cant make a non-transponder key for a transponder key.....until i stood there in front of her and cut out the transponder chip from the key and told her, here...now its a non-chip key. She's like your not going to use this for the ignition right? Im like no no no, this for the doors. You can even use these on the ignition     http://imgur.com/a/1Qnkp  Theres no reason i would spend 1/7th the cost for a key than the vehicle's value. Of course i would prolly do that to a $20,000 vehicle too i guess     
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-I-hate-transponder-keys
+INFO    \ [02/22/2018 16:11:25] | answers: 11
+INFO    \ [02/22/2018 16:11:25] | views: 1236
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 11
+{
+INFO    \ [02/22/2018 16:11:25] | id: 7ac91567
+INFO    \ [02/22/2018 16:11:25] | title: this thing i have created for Linux rocks!
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  this thing i have created for Linux rocks! at least for me, it does. i use the command line quite heavily. even though i run my laptop in graphical mode under Ubuntu (16.04.3 LTS) Unity. i still have lots of terminal windows open (more than Firefox) and have made a lot of use of the screen command. i have even created an ssh script that lets me specify a screen session to connect to or create (ssh username+screenname@host+port).  the thing i have created is a set of Python scripts to front end the screen command in a few ways. the first is sbg which creates an idle (waiting for input) background session with my shell (bash) running. it includes 2 options (cols and rows) to set the virtual display size. the second is scn which connects to a background session just like the screen command does with the right options, but with less typing. the third is sin which lets me enter input (typed on the command line as arguments) to existing background sessions. the fourth is sls which lists the existing screen sessions. it is just a convenient way to do "screen -ls" the fifth is sss which takes a snapshot of the background session virtual display and outputs it. sss and sin are used the most. i use them most heavily on remote hosts and cloud instances because i don't keep so many ssh sessions open.  i can push heavier time consuming commands into background sessions so easily now that almost everything i expect to run longer than 20 seconds and don't need to immediately see the output from, i do through one of these background sessions with that sin command. it nicely inserts spaces between arguments and appends a carriage return at the end. an option exists to turn off the appended carriage return. it interprets sequences like \r and \t and inputs the corresponding single control character. it supports a larger set of these than the Python interpreter does for Python source code (so i am not using the interpreter to fudge any of this to be pythonic). it also supports carat sequences like ^c and ^[. ^i is a tab just like \t. ^m is a carriage return just like \r. it also interprets codes in octal like \033 and \o033 which are escape just like \e. and it interprets sequences in other bases: 10: \d255 16: \xff 4: \q3333 (think Quad) and 2: \y11111111 (think binarY). a better list of these is in the source code comments.  i've probably used these commands a couple hundred times, just tonight (past 3 AM now). i am still tweaking these and catching little bugs. i will likely release these, and separate functions to do the control character sequence conversion, sometime this month. other commands are planned to allow raw output to stdout, instead of to a background session. i am also looking around for how to make this into a codec, e.g. decode (\t to tab) and encode (tab to \t).   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-this-thing-i-have-created-for-Linux-rocks
+INFO    \ [02/22/2018 16:11:25] | answers: 3
+INFO    \ [02/22/2018 16:11:25] | views: 119
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 12
+{
+INFO    \ [02/22/2018 16:11:25] | id: dc3bde03
+INFO    \ [02/22/2018 16:11:25] | title: I just switched to Debian and already miss Corana :(
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I was never fooled by the marketing shtick of Microsoft reps calling Cortana "she," because, well, Cortana is a sexless AI and that's that. But I already miss being able to launch an application by just saying "Hey Cortana, open [application name]." Or to start a search with the browser still closed by saying, "Hey Cortana, python numpy tutorial" (even if I'd get damned Bing search results). Or to say "Hey Cortana, what's the weather?" and have the AI show me today's weather forecast for my location, even speaking a summary of the weather to me. Or even that silly thing Microsoft encourages people to try: "Hey Cortana, tell me something interesting." The trivia that the AI came up with was good for slow moments.  It's not like I'm crying in my Scotch, or anything, but it now bugs me when I have to use the mouse or keyboard for some things.  Thanks for reading.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-I-just-switched-to-Debian-and-already-miss-Corana
+INFO    \ [02/22/2018 16:11:25] | answers: 6
+INFO    \ [02/22/2018 16:11:25] | views: 118
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 13
+{
+INFO    \ [02/22/2018 16:11:25] | id: ec68d42a
+INFO    \ [02/22/2018 16:11:25] | title: a fun(ny) program i want to make
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  i tested this and it is possible to make a Python script be an interpreter of another script on the other script's #! line. so what i think i want to do is make a stack-oriented language that has the run-time features of Python.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-a-fun-ny-program-i-want-to-make
+INFO    \ [02/22/2018 16:11:25] | answers: 2
+INFO    \ [02/22/2018 16:11:25] | views: 113
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 14
+{
+INFO    \ [02/22/2018 16:11:25] | id: 34555e47
+INFO    \ [02/22/2018 16:11:25] | title: Socket Program Challenging issue, please help
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  Dear Experts   Hope all doing Good  facing a challenging problem in my C socket Program, Please help in this regard. Am writing a server Socket Program, it is working fine but my requirement is below.   Am having 2 cprograms  1. Child c program which will have a function to convert upper case as function as below. 2. a server socket program to send the result of child program to socket specified port.  if it is a chat kind of program , i can able to do, but it need send message to socket from other function and value.  Problems,  1. After sending first message Server socket program is exiting. 2. how to keep waiting the server socket program and to send frequent changing results from child program to socket.  Please help me in this regard, will help me a lot.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Socket-Program-Challenging-issue-please-help
+INFO    \ [02/22/2018 16:11:25] | answers: 0
+INFO    \ [02/22/2018 16:11:25] | views: 96
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 15
+{
+INFO    \ [02/22/2018 16:11:25] | id: 70746a81
+INFO    \ [02/22/2018 16:11:25] | title: http/https client
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  i am looking for an easy to use Linux CLI text client that allows me to easily specify an IP address and port to connect to in lieu of using info from the URL (but still uses other info from it). in particular i want to connect to a different IP address and/or port number, but still use the host name from the URL. something in Python would be best.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-http-https-client
+INFO    \ [02/22/2018 16:11:25] | answers: 0
+INFO    \ [02/22/2018 16:11:25] | views: 83
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 16
+{
+INFO    \ [02/22/2018 16:11:25] | id: 42423fb8
+INFO    \ [02/22/2018 16:11:25] | title: Learning Milestone
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  Hey all, just wanted to share my excitement at crossing a major milestone with my Python education! I officially edited a Python module to fix an issue I was having!  When using the Python webbrowser module, it would only open in IE, regardless of my settings. So I finally opened the webbrowser module, did a ctrl+f to find "explorer", and edited the path to be Chrome instead of IE. And surprisingly, it worked!!! Feeling like a champion today!   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Learning-Milestone
+INFO    \ [02/22/2018 16:11:25] | answers: 2
+INFO    \ [02/22/2018 16:11:25] | views: 94
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 17
+{
+INFO    \ [02/22/2018 16:11:25] | id: 5d77018d
+INFO    \ [02/22/2018 16:11:25] | title: Restore Menu Bar
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I have a Raspberry Pi and I accidentally deleted my desktop. I am unable to find a way to restore it. I am unable to access anything on my Pi.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Restore-Menu-Bar
+INFO    \ [02/22/2018 16:11:25] | answers: 8
+INFO    \ [02/22/2018 16:11:25] | views: 207
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 18
+{
+INFO    \ [02/22/2018 16:11:25] | id: 7d81f269
+INFO    \ [02/22/2018 16:11:25] | title: looking for email provider
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  i am looking for an email provider that can service a "whole domain" by delivering all email to any user name at my domain to a single mailbox that can then be accessed in a usual manner (like via secure IMAPS ... IMAP over TLS/SSL).   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-looking-for-email-provider
+INFO    \ [02/22/2018 16:11:25] | answers: 2
+INFO    \ [02/22/2018 16:11:25] | views: 103
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 19
+{
+INFO    \ [02/22/2018 16:11:25] | id: ea2b17a1
+INFO    \ [02/22/2018 16:11:25] | title: Problem with Jupyter Notebook
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  I'm preparing a python based HTML presentation with Jupyter Notebook. I built my notebook using command line: jupyter notebook Presentation.ipynbAll the images show exactly as I want them to.  When I convert to html using command: ipython nbconvert Presentation.ipynb --to slidesThe page looks great except, all the images get replaced with the image alt value  Hoping someone has solved this issue.   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Problem-with-Jupyter-Notebook
+INFO    \ [02/22/2018 16:11:25] | answers: 1
+INFO    \ [02/22/2018 16:11:25] | views: 104
+INFO    \ [02/22/2018 16:11:25] | }
+INFO    \ [02/22/2018 16:11:25] | 20
+{
+INFO    \ [02/22/2018 16:11:25] | id: 74dd4349
+INFO    \ [02/22/2018 16:11:25] | title: Son's new music
+INFO    \ [02/22/2018 16:11:25] | category: Bar
+INFO    \ [02/22/2018 16:11:25] | questions:  My son sent me this link. I think I like this, but have never heard about generatibe music before: https://www.youtube.com/watch?v=kFtqO16GNDE   
+INFO    \ [02/22/2018 16:11:25] | href: https://python-forum.io/Thread-Son-s-new-music
+INFO    \ [02/22/2018 16:11:25] | answers: 5
+INFO    \ [02/22/2018 16:11:25] | views: 178
+INFO    \ [02/22/2018 16:11:25] | }

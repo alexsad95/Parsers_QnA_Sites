@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # ============================================================
 # [ ] TODO -> Создать таблицу с полями 
+# [ ] TODO -> Вычисление категории и запись
 
 # ----------------GLOBAL TODO и сделанные---------------------
 # [x] TODO -> Написать отдельную главную функцию с параметрами
@@ -10,12 +11,14 @@
 # [x] TODO -> Исправить ошибку UnicodeEncodeError 3 row "Funny English" (python3 и папка py3parser)
 # [x] TODO -> Исправить views и answer на int и убрать запятую
 # [x] TODO -> Убрал lastdate т.к. не имеет смысл добавлять дату изменения вопросов, тем более нет точной даты создания
+# [x] TODO -> Парсинг по категории и странице
+# [x] TODO -> Добавление уникального ID
 
 # [ ] TODO -> Сохранение в БД
 # [ ] TODO -> Добавить исключения, логгирование
 # [ ] TODO -> Распарсить форум
 # ============================================================
-
+import uuid
 import re, sys, json, time, requests
 from random import uniform, choice
 from bs4 import BeautifulSoup
@@ -114,16 +117,18 @@ def parse_question_info(url):
         title = td_list[2].div.span.span.a.text
         short_questions = td_list[2].get('title')
         href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
-        div_content = parse_question(str(href))
+        question, category = parse_question(str(href))
         answer = td_list[3].a.text
         views = td_list[4].text
         # last_date = td_list[6].span.text[:22]
 
         info = {}
+        info.update({'id': str(uuid.uuid4())[0:8]})
         info.update({'title':  title})
-        info.update({'questions': div_content})
+        info.update({'category': category})
+        info.update({'questions': question})
         info.update({'href': str(href)})
-        info.update({'answer': int(answer.replace(",",""))})
+        info.update({'answers': int(answer.replace(",",""))})
         info.update({'views': int(views.replace(",",""))})
         # info.update({'last_date': str(last_date)})
         full_info.append(info)
@@ -143,7 +148,10 @@ def parse_question(url):
     post_text = div_content.find('div', {'class': 'post_body scaleimages'})
     question = post_text.text
 
-    return question
+    div_navigation = soup.find('div', {'class': 'navigation'})
+    div_navigation = div_navigation.find_all('a')
+    category = div_navigation[2].text
+    return question, category
 
 
 # парсинг количества страниц с вопросами в категории
@@ -193,7 +201,7 @@ def main_function(command):
             page = [int(s.strip()) for s in page.split(',')]
             for i in page:
                 print('Страница №', i)
-                print(url + '?page=' + str(i))
+                # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
         else:
