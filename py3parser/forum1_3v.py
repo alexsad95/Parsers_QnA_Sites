@@ -104,7 +104,7 @@ def out_category_question():
     for i, td_list in enumerate(td_list_orig):
         category_url.append([str(td_list[1].strong.text), str(url_for_category[i])])
 
-    for i in category_url: print(i)
+    for i in category_url: print(" ",i)
 
 
 # парсинг основной информации
@@ -147,11 +147,12 @@ def parse_question_info(url):
         full_info.append(info)
 
     # вывод полученных данных
-    for i,info in enumerate(full_info):
-        logger.info(str(i+1)+'\n{')
-        for key, value in info.items():
-            logger.info('{0}: {1}'.format(key, value))
-        logger.info('}')
+    # for i,info in enumerate(full_info):
+    #     logger.info(str(i+1)+'\n{')
+    #     for key, value in info.items():
+    #         logger.info('{0}: {1}'.format(key, value))
+    #     logger.info('}')
+
     save_to_db(full_info)
 
 # парсинг самого вопроса переходя на его страницу
@@ -187,9 +188,14 @@ def save_to_db(questions):
 
     # добавление в БД
     for i, items in enumerate(questions):
-        count = i+1
-        print("ITEMS: ", items)
         try:
+            curs.execute("""select title from python_forum1 where question = (%s)""",
+                        (items["questions"],))
+
+            result = curs.fetchall()
+            if result:
+                break
+
             curs.execute(
                 """ INSERT INTO python_forum1
                     VALUES (%s,%s,%s,%s,%s,%s,%s)""",
@@ -201,12 +207,13 @@ def save_to_db(questions):
                     int(items["views"]),
                     items["questions"])
                     )
+            count = i+1
         except psycopg2.Error as err:
             print("Query error: {}".format(err))
     conn.commit()
 
     # логирование в файл, вывод полученных результатов
-    logger.info(u"   Вопросы за данный диапазон: %s" % count)
+    logger.info(u"  Вопросы за данный диапазон: %s" % count)
     logger.debug("\n")
 
 
@@ -216,22 +223,22 @@ def main_function(command):
     if command == '-p_category':
         out_category_question()
 
-        category = input('\nВведите название категории: ')
-        page = input('Введите номер страницы: ')
+        category = input('\n  Введите название категории: ')
+        page = input('  Введите номер страницы: ')
         url = 'https://python-forum.io/' + category
 
         # если были введены страницы, парсинг по страницам
         if page:
             page = [int(s.strip()) for s in page.split(',')]
             for i in page:
-                print('Страница №', i)
+                print('  Страница №', i)
                 # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
         # если стр не были введены, парсинг всех страниц
         else:
             for i in range(parse_count_pages(url)):
-                print('Страница №',int(i) + 1)
+                print('  Страница №',int(i) + 1)
                 parse_question_info(url + '?page=' + str(i+1))
 
     elif command == '-help':
