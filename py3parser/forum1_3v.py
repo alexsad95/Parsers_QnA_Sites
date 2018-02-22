@@ -1,25 +1,30 @@
 #! python3
 # -*- coding: utf-8 -*-
 # ============================================================
-# [ ] TODO -> Создать таблицу с полями 
-# [ ] TODO -> Вычисление категории и запись
 
 # ----------------GLOBAL TODO и сделанные---------------------
+# Были сделаны
 # [x] TODO -> Написать отдельную главную функцию с параметрами
 # [x] TODO -> Изменить список на словарь для удобства
 # [x] TODO -> Исправить ошибку tr в Forum-Bar 1 стр (поиск tr по классу)
 # [x] TODO -> Исправить ошибку UnicodeEncodeError 3 row "Funny English" (python3 и папка py3parser)
+
+# Сделал недавно
 # [x] TODO -> Исправить views и answer на int и убрать запятую
 # [x] TODO -> Убрал lastdate т.к. не имеет смысл добавлять дату изменения вопросов, тем более нет точной даты создания
 # [x] TODO -> Парсинг по категории и странице
 # [x] TODO -> Добавление уникального ID
+# [x] TODO -> Вычисление категории и запись
 
+# Нужно сделать
+# [ ] TODO <текущее> -> Создать таблицу с полями 
 # [ ] TODO -> Сохранение в БД
 # [ ] TODO -> Добавить исключения, логгирование
 # [ ] TODO -> Распарсить форум
 # ============================================================
-import uuid
-import re, sys, json, time, requests
+
+import re, sys, json, time, requests, psycopg2
+from uuid import uuid4
 from random import uniform, choice
 from bs4 import BeautifulSoup
 
@@ -33,6 +38,11 @@ f = open('../py3parser/files/user-agents.txt', 'r')
 l = [line.strip() for line in f]
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
+
+conn = psycopg2.connect(
+        "dbname='diplom' user='postgres'"
+        " host='localhost' password='77896499'")
+curs = conn.cursor()
 
 
 def print_help():
@@ -102,7 +112,7 @@ def parse_question_info(url):
     soup = url_request(url)
     div_wrapper = soup.find('div', {'id': 'content'}).find_all('table')
 
-    # основной список с информацией о вопросе
+    # основной список, где хранятся словари с данными о вопросе
     full_info = []
     tr_list = div_wrapper[1].find_all('tr', { 'class' : 'inline_row' })
 
@@ -111,19 +121,22 @@ def parse_question_info(url):
         if len(td_list) == 1:
             break
 
+        # отбрасываем лишние блоки
         if td_list[2].div.span == None:
             td_list[2].div.decompose()
 
+        # получаем нужные данные
         title = td_list[2].div.span.span.a.text
         short_questions = td_list[2].get('title')
         href = 'https://python-forum.io/'+ str(td_list[2].div.span.span.a.get('href'))
-        question, category = parse_question(str(href))
+        question, category = parse_question_and_category(str(href))
         answer = td_list[3].a.text
         views = td_list[4].text
         # last_date = td_list[6].span.text[:22]
 
+        # словарь где хранятся данные
         info = {}
-        info.update({'id': str(uuid.uuid4())[0:8]})
+        info.update({'id': str(uuid4())[0:8]})
         info.update({'title':  title})
         info.update({'category': category})
         info.update({'questions': question})
@@ -133,30 +146,36 @@ def parse_question_info(url):
         # info.update({'last_date': str(last_date)})
         full_info.append(info)
 
+    # вывод полученных данных
     for i,info in enumerate(full_info):
         logger.info(str(i+1)+'\n{')
         for key, value in info.items():
             logger.info('{0}: {1}'.format(key, value))
         logger.info('}')
-
+    save_to_db(full_info)
 
 # парсинг самого вопроса переходя на его страницу
-def parse_question(url):
+def parse_question_and_category(url):
     soup = url_request(url)
     div_content = soup.find('div', {'class': 'post_content'})
 
+    # парсинг вопроса
     post_text = div_content.find('div', {'class': 'post_body scaleimages'})
     question = post_text.text
 
+    # парсинг категории
     div_navigation = soup.find('div', {'class': 'navigation'})
     div_navigation = div_navigation.find_all('a')
+
     category = div_navigation[2].text
+
     return question, category
 
 
 # парсинг количества страниц с вопросами в категории
 def parse_count_pages(url):
     soup = url_request(url)
+
     div_pagination = soup.find('div', {'class': 'pagination'})
     count = re.findall('\d+', str(div_pagination.span.text))
 
@@ -165,17 +184,23 @@ def parse_count_pages(url):
 # сохранение в БД полученных вопросов
 def save_to_db(questions):
     count = 0
+
+    # добавление в БД
     for i, items in enumerate(questions):
         count = i+1
+        print("ITEMS: ", items)
         try:
             curs.execute(
-                """ INSERT INTO forum1_questions
-                    VALUES (%s,%s,%s,%s,%s)""",
+                """ INSERT INTO python_forum1
+                    VALUES (%s,%s,%s,%s,%s,%s,%s)""",
+                    (items["id"],
                     items["title"],
-                    items["questions"],
+                    int(items["answers"]),
+                    items["category"],
+                    items["href"],
                     int(items["views"]),
-                    int(items["answer"]),
-                    items["href"])
+                    items["questions"])
+                    )
         except psycopg2.Error as err:
             print("Query error: {}".format(err))
     conn.commit()
@@ -188,15 +213,14 @@ def save_to_db(questions):
 # главная фукция 
 def main_function(command):
 
-    # print(command)
     if command == '-p_category':
         out_category_question()
-        
-        # if command[1]:
+
         category = input('\nВведите название категории: ')
         page = input('Введите номер страницы: ')
         url = 'https://python-forum.io/' + category
 
+        # если были введены страницы, парсинг по страницам
         if page:
             page = [int(s.strip()) for s in page.split(',')]
             for i in page:
@@ -204,6 +228,7 @@ def main_function(command):
                 # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
+        # если стр не были введены, парсинг всех страниц
         else:
             for i in range(parse_count_pages(url)):
                 print('Страница №',int(i) + 1)
@@ -212,16 +237,18 @@ def main_function(command):
     elif command == '-help':
         print_help()
 
+    curs.close()
+    conn.close()
 
 if __name__ == '__main__':
-    try:
-        if len(sys.argv) == 1:
-            print_help()
-            sys.exit(1)
-        
-        command = sys.argv[1] #, [int(s.strip()) for s in sys.argv[2][1:-1].split(',')]]
-        main_function(command)
+    # try:
+    if len(sys.argv) == 1:
+        print_help()
+        sys.exit(1)
 
-    except Exception as e:
-        e = sys.exc_info()
-        print('\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1]))
+    command = sys.argv[1]
+    main_function(command)
+
+    # except Exception as e:
+        # e = sys.exc_info()
+        # logger.error('\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1]))
