@@ -17,6 +17,7 @@
 # Сделал недавно
 # [x] TODO -> Создать таблицу с полями 
 # [x] TODO -> Сохранение в БД
+# [x] TODO -> Проверка на идентичность вопросов в БД
 
 # Нужно сделать
 # [ ] TODO <текущее> -> Сохранение последней страницы и категории в файл
@@ -48,6 +49,7 @@ conn = psycopg2.connect(
 curs = conn.cursor()
 
 
+# вывод справки
 def print_help():
     print('''
   Программа извлекает все необходимые данные с форума python-forum.io, и сохраняет в БД.
@@ -59,6 +61,14 @@ def print_help():
       -p_category [num]    - парсинг определённой категории или определённой страницы.
       -p_all               - парсинг всех категорий с последних сохранённых вопросов.''')
     sys.exit()
+
+
+# комманда выводит последнюю категорию и страницу с файла
+def last_page():
+    with open('../py3parser/files/category_page.txt', "rb") as f:
+        data = pickle.load(f)
+    print('  Категория:', data['category'], '\n  Страница:', data['page'])
+
 
 # делает запрос на сайт и возвращает html объект
 def url_request(url):
@@ -157,7 +167,8 @@ def parse_question_info(url):
     #         logger.info('{0}: {1}'.format(key, value))
     #     logger.info('}')
 
-    # save_to_db(full_info)
+    save_to_db(full_info)
+
 
 # парсинг самого вопроса переходя на его страницу
 def parse_question_and_category(url):
@@ -186,10 +197,11 @@ def parse_count_pages(url):
 
     return int(count[0])
 
+
 # сохранение в БД полученных вопросов
 def save_to_db(questions):
     count = 0
-
+    difference = 0
 
     # добавление в БД
     for i, items in enumerate(questions):
@@ -198,8 +210,14 @@ def save_to_db(questions):
                         (items["questions"],))
 
             result = curs.fetchall()
-            if result:
-                break
+
+            # проверка на идентичность
+            list_of_results = map(lambda x: x[0], result)
+            if items["title"] in list_of_results:
+                print('  Вопрос уже есть в БД:', items["title"])
+                difference += 1
+                continue
+
 
             curs.execute(
                 """ INSERT INTO python_forum1
@@ -217,8 +235,13 @@ def save_to_db(questions):
             print("Query error: {}".format(err))
     conn.commit()
 
+    if count > difference:
+        count_questions = count - difference
+    else: 
+        count_questions = 0
+
     # логирование в файл, вывод полученных результатов
-    logger.info(u"  Вопросы за данный диапазон: %s" % count)
+    logger.info(u"  Кол-во вопросов с страницы: %s" % count_questions)
     logger.debug("\n")
 
 
@@ -231,10 +254,7 @@ def main_function(command):
         category = input('\n  Введите название категории: ')
         page = input('  Введите номер страницы: ')
         url = 'https://python-forum.io/' + category
-        
-        # l = [line.strip() for line in f]
-        # print('  File: ', f1.read())
-        
+
         # если были введены страницы, парсинг по страницам
         if page:
             page = [int(s.strip()) for s in page.split(',')]
@@ -243,21 +263,28 @@ def main_function(command):
                 # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
-                f = open('../py3parser/files/category_page.txt', 'w+')
-                f.write('Page: ' + str(i) + '\nCategory: ' + str(category))
-                f.close()
-        # если стр не были введены, парсинг всех страниц
+                category_page = {'category': str(category), 'page': str(i)}
+
+                with open('../py3parser/files/category_page.txt', "wb+") as f:
+                    pickle.dump(category_page, f)
+
+
+        # если страницы не были введены, парсинг всех страниц
         else:
             for i in range(parse_count_pages(url)):
                 print('  Страница №',int(i) + 1)
                 parse_question_info(url + '?page=' + str(i+1))
-        print('  File: ', open('../py3parser/files/category_page.txt', 'r').readline())
+        # print('  File: ', pickle.load(open('../py3parser/files/category_page.txt', 'rb')) )
+
+    elif command == '-last':
+        last_page()
 
     elif command == '-help':
         print_help()
 
     curs.close()
     conn.close()
+
 
 if __name__ == '__main__':
     # try:
