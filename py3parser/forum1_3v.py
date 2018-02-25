@@ -8,22 +8,25 @@
 # [x] TODO -> Изменить список на словарь для удобства
 # [x] TODO -> Исправить ошибку tr в Forum-Bar 1 стр (поиск tr по классу)
 # [x] TODO -> Исправить ошибку UnicodeEncodeError 3 row "Funny English" (python3 и папка py3parser)
-
-# Сделал недавно
 # [x] TODO -> Исправить views и answer на int и убрать запятую
 # [x] TODO -> Убрал lastdate т.к. не имеет смысл добавлять дату изменения вопросов, тем более нет точной даты создания
 # [x] TODO -> Парсинг по категории и странице
 # [x] TODO -> Добавление уникального ID
 # [x] TODO -> Вычисление категории и запись
 
+# Сделал недавно
+# [x] TODO -> Создать таблицу с полями 
+# [x] TODO -> Сохранение в БД
+
 # Нужно сделать
-# [ ] TODO <текущее> -> Создать таблицу с полями 
-# [ ] TODO -> Сохранение в БД
+# [ ] TODO <текущее> -> Сохранение последней страницы и категории в файл
+# [ ] TODO -> -p_all аргумент парсинг всего с последней страницы
+# [ ] TODO -> Перед парсингом читать последнюю страницу
 # [ ] TODO -> Добавить исключения, логгирование
 # [ ] TODO -> Распарсить форум
 # ============================================================
 
-import re, sys, json, time, requests, psycopg2
+import re, sys, json, time, requests, psycopg2, pickle
 from uuid import uuid4
 from random import uniform, choice
 from bs4 import BeautifulSoup
@@ -52,6 +55,7 @@ def print_help():
   Необходимаые аргументы и их обозначение:
       -help                - вывод справки.
       -count               - вывод количества сохранённых данных.
+      -last                - вывод последней категории и страницы.
       -p_category [num]    - парсинг определённой категории или определённой страницы.
       -p_all               - парсинг всех категорий с последних сохранённых вопросов.''')
     sys.exit()
@@ -153,7 +157,7 @@ def parse_question_info(url):
     #         logger.info('{0}: {1}'.format(key, value))
     #     logger.info('}')
 
-    save_to_db(full_info)
+    # save_to_db(full_info)
 
 # парсинг самого вопроса переходя на его страницу
 def parse_question_and_category(url):
@@ -185,6 +189,7 @@ def parse_count_pages(url):
 # сохранение в БД полученных вопросов
 def save_to_db(questions):
     count = 0
+
 
     # добавление в БД
     for i, items in enumerate(questions):
@@ -226,7 +231,10 @@ def main_function(command):
         category = input('\n  Введите название категории: ')
         page = input('  Введите номер страницы: ')
         url = 'https://python-forum.io/' + category
-
+        
+        # l = [line.strip() for line in f]
+        # print('  File: ', f1.read())
+        
         # если были введены страницы, парсинг по страницам
         if page:
             page = [int(s.strip()) for s in page.split(',')]
@@ -235,11 +243,15 @@ def main_function(command):
                 # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
+                f = open('../py3parser/files/category_page.txt', 'w+')
+                f.write('Page: ' + str(i) + '\nCategory: ' + str(category))
+                f.close()
         # если стр не были введены, парсинг всех страниц
         else:
             for i in range(parse_count_pages(url)):
                 print('  Страница №',int(i) + 1)
                 parse_question_info(url + '?page=' + str(i+1))
+        print('  File: ', open('../py3parser/files/category_page.txt', 'r').readline())
 
     elif command == '-help':
         print_help()
@@ -255,7 +267,7 @@ if __name__ == '__main__':
 
     command = sys.argv[1]
     main_function(command)
-
+    f.close()
     # except Exception as e:
         # e = sys.exc_info()
         # logger.error('\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1]))
