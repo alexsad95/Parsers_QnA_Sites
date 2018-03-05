@@ -18,10 +18,12 @@
 # [x] TODO -> Создать таблицу с полями 
 # [x] TODO -> Сохранение в БД
 # [x] TODO -> Проверка на идентичность вопросов в БД
+# [х] TODO -> Сохранение последней страницы и категории в файл (pickle)
 
 # Нужно сделать
-# [ ] TODO <текущее> -> Сохранение последней страницы и категории в файл
+# [ ] TODO -> возможность начинать с опред страницы и по конечную ([1,2,3,4,-] с первые 4 и до конца)
 # [ ] TODO -> -p_all аргумент парсинг всего с последней страницы
+# [ ] TODO -> удалить дубликаты с БД
 # [ ] TODO -> Перед парсингом читать последнюю страницу
 # [ ] TODO -> Добавить исключения, логгирование
 # [ ] TODO -> Распарсить форум
@@ -42,6 +44,7 @@ f = open('../py3parser/files/user-agents.txt', 'r')
 l = [line.strip() for line in f]
 user_agents = choice(l)
 user_agent = {'User-Agent': user_agents}
+f.close()
 
 conn = psycopg2.connect(
         "dbname='diplom' user='postgres'"
@@ -79,9 +82,9 @@ def url_request(url):
 
     # стандартная проверка на доступность сайта
     if page.status_code == 404:
-        print('Error 404')
+        print('  Error 404')
     if (page.status_code == 429):
-        print('Сайт заблокирован. Нужно подождать...')
+        print('  Сайт заблокирован. Нужно подождать...')
         while (page.status_code == 429):
             time.sleep(60)
             page = requests.get(url, headers=user_agent)
@@ -214,7 +217,7 @@ def save_to_db(questions):
             # проверка на идентичность
             list_of_results = map(lambda x: x[0], result)
             if items["title"] in list_of_results:
-                print('  Вопрос уже есть в БД:', items["title"])
+                logger.info('  Вопрос уже есть в БД:', items["title"])
                 difference += 1
                 continue
 
@@ -259,7 +262,7 @@ def main_function(command):
         if page:
             page = [int(s.strip()) for s in page.split(',')]
             for i in page:
-                print('  Страница №', i)
+                logger.info('  Страница №', i)
                 # print(url + '?page=' + str(i))
                 parse_question_info(url + '?page=' + str(i))
 
@@ -272,7 +275,7 @@ def main_function(command):
         # если страницы не были введены, парсинг всех страниц
         else:
             for i in range(parse_count_pages(url)):
-                print('  Страница №',int(i) + 1)
+                logger.info('  Страница №',int(i) + 1)
                 parse_question_info(url + '?page=' + str(i+1))
         # print('  File: ', pickle.load(open('../py3parser/files/category_page.txt', 'rb')) )
 
@@ -294,7 +297,6 @@ if __name__ == '__main__':
 
     command = sys.argv[1]
     main_function(command)
-    f.close()
     # except Exception as e:
         # e = sys.exc_info()
         # logger.error('\n\n'+'--'*20 + u'\nСведения об исключении: \n' + str(e[0]) + '\n' + str(e[1]))
