@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+'''
+    Скрипт который парсит сами вопросы с сайта StackOverflow
+    Проходит по полю questions с БД. Если пустой, то парсит по url
+    на сайте и сохраняет в файле files/questions.txt 
+    для последующего сохранения в БД.    
+
+'''
+
 import sys
 import json
 import time
@@ -7,12 +15,12 @@ import psycopg2
 import requests
 from random import uniform, choice 
 from bs4 import BeautifulSoup 
-from log import *
-sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
+# from log import *
+sys.path.append(r'\\path_to_project')
 import ParserQuestions
 
 # подключение модуля для логирования
-logger = ParserQuestions.save_log('../files/out_parseq.log')
+logger = ParserQuestions.save_log('../StackOverflow/files/out_parseq.log')
 
 rowcount = 0
 dictionar = {}
@@ -83,7 +91,7 @@ def parse_questions(data, json_or_db):
             continue
 
         if (page.status_code == 429):
-            print u"Сайт заблокирован. Нужно подождать..."
+            print("Сайт заблокирован. Нужно подождать...")
             while (page.status_code == 429):
                 time.sleep(60)
                 page = requests.get(dt[1], headers=user_agent)
@@ -116,10 +124,10 @@ def parse_questions(data, json_or_db):
             rowcount = num+1
             dictionar[dt[0]] = string
 
-    logger.info(u"Количество записаных вопросов: " + str(rowcount))
-    logger.info(u"Время выпонения скрипта " +
-                unicode(round(time.clock(), 2)) + u" сек. или " +
-                unicode(round(time.clock()/60, 2)) + u" мин.")
+    logger.info("Количество записаных вопросов: " + str(rowcount))
+    logger.info("Время выпонения скрипта " +
+                unicode(round(time.clock(), 2)) + " сек. или " +
+                unicode(round(time.clock()/60, 2)) + " мин.")
 
 
 
@@ -128,12 +136,12 @@ if __name__ == '__main__':
         json_or_db = ''
 
         #  записывать ли в БД?
-        host = raw_input("Host: ")
+        host = input("Host: ")
         if host == 'not db':
             pass
         else:
-            conn = psycopg2.connect("dbname='diplom' user='postgres'"\
-                    "hostaddr='"+str(host)+"' password='77896499'")
+            conn = psycopg2.connect("dbname='dbname' user='db_user'"\
+                    "hostaddr='"+str(host)+"' password='password'")
 
         # запрашивает команду
         # len - показывает количество вопросов с файла question.txt
@@ -141,26 +149,26 @@ if __name__ == '__main__':
         # parse - начинает парсить вопросы с start по end 
         # quit - выход с программы 
 
-        line = raw_input("Command: ")
+        line = input("Command: ")
 
         if line == 'len':
             with open("files/questions.txt", "rb") as f:
                 data = pickle.load(f)
 
-            print u"Количество вопросов: ", len(data)
+            print("Количество вопросов: ", len(data))
 
         elif line == 'getid':
             data = get_id()
             with open("files/questions.txt", "wb") as f:
                 pickle.dump(data, f)
-            print u"Все Id записанны"
+            print("Все Id записанны")
 
         elif line == 'parse':
-            start = raw_input("Start: ")
-            end = raw_input("End: ")
-            with open("files/questions.txt", "rb") as f:
-                data = pickle.load(f)
-            json_or_db = raw_input("Write to Json or DB: ")
+            start = input("Start: ")
+            end = input("End: ")
+            # with open("files/questions.txt", "rb") as f:
+            #     data = pickle.load(f)
+            json_or_db = input("Write to Json or DB: ")
 
             parse_questions(data[int(start):int(end)], json_or_db)
 
@@ -172,7 +180,7 @@ if __name__ == '__main__':
                 data = pickle.load(f)
             parse_questions(data)
 
-        raw_input()
+        input()
 
 
     # обработка всех исключений 
@@ -189,7 +197,7 @@ if __name__ == '__main__':
             sys.exit(1)
         else:
             conn.close()
-            logger.error(u"Сведения об исключении: " + str(e))
+            logger.error("Сведения об исключении: " + str(e))
 
     finally:
         if host == 'not db' and line == 'len':
@@ -198,15 +206,15 @@ if __name__ == '__main__':
         elif json_or_db == 'json':
             with open("files/"+name+".json", "wb") as f:
                 pickle.dump(dictionar, f)
-            logger.info(u"Время выпонения скрипта " +
-                unicode(round(time.clock(), 2)) + u" сек. или " +
-                unicode(round(time.clock()/60, 2)) + u" мин.")
+            logger.info("Время выпонения скрипта " +
+                unicode(round(time.clock(), 2)) + " сек. или " +
+                unicode(round(time.clock()/60, 2)) + " мин.")
             conn.close()
             raw_input()
 
         elif json_or_db == 'db':
             conn.close()
-            logger.info(u"Время выпонения скрипта " +
-                unicode(round(time.clock(), 2)) + u" сек. или " +
-                unicode(round(time.clock()/60, 2)) + u" мин.")
+            logger.info("Время выпонения скрипта " +
+                unicode(round(time.clock(), 2)) + " сек. или " +
+                unicode(round(time.clock()/60, 2)) + " мин.")
             raw_input()

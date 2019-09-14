@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+'''
+    Скрипт который собирает данные с сайта StackOverflow с 
+    помощью Stack Exchange API и записывает в БД 
+'''
 
 import sys
 import time
@@ -6,25 +10,31 @@ from datetime import datetime
 import calendar
 import psycopg2
 from stackapi import StackAPI, StackAPIError
-from log import *
-sys.path.append('C:\Users\\alexsad\Dropbox\Stud\Diplom\DIPLOM PROJECT')
-import ParserQuestions
+from files import log
+
+PG_DBNAME    = 'dbname'
+PG_USER      = 'user_db'
+PG_HOST      = 'host'
+PG_PASSWORD  = 'password'
 
 # подключение модуля для логирования
-logger = ParserQuestions.save_log('../files/out_soapi.log')
+logger = log.save_log('../ParserQuestions/files/out_forum1.log')
 
-# работа с модулем StackAPI
-SITE = StackAPI('stackoverflow', key='E5Wui1*QSAqxGZuRiQ295A((')
+# работа с модулем StackAPI (сайт )
+SITE = StackAPI('stackoverflow', key='api_key')
 SITE.max_pages = 1000
 
 conn = psycopg2.connect(
-        "dbname='diplom' user='postgres'"
-        " host='localhost' password='77896499'")
+        "dbname="+PG_DBNAME+
+        " user="+PG_USER+
+        " host="+PG_HOST+ 
+        " password="+PG_PASSWORD)
+
 curs = conn.cursor()
 
 def print_help():
-    print '-'*80
-    print u'''
+    print('-'*80)
+    print('''
     Программа извлекает все вопросы по тегу "Python"
     с сайта stackoverflow.com, и сохраняет в БД.
     Работает с аргументами:
@@ -37,8 +47,8 @@ def print_help():
             [date]   - дата для диапазона извлечения
                        с конечной даты находящейся в
                        БД по указаную.
-'''
-    print '-'*80
+''')
+    print('-'*80)
     sys.exit()
 
 
@@ -61,13 +71,13 @@ def min_max_len(date):
 
     except psycopg2.Error as err:
         print("Query error: {}".format(err))
-    print result[0][0]
+    print(type(result[0][0]),result[0][0])
     return result[0][0]
 
 
 # извлечение вопросов циклом по диапазону дат
 def recieve_questions(start_date=None, end_date=None):
-    logger.info(u"   Идёт извлечение данных...")
+    logger.info("   Идёт извлечение данных...")
     if type(start_date) == int:
         logger.info(
             "   Start_date: %s"
@@ -115,7 +125,7 @@ def save_to_db(questions):
     conn.commit()
 
     # логирование в файл, вывод полученных результатов
-    logger.info(u"   Вопросы за данный диапазон: %s" % count)
+    logger.info("   Вопросы за данный диапазон: %s" % count)
     logger.debug("\n")
 
 
@@ -124,25 +134,25 @@ def main():
 
     if (min_max_len('min') is None) and len(sys.argv) != 3:
         print(
-            u"\n   Данных нет. Введите начальное " +
-            u"и конечное значение для диапазона даты")
+            "\n   Данных нет. Введите начальное " +
+            "и конечное значение для диапазона даты")
         sys.exit()
 
     elif len(sys.argv) == 1 and min_max_len('min') is not None:
-        print(u"\n   Введите начальное и конечное значение даты")
+        print("\n   Введите начальное и конечное значение даты")
         sys.exit()
 
     elif sys.argv[1] == "-mml":
         print(
-            u"\n   Начальная дата  (общ.): %s"
+            "\n   Начальная дата  (общ.): %s"
             % datetime.utcfromtimestamp(min_max_len("min")))
 
         print(
-            u"   Конечная дата   (общ.): %s"
+            "   Конечная дата   (общ.): %s"
             % datetime.utcfromtimestamp(min_max_len("max")))
 
         print(
-            u"   Количесвто вопросов:    %s"
+            "   Количесвто вопросов:    %s"
             % min_max_len("len"))
         sys.exit()
 
@@ -162,7 +172,7 @@ def main():
         end_date = datetime.utcfromtimestamp(
             calendar.timegm(time.strptime(sys.argv[1], '%d.%m.%Y'))
             ).timetuple()
-        print end_date
+        # print(end_date)
         mass = []
         mass2 = []
 
@@ -241,16 +251,16 @@ def main():
     # логирование результатов
     logger.info("-"*80)
     logger.info(
-        u"   Начальная дата (общ.): %s"
+        "   Начальная дата (общ.): %s"
         % datetime.utcfromtimestamp(min_max_len("min")))
     logger.info(
-        u"   Конечная дата  (общ.): %s"
+        "   Конечная дата  (общ.): %s"
         % datetime.utcfromtimestamp(min_max_len("max")))
-    logger.info(u"   Всего количество вопросов: %s" % min_max_len("len"))
+    logger.info("   Всего количество вопросов: %s" % min_max_len("len"))
     logger.info(
-        u"   Время выпонения скрипта " +
-        unicode(round(time.clock(), 2)) + u" сек. или " +
-        unicode(round(time.clock()/60, 2)) + u" мин.")
+        "   Время выпонения скрипта " +
+        str(round(time.clock(), 2)) + " сек. или " +
+        str(round(time.clock()/60, 2)) + " мин.")
     logger.debug("\n")
 
     curs.close()

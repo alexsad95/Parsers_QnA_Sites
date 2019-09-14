@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+'''
+    Скрипт который сохраняет распарсенные данные с файлов 
+    json папки files в таблицу БД.
+'''
+
 import os
 import sys
 import pickle
@@ -24,7 +29,7 @@ def update_question(string, id):
 
 
 def main():
-	mass = os.listdir('F:\\ParseQuestions\\files')
+	mass = os.listdir('F:\\ParserQuestions\\files')
 	mass2 = []
 	for i in mass:
 		if i.find('.json') != -1:
@@ -33,8 +38,8 @@ def main():
 
 if __name__ == '__main__':
 	
-	conn = psycopg2.connect("dbname='diplom' user='postgres'"\
-							"host='localhost' password='77896499'")
+	conn = psycopg2.connect("dbname='dbname' user='user_db'"\
+							"host='host' password='password'")
 	mass = main()
 	print u'\n  Выбирете файл'
 	for i, files in enumerate(mass):

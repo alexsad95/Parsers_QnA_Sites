@@ -1,0 +1,875 @@
+(dp0
+I10619905
+S'\nIf I have a list defined as such:\n\nand I need to sort the list. I know I can use the sorted() function with a key function lambda=x:x[i] where i is the position to sort in a list.  So this should work:\n\nand give back a list sorted on the 2nd column in the sub list.\nHow would you adapt a quicksort algorithm to handle a multi-dimensional list?\n'
+p1
+sI10625220
+S"\nI have a list consisting of tuples, I want to pass each tuple's elements to a function as arguments:\n\nHow do I do it?\nBest Regards\n"
+p2
+sI10618887
+S'\nI am trying to use the call function from the Python library inside a Sikuli script.\n\nThe problem is that the message "call has ended" never appears until I close the notepad. I think it\'s related to the error code call sends at the end of execution.\nThanks.\n'
+p3
+sI10622472
+S'\n\nThis question already has an answer here:\n\n\nAbout the changing id of an immutable string\n\r\n                    5 answers\r\n                \n\n\n\n\nHow many characters should have to s1 is s2 give False? Where is limit? I.e.,  I am asking how long a string has to be before python starts making separate copies of it.\n'
+p4
+sI10626058
+S"\nLet's say that I have a line of code that is a string:\n\nNow I want to execute it using eval()\nSo if I have already given x & y values beforhand, I know that can write:\n\nAnd it will work great.\nBut I want to give them values from a dict.  In other words, if I have a dict:\n\nI want the values that will go into x & y to come from b.\nHow do I do this?\n"
+p5
+sI10632791
+S"\nI've a weired problem when parsing a html document. The html document has a span something like this:\n\nWhen I parse it (it's inside a td) :\n\nI get the following:\n\nWhat might be the issue?\n"
+p6
+sI10626062
+S'\nI am using PIL through virtualenv on ubuntu, installed with pip. I have changed the setup.py file to point to the decoders libaries. \nI get this message when I install PIL:\n\n    PIL 1.1.7 SETUP SUMMARY\n\n'
+p7
+sI10628013
+S'\n\nWith this script, it will only ever print the last line if both of my variables are empty. If I fill in one, or both, it triggers that if, making me redo the function.\nWhat am I doing wrong here?\n'
+p8
+sI10610193
+S'\nI have a piece of code to read two files, convert them to sets, and then subtract one set from   the other. I would like to use a string variable (installedPackages) for "a" instead of a file. I would also like to write to a variable for "c".\n\nI have tried the following and it does not work:\n\nI have tried to use StringIO, but I think I am using it improperly.\nHere, finally, is how I have created installedPackages:\n\nSample of packages.txt:\n\n'
+p9
+sI10609683
+S'\nI am building a Django application which has Company, Employee and Ext models as so:\n\nI have the following forms for these models:\n\nI came across "Django Dynamic Formset" (http://code.google.com/p/django-dynamic-formset/) which I have sucessfully got working to allow me to add multiple employee forms to my employee formset dynamically in the template: \n\nMy goal is to be able to add a single Company, one or more Employees associated with this Company, and a single Ext object associated with just one of these Employees, all in a single submission.\nI\'m not sure about how to tackle this.  Can anyone point me in the right direction?\n'
+p10
+sI10618286
+S'\nCan anybody tell me, how to get p,q,dp,dq and u component of rsa private key?\nloading of the key:\n\nwhat shall i do next?\n'
+p11
+sI10629795
+S"\nI'm trying to implement stay signed in options using tipfy though I'mm not allowed to use the default Tipfy mechanism.  This is what I have tried so far, \n\nI'm having a problem of instantiating the SecureCookieStore() Object. what argument should I need to pass for its constructor. Please note that i wrote this code segment inside a  handler implemented by the request handler. I will be thankful if anyone provide me a proper answer. \n"
+p12
+sI10619415
+S"\nI am struggling with a problem - please forgive me for my bad English. I am currently writing some script in Python where I need to manipulate list and convert them.\nI want to convert a double numbering to another numbering where only one index is used.\nIf n is the first index of my double numbering and m the second one, what is the expression L(n, m) = idx which permits to pass from (here n_max = 3 but I want a general rule) :\n\nand so on to\n\n? It clearly depend on n_max but I am searching for a while and don't find any reliable expression or script.\nFor example, if the [n, m] had the following structure :\n\nthe searched expression would be :\n\nAny help will be appreciated, even little hints or links :)\nThanks ! I already searched on the web and on this website but didn't find any answer.\n"
+p13
+sI10633752
+S"\ni'm trying to print ascii or extended ascii character. using this code :\n\nit will print ascii #255, but now i want to input using decimal number like this :\n\nIt doesn't work coz myhex is '0xff' , so i need to convert into '\\xff'. replacing the '0x' with '\\x' is giving me error. \n\nwill give me error : ValueError: invalid \\x escape\nHow to solve the problem? anyone can help ? the goal i want to print char -> \xc3\xbf in terminal/console.\n"
+p14
+sI10618674
+S"\nI want to create a map with several given points in Python. For this I want to use Basemap from matplotlib. It works well, but I don't know how to get a proper background map.\nHow can I import an OSM map? Or should I use a different mapping package? I just want to create a raster map and save it as png.\n"
+p15
+sI10611228
+S"\nMaybe I have the wrong impression, but wouldn't the parent class of a class object be a class?\nIf so, why didn't the authors of Python follow good style convention and capitalize the object class to Object to denote it as a class object? Is it a class at all?\n"
+p16
+sI10626078
+S"\nI am trying to do an animation of a Particle Swarm Optimization using Python and Mayavi2.\nThe animation is working fine, my problem is that it is not possible to interact with the plot while it is animating the movement. Specifically i would like to turn the graph and zoom. Maybe someone has experience doing animations?\nThe way i do it is first to calculate the positions of the particles and then to store them. After the calculation is finished i plot the positions of the particle at the first instace of time with point3d() and then i iterate through time updating the data using the set() method.\nIs there a way to make it possible to turn the graph?  I have heard about something with threads, disabeling the the rendering, but i could not figure out how to do it in my code. Besides lots of other stuff, I have read:\nhttp://code.enthought.com/projects/mayavi//docs/development/html/mayavi/mlab_animating.html\nhttp://code.enthought.com/projects/mayavi//docs/development/html/mayavi/tips.html#acceleration-mayavi-scripts\nbut it can't see how to use it.\nAny suggestions?\nHere is my code:\n\n"
+p17
+sI10628870
+S"\nLets say I have this string:\n\nI am looking for a way to delete everything enclosed in quotes\nSo, it would become:\n\nBecause, 'Hello'  and 'Whats hello' are enclosed by quotes. And 6 is a number.\nIs there a way to do this? Maybe using Regular Expressions? I tried doing this with a For Loop, but I guess my logic wasn't that great.\n"
+p18
+sI10634278
+S'\nSo I\'m interested in this theory that if you go to a random Wikipedia article, click the first link not inside parentheses repeatedly, in 95% of the cases you will end up on the article about Philosophy. \nI wanted to write a script in Python that does the link fetching for me and in the end, print a nice list of which articles were visited (linkA -> linkB -> linkC) etc.\nI managed to get the HTML DOM of the web pages, and managed to strip out some unnecessary links and the top description bar which leads disambiguation pages. So far I have concluded that:\n\nThe DOM begins with the table which you see on the right on some pages, for example in Human. We want to ignore these links.\nThe valid link elements all have a <p> element somewhere as their ancestor (most often parent or grandparent if it\'s inside a <b> tag or similar. The top bar which leads to disambiguation pages, does not seem to contain any <p> elements.\nInvalid links contain some special words followed by a colon, e.g. Wikipedia:\n\nSo far, so good. But it\'s the parentheses that get me. In the article about Human for example, the first link not inside parentheses is "/wiki/Species", but the script finds "/wiki/Taxonomy" which is inside them. \nI have no idea how to go about this programmatically, since I have to look for text in some combination of parent/child nodes which may not always be the same. Any ideas?\nMy code can be seen below, but it\'s something I made up really quickly and not very proud of. It\'s commented however, so you can see my line of thoughts (I hope :) ).\n\n'
+p19
+sI10626087
+S"\nThis is a bit tricky and I couldn't come up with anything concise. \nI have a list of tuples sorted by an item of the tuple. It's possible for these items to have the same value, so something like this:\n\nWhat I'm looking for, is a way to randomize the order of all the 1's and 2's within their own sets. This is to replace a bit of mysql:\n\n"
+p20
+sI10632232
+S'\nThis question has been asked before but the accepted solution (given by the question poster himself) says that we can add the new filter to jinja2.filter.FILTER straightaway.\nBut in the jinja2 documentation, it is advised that the filter be added to the environment.\nI am developing an app under pyramid and need to define my custom filter and do the following.\n\nWhere should this code fragment be placed? \nI tried placing it in the views file but that obviously did not work. \nIf i place it in __init__.py, how do I make sure that jinja2 picks it up? I mean how do I send back the env to jinja2 settings under pyramid?\n'
+p21
+sI10632796
+S'\nI have well formatted JSON File.\nFrom Sphinx search ,i first convert it into sphinx xml formatted File.\nThen using xml pipe on new generated xml file ,i do Sphinx Search.\nIs there any direct way to search on json with out converting into specific xml file?\n'
+p22
+sI10612268
+S'\n\nHow can I possibly trigger a reload of a page using either something in Django views.py or with Jquery? Basically, I want the page to automatically reload the same way when you click on the URL bar of a web browser and press enter does.\nThanks,\nAlex \n'
+p23
+sI10633773
+S'\nI would like to be able to perform area-weighted regridding of regularly spaced 2D latitude-longitude data in python, e.g. from a 0.5x0.5 grid to a 2.5x3.75 grid for example. This data is emissions in kg/m^2/s, so I will need to conserve mass as well as the spatial distribution.\nI know that there are a number of scipy interpolation routines, and I am unsure which, if any, would be the best one to use in this case. I would prefer not to have to install too many extra python packages if possible, unless absolutely required (i.e. I have scipy+numpy installed, but would rather not have to install a specialist python package which, will doing what I need, also requires me to store the data in a particular class structure etc. However, I will do this if needed!). \nThis is also a bit of a learning exercise for me to understand how to do these sorts of things in python, as well as being able to do it.  \n'
+p24
+sI10609711
+S'\n\nI wonder how to reduce the repetitive part in the def using some for-loop techniques. Thanks.\n'
+p25
+sI10625584
+S"\nI'm embedding the python interpreter in a multithreaded C application and I'm a little confused as to what APIs I should use to ensure thread safety.\nFrom what I gathered, when embedding python it is up to the embedder to take care of the GIL lock before calling any other Python C API call. This is done with these functions:\n\nBut this alone doesn't seem to be enough. I still got random crashes since it doesn't seem to provide mutual exclusion for the Python APIs.\nAfter reading some more docs I also added: \n\nright after the call to Py_IsInitialized() but that's where the confusing part comes. The docs state that this function:\n\nThis suggests that when this function returns, the GIL is supposed to be locked and should be unlocked somehow. but in practice this doesn't seem to be required. With this line in place my multithreaded worked perfectly and mutual exclusion was maintained by the PyGILState_Ensure/Release functions.\nWhen I tried adding PyEval_ReleaseLock() after PyEval_ReleaseLock() the app dead-locked pretty quickly in a subsequent call to PyImport_ExecCodeModule().\nSo what am I missing here? \n"
+p26
+sI10627124
+S"\nI'm not really a Python expert nor am I a Postgres expert, but here goes:\nI need a good open source Postgres driver for Python.  It must be able to work cross platform with little fuss, between Windows, Mac, and Linux.  The end goal is to have it deployed to a 64 bit CentOS Linux server.\nI need it to be open source, because I will need to modify it a little bit to fit our Postgres-like database.  I have already done this in the C-only world with great success and I would like to avoid rolling my own driver from scratch.\nAny suggestions?\nThanks you.\n"
+p27
+sI10630197
+S'\nI think I should use a regexp to match content in my file.\nI want to replace all sequences of w=<DIGIT> e.g. what I want to achieve is many\n\nSo I wonder if you can suggest a regexp that matches my expression?\nUpdate\nI tried the obvious and it seems to work\n\n'
+p28
+sI10622009
+S'\nI am very suprised that I have not found a solution so far. I have a Python program that needs to use JMS to produce and consume messages. The JMS provider is HornetQ.\nI have read about stomp connectors that "may" work with HornetQ. However for various reasons it would be much easier to "just" use JMS as if it was a Java client.\nAny help is appreciated\n'
+p29
+sI10627643
+S"\nI'm not sure if this is the right Stack Exchange page to ask (perhaps Programmers is also suitable, although they oppose software-technical questions).\nHowever, for a program that should act as a client to a internal knowledge database, I'm investigating Rich Text controls/widgets from different frameworks. This Rich Text control should display a subset of HTML. Only h1-h6, b, i, img (embedded or not), lists and simple tables are supported.\nThe text is saved in the data model as markdown code.\nNow I need a control that displays this markup with online editing (just like text processors) and can save the contents again as markdown.\nThe client can be written in Python (with PyQt or wxPython) or C# with WinForms.\nI've tested the Rich Text controls in these frameworks, but they were not suitable. WinForms' RichEditBox outputs strange RTF, the others some horribly formatted HTML.\nNow I want to extend an existing control in such a way that it holds the contents as markdown in every given second.\nAre there any good, open-sourced controls/widgets for the mentioned target platforms that could act as a good start?\n"
+p30
+sI10612798
+S'\nI\'m looking at "Idioms and Anti-Idioms in Python" in the part where it talks about the situation when a module "advertises itself as from import * safe".  \nWhat are examples of modules that are safe in this sense?  I think this sense is different from a module being simply \'import safe\' (no from, no star).  \nWhy would one want a module to be safe in this sense?  \n'
+p31
+sI10610751
+S'\nI have a file, light.py that I\'m trying to debug. In the python console, I type "import light" and it runs the program. But I want to check the contents of some variables by typing the variables. How do I do that? \n'
+p32
+sI10612288
+S"\nIm trying to write a function that creates  set of dynamic sublists each containing 5 elements from a list passed to it.Here's my attempt at the code \n\nEDIT:\nSample input: [1,2,3,4,5,6,7,8,9,10]\nExpected output: [[1,2,3,4,5],[6,7,8,9,10]]\n"
+p33
+sI10624608
+S"\nWhat's the ctype equivalent in python for these variable types:\n\nword is defined as:\n\nDefinition of unsigned 16-bit type \nLooked everywhere but I cannot find the equivalent ctype\nThanks!\n"
+p34
+sI10613315
+S'\nI need to create a secure restFUL api using sencha and django. I am fairly new to python. So far i am able to send request from sencha to server using basic authentication as below\n\nIn php/apache i can access those header with ease with the code below\n\nHow to do this in python? \n'
+p35
+sI10634310
+S"\nI have a lookup table hard-coded in python at the moment that looks something like:\n\nI would like to move the mapping to an external file to make it easier to manage, but have not been able to find a way to store x-escaped character codes and read them back in. Instead of '\\x85', I end up with '\\x85'.\nAny ideas?\n"
+p36
+sI10619975
+S"\nThe Google App Engine has previously released a Search API, that allows you to create Document objects, which can be searched within an indexing system similar to Googles search operations.\nOne of the associated classes is the FieldExpression.  According to the documentation, an expression allows you to define custom content snippets for your fields.  The example that they have given for a FieldExpression definition is:\n\n...where the name parameter identifies the expression, and the expression parameter is some form of code, executed when the specific FieldExpression's value is accessed on a document.  \nMy question is, can I call external methods on my Document object (or possibly else where), from within the expression code?  If not, what are your syntax options for use when defining a FieldExpression object?\n"
+p37
+sI10625096
+S'\nI have an array like this:\n\nNow I want to extract the following:\n\nSo basically just first 2 columns..\n'
+p38
+sI10628169
+S'\nI need to parse a Python-generated datetime string into a Javascript Date object. I went the simplest route:\nIn Python:\n\nexample dstring = \'2012-05-16 19:20:35.243710-04:00\'\nIn Javascript (with datejs library):\n\nThis gets me a correct date object in Chrome, but an "Invalid Date" error in Firefox and Safari (on Mac). \n'
+p39
+sI10618955
+S'\nI have a blender scene with a few objects, I would get the object name when mouse is over one of them, setting a property of an empy object.\nWhat I have now is just the list of the scene objects. What can I do?\n\n'
+p40
+sI10618956
+S'\nI want to implement a symbol type, which keeps track of the symbols we already have(saved in _sym_table), and return them if they exist, or create new ones otherwise. The code:\n\nBut when I call copy.deepcopy on a list of such Symbol instances, exception is raised:\n\nError messages:\n\nSo my questions are:\n\nHow can I make a deep copy on these objects with self-defined __new__ methods? \nAnd any suggestions about when and how to use copy.deepcopy? \n\nThanks a lot!\n'
+p41
+sI10615888
+S'\nHi i want to store an object as a secure cookie in tipfy and want to retrieve the object from the tipfy. How to do this? \nthis is what i have done so for . this code segment is inside a handler extends from Request handler\n\ni do not know a way to save the cookie mentioned in the documentation werkzeug.contrib.securecookie.SecureCookie.save_cookie:\n'
+p42
+sI10628177
+S"\nI have to read a text file line by line and extract some part of each line. I have a working code if the line I am reading is in the expected format but this is not always the case. There are errors in the file, i.e. some missing information or characters. So I want to skip these faulty lines. For this, I want to utilize regular expression module. I defined the regular expression I need. Lets say, reg_exp_string is going to be matched with the line I read. I want a full match, I do not want to searh some part of the text. If it is a full match return true, otherwise return false. The think is, I tried re.match() and it returns an object. I couldn't figure it out. What is the correct way to use it? It always returns an object if some part of the string matches with the regular expression. I want a full match only and get a boolean answer. How can I do this?\n"
+p43
+sI10622034
+S'\nI\'m new to coding and am having an issue with my program. I have to get sales information from a file and print it in a certain format. This is the code:\n\nWhen I use the %s.%s.%s it\'s printing the date above the sales, I want it to print that above the other print statement once per month, and be able to increase it once the month is up.\nAlso in the print "0%s:" % printNum,  "*" * printcost statement I would like it to only print the zero for the first nine days.\nEssentially my question is how in Python do I run something a certain number of times, but the number of times is dependent on the user and correlate with the date, and in order to do that the computer needs to be able to recognize the date. Sorry for the vagueness.\n'
+p44
+sI10635107
+S"\nI am trying to manipulate raster values in a grid (ASCII Grid) with GDAL. But before proceeding with this, I have trouble writing the new values into the file. I get these error messages when slopeband.WriteArray(s) is called.\nERROR 6: slope.asc, band 1: WriteBlock() not supported for this dataset.\nERROR 1: slope.asc, band 1: An error occured while writing a dirty block\nI'm sorry if this is very basic, but I'm still new to python and GDAL in particular. I use GDAL 1.9.0 on Mac OS X 10.6.8 and Python 2.7. Thank you!\n\n"
+p45
+sI10614356
+S"\n\ndjango-south is a de facto standard for db migrations in django, moreover django itself doesn't supports db-migrations.\nNow, since django carries some high-quality apps that are almost must haves in django.contrib then :\n\nWhy doesn't it include django-south ?\nWhat is the thought processes behind that ?\nIs it not good enough or licencing issues ?\n\nRelated Question :\n\nDoes core django supports migration without django-south or similar app?\n\n"
+p46
+sI10621198
+S"\nI have the following dictionary:\n\nThis is the the ugly output:\n\nThis is how I wished the output to look like:\n\n(only tab-separated which I didn't manage to show here)  \n"
+p47
+sI10609081
+S'\nI\'m actually looking for the opposite of this  question:\nConverting string into datetime\nI have a list of datetime objects and I want to create a human-friendly string\nfrom them, e.g., "Jan 27 and 30, Feb 4, 2012".   Any ideas?\nNote that strftime only works on a single datetime object.   The problem here is that you have a list of datetimes that might not be evenly spaced, might cross month or year boundaries, but the entire range of dates has to be expressed in a single, concise string.  \n'
+p48
+sI10615385
+S"\nGood Morning,\nI m a beginner in python and I would like to have a little help : \nI ll give you an exemple :\nI got in a file:\n\nAnd i want :\n\nI have to find them then I have to replace them by adder.\nI got no information about the number i gave random one.\nBut I don't know how you pick the entire string ?\nI want to find 'add_' then i want to replace adder_signed_123_548 is it doable?\nI hope it was clear.\nThx for help :)\n"
+p49
+sI10624091
+S"\nI have a struct within a struct in the define.h file in this way:\n\nAnd I want to define an equivalent structure using ctypes in python for this so that when I use the dll I can pass this structure to fetch data in python.\nHow can I define this in python. I know how to define a single level struct but this is a struct within a struct and I'm not sure how I can define that. Please help.\nHere's how I've started my code:\n\n"
+p50
+sI10628377
+S"\nbelow is my code that I am trying to turn into a windows service. You'll see test.py as the call it makes and all this is a short script that writes into a log file (as a test).\nThe code is there to make it a windows service and it does that fine, but when I run it nothing writes into the log file. Help greatly appreciated. Below is the code:\n\nEdit: Thought for the sake of it I'd include my test.py file's code, it has unnecessary imports but will get the job done if you run it alone.\n\n"
+p51
+sI10615901
+S"\nIs there a simple solution to trim whitespace on the image in PIL?\nImageMagick has easy support for it in following way:\n\nI found a solution for PIL:\n\nBut this solution has disadvantages:\n\nI need to define border color, it is not a big deal for me, my images has white background\nAnd the most disadvantage, This PIL solution doesn't support ImageMagick's -fuzz key. To add some fuzzy cropping. as I can have some jpeg compression artifacts and unneeded huge shadows.\n\nMay be PIL has some built in functions for it? \nOr there is some fast solution?\n"
+p52
+sI10611294
+S"\nI am new to the Beaglebone, and was moving along at a pretty good click until this strange problem popped-up. I spent all weekend trying to figure it out before posting here. \nI am trying to read analog input using multiple sensors from a beaglebone with Angstrom 3.2.5+ and I have a problem that I think might be a hardware issue. \nUsing this Python script and Alexander Hiam's PyBBIO I have been able to test a photoresistor with success (the value responds to more and less incidental light): \n\nBut, any other analog-in (AINx(2-7)) I read with the script above always shows the same value of the photo resistor I have plugged-into AIN1 \nAnd, possibly related, I am unable to read any of the AINx(1-7) using cat with an error\n\nAny ideas? I am really stuck. Thanks in advance. \nPS: More info... \nMy circuit consists of a 10k resistor and a photoresistor. My pin connections are: \n\nHeader P9 Pin 32 (VDD_ADC(1.8V)) to one end of photocell\nHeader P9 Pin 34 (GNDA_ADC) to the other end of the resistor\nHeader P9 Pin 39 (AIN0) to the other side of the photocell along with one end of pull-down resistor\n\nHere is an image which matches my own circuit: \n\nThe results from all of the AINx(1-7)'s and then some... \n\nUPDATE 1\nI edited the analog_test_simple.py file to show all ADC ports on the BeagleBone. This is the result from the shell with no sensors plugged-in.\n\nAnd if I plug the sensor back in I get a change in value, but again, they are all the same:\n\n"
+p53
+sI10633918
+S"\nI have a question regarding the user api for GAE Python.\nFor a new application for an already existing user base I would like to get two informations for a user. First is the name and the second would be a flag (0,1 or 2 in example).\nIt's an internal application and only people from the same domain can login. How can I access their information beyond whats in the users reference? And how could I set that additional flag?\nThanks alot.\n"
+p54
+sI10621536
+S"\nWhat I want to do is the opposite of what most people want to do: I have a library written in Python, and I want to make it available to C (and possibly other languages).\nI know that the typical answer to this is using the Python library for C, that is:\n\n\n(source: http://docs.python.org/extending/embedding.html#very-high-level-embedding)\nHowever, this seems less than optimal to me:\n\nIt is ugly\nIt's just for C\n\nWhat I want, instead, is a way to bind my library to LOT of languages, including C.\nI don't care about automatic wrapper generation: my library is quite simple, so I can write glue code.\nAt the moment, the only solution I came up with is using code similar to the one above to bind my library to C. Then use SWIG to bind the C library to other languages.\nIs there a better one?\n"
+p55
+sI10611298
+S'\nThe \'segmentation fault\' happens, and scrapy stop running.\nAfter checking the website url, I found it should belong to one tag with\nhref attribute but no value. like this: " <a href> dummy </a> "\nI suspect this is caused by lxml .so lib, how to deal with this? At\nleast prevent the spider stop issue.\nMy code snippet:\n\nBTW, The site scraped is \'http://mil.news.sohu.com/\'\nRunning Environment: scrapy 0.15.1 and python 2.7.3, pre-install openssl0.12 because the openssl0.13 default for scrapy doesn\'t install sucessfully.\nthanks a lot\nAaron\n'
+p56
+sI10632111
+S'\nI have a list of objects where objects can be lists or scalars. I want an flattened list with only scalars.\nEg:\n\nP.S. The answers in this question does not work for heterogeneous lists. Flattening a shallow list in Python\n'
+p57
+sI10633831
+S"\ni was helping my friend to do logic algorithm in python but i haven't come with best solution yet.\nfirst of all, i have a list of array:\n\nand he wanted to categorize the x so the output become like this: \n\nthe rule is simple:\n\nthis is what i come so far, but still far from the solution\n\nbest regards,\nGlenn\n"
+p58
+sI10623592
+S'\nI have a huge dictionary something like this:\n\nexample:\n\nand so on..\nEach of the "auth" keys can have any set of "genres" associated wtih them. The value for a keyed item is the number of books they wrote.\nNow what I want is to convert it in a form of matrix...something like:\n\nHow do i do this?\nThanks\n'
+p59
+sI10635212
+S'\nAs far as my knowledge says in digest authentication, a client does an irreversible computation, using the password and a random value supplied by the server as input values. The result is transmitted to the server who does the same computation and authenticates the client if he arrives at the same value. Since the computation is irreversible, an eavesdropper can\'t obtain the password.\nKeeping eye on the above definition, I used CryptoJS.HmacSHA256("password", "key")  in Javascript  to send the information to django server, now the problem is:\nI need to check that in server using same logic but django already has hashed the password in its own format, for example using pbkdf2_sha256.\nShould I use some reversible algorithm like AES? I don\'t think it is possible to crack django\'s hashing algorithm and write the same for client side?\n'
+p60
+sI10609261
+S"\nI'm writing a game server in Python and a game client in Game Maker with the Faucet Networking plugin (though that shouldn't matter). The client sends an UPDATEXY message to the server each time the player moves, and there is a message chatting thing in the client. With 2 clients connected to the server, it seems that the client gets overloaded with messages (further into the run time, chat messages appear slower and the player lags behind where the actual other player is). I believe this is because the client cannot process the messages at the rate they are flowing in, so I implemented a feature in the client where it would just dump all messages in the receive buffer, and ignore them. This seemed to work, but the player would jerk around violently. Is there any sort of 'clean fix' to this problem, or is it a fundamental thing that I have done wrong since the start? \nBy the way, the protocol I am using is TCP. Is this a problem with TCP itself or am I just using it wrong? Would switching to UDP help?\nThanks.\nEDIT: Code was requested so here you go for the server:\n\n^That's just a few packets, there are more, but they are all pretty much like those\nHere you go for the client:\n\n^Sorry that's a total messtastic, it's just temporary code for now. It too is just a few packets, it handles more below that code, though they all look similar to those.\n"
+p61
+sI10627176
+S'\nPython newb here.\nI\'m trying to re-use same browser throughout my testcases.\nHowever, I cannot figure out how to pass global variable to make this work.\nCurrently,\nI have a main.py that looks like this\n    #!C:/Python27/python.exe\n\nAnd I have testcaseA.py file in setup/ folder that looks like this:\n\ntestcaseB.py is basically identical to testcaseA.py\nWhen I run main.py, I get an error:\n    ft1.1: Traceback (most recent call last):\n      File "C:\\test\\setup\\testcaseA.py", line 10, in setUp\n        self.driver = DRIVER #get global driver variable\n    NameError: global name \'DRIVER\' is not defined\nAny suggestions?\nThanks!\n'
+p62
+sI10630259
+S'\nI have a tuple of Action objects\nI want to create a list of every possible permutation of the Action objects N deep.\ni.e. if I have the actions Eat, Sleep, Drink, and N = 2\nthe list would be\n\nNow, I have a much larger list than three Actions, and N will probably be 3 or more.\nHow would I do this in Python 2.7?\n'
+p63
+sI10610804
+S"\nMy question is really how to setup a SQLAlchemy-declarative model that can be accessed from PySide's QTableView class.\nI'm just trying to essentially implement a front end for the Object Relational tutorial\nUnfortunately I have a few points of confusion. I'll try to explain where I'm at.\nI have a followed the SQLAlchemy tutorial to the point where I have two related tables and can manipulate/query those with no problems. Trying to establish a QTableView class apparently requires a setData() method with my own model, or using the default model requires a setItem() method.\nSo the question is how to design the model. I presume this means defining one of those two methods to query/modify the database. I don't know the right way to do this. \nThe model is supposed to be like User firstname and lastname repeated on a few rows until all the addresses have been shown, then move on to the next User. I can do this with nested for loops to print this at the prompt but I don't think making a big list is the way to go as that seems to defeat the point of having the database in the first place...\nI also don't know what will happen when the database grows, does the entire table become instantiated and held in memory or does Qt load rows and columns as they come in to view when the user scrolls?\nLot of text here sorry, but trying to be clear. If there are any additional things I could add please let me know. Or if I'm totally on the wrong track .... \n\n"
+p64
+sI10623093
+S'\n\nWhen I run this, I get an error:\n\n'
+p65
+sI10611319
+S"\nI'm trying to run a physics simulation (using ODE) in a wxPython application. My first attempt ran my simulation at 100Hz using a timer, however this actually ran at something closer to 60Hz. It's important that the rate of the simulation is accurate, so I wrote a small thread that slept for 0.01 seconds, and then sent a message (via wx.PostEvent) to the main UI thread that ran (and rendered) the simulation.\nThis completely hung the application, and from logging I can see that not all of the events that I'm sending (at 100Hz) are being processed. I presume therefore that I'm filling up the message queue and my UI grinds to a halt.\nWhen I set my thread to run at 50Hz, all works fine. But I mean, this is 2012 and I've got eight cores running at some absurd number of gigahertz or whatever. It doesn't seem to me that an accurate 100Hz is asking all that much. It only has to be accurate in the long run, some jitter (let's say 10%) is perfectly fine.\nAny ideas? Here's my thread code by the way\n\n"
+p66
+sI10628566
+S"\nI feel like I'm missing something very obvious here, but I can't get a scatter plot in pylab to print in black and white. Any and all help would be greatly appreciated. Here's my code:\n\nThanks,\nAdam\n"
+p67
+sI10613882
+S"\nI'd like some guidance about my current uni assignment I've become very stuck and would like some valued advice from you talented people in regards to my direction and if I'm heading down the right path. currently I'm receiving error:\nunsupported operand type(s) for %: 'tuple' and 'int'\nBut that is only the beginning, I'm having trouble with lists, recording them as wickets are lost, adding the name from list to each prompt in the getRuns() function, and recording the score of each batter.\nMy source code is:\nhttp://pastebin.com/iTYdqQBi\nAnd my assignment outline is:\nhttp://pastebin.com/yRnqY15K\nIf you could take just five minutes of your time to help a struggling student it would be much appreciated. Thanks. :)\n"
+p68
+sI10619006
+S'\nSay I have series of book chapter objects, defined by this model:\n\nAnd suppose I currently have four chapters: a, b, c, and d. How would I define the order of the chapters to be b, d, c, a or some other arbitrary sequence?\n'
+p69
+sI10611328
+S'\nI have some log files with times in the format HH:MM::SS.nano_seconds (e.g. 01:02:03.123456789). I would like to create a datetime in python so I can neatly do math on the time (e.g. take time differences). strptime works well for microseconds using %f. Do the Python datetime and time modules really not support nanoseconds?\nThanks\n'
+p70
+sI10624130
+S'\nI am new to wxpython so this may be a pretty easy question, I dunno.\nI want to have a dialog box pop up that takes user input. Check. I want multiple user input fields. Check. I also want to have them come up in the same line, e.g.:\nEnter the Month: x Enter the Day: x Enter the Hour: x\netc... rather than have them each take new lines. So if I have code like this (copied from some tutorial):\n\nHow would I make it so that the "basic control" and "password" fields appeared on the same line?\n'
+p71
+sI10627204
+S'\nI am running nginx, and tornado on a c1.medium instances.\nWhen I run ab the below is my output. Nginx will not work.  I have tried to tweak the config file for ninx to no avail.  If I run on just one port by passing nginx e.g. ` \n\nthen its fast.  See the very bottom.  This must be an nginx issue so how to I resolve?  Also below is the conf file for nginx.\n\nThis should smoke but yet it does not.\nI set the following parmamerts\n\nHere is my nginx conf:\n\nif I run ab by by passing nginx: \n\nOupput when using the -v 10 option on ab:\n\n'
+p72
+sI10622597
+S"\nThe problem is a list of room numbers and guest details I ripped straight from a txt file that needs to be put into a dictionary with the room number as the keys and the details as the values.\nThe guest list is literally a list, each item represents room number, guest name, arrival, departure dates. Rooms without anything next to them are empty.\n\nBasically, got to get that into a dictionary.  Here's what I tried:\n\nwhich gives me:\n\nAs you can see the dictionary is put together in no particular order.  However for this particular exercise, the dictionary needs to be in order from lowest to highest room number.  I guess I thought that it would just iterate through each internal list from beginning to end, test it, and just build the dictionary in that order.\nDoes anyone know how to write the code correctly so that the dictionary comes out as {'101': None, '102', None, '103': None... etc.)? And hopefully someone could explain why my code didn't work as I intended too.\n"
+p73
+sI10632839
+S'\nWith Sqlite, a "select..from" command returns the results "output", which prints (in python):\n\nIt seems to be a list of tuples. I would like to either convert "output" in a simple 1D array (=list in Python I guess):\n\nor a 2x3 matrix:\n\nto be read via "output[i][j]"\nThe flatten command does not do the job for the 1st option, and I have no idea for the second one... :)\nCould you please give me a hint?  Some thing fast would be great as real data are much bigger (here is just a simple example).\nThank you.\n'
+p74
+sI10610824
+S"\nDoes the Python standard library have a shortcut for writing decorators which accept arguments?\nFor example, if I want to write a decorator like with_timeout(timeout):\n\nI have to write something like:\n\nBut that's awfully verbose. Is there a shortcut which makes decorators which accept arguments easier to write?\nNote: I realize that it's also possible to use three nested functions to implement decorators with arguments\xe2\x80\xa6 But that feels just a bit suboptimal too.\nFor example, possibly something like a @decorator_with_arguments function:\n\n"
+p75
+sI10622828
+S'\nModel\n\nShell\n\nIt should be\n\nWhat is causing this error?\n'
+p76
+sI10629774
+S"\nI'm running Python 2.7.3 under windows (installed the binary from python.org).  When running in the cmd shell or under MinGW msys, I see odd behavior.  If I make a subprocess call with shell=False, the current working directory is maintained.  If I set shell=True, the cwd is set to the root of my c: drive.  This seems wrong.\n\nI'd like to be able to use the shell so that I can have access to Environment variables.  What can I do?  Is this a bug?\nI thought that reading the current working directory and than explicitly setting it might work if I use a Popen object directly and figure out the correct format for the path (i.e. windows or Posix style).  \n"
+p77
+sI10615917
+S'\nUnder Windows, executing the following Python script I get an ERRORLEVEL of 0 instead of the expected 2.\n\nIf I remove the import scipy.io, I got the correct ERRORLEVEL of 2...\nAny idea why importing scipy.io cause such an issue?\nPS: windows 7, python 2.72, scipy 0.10.1\nCalling help(sys.exit) just before the sys.exit call return the following (which seems to be good): \n\nIf I call \n\nThe string is printed but the system still return 0 as ERRORLEVEL instead of the 1 expected.\n'
+p78
+sI10629268
+S'\nTarget Platform: Windows XP high school computers\nLibraries Required: SFML, GLEW, ODE, Python (for embedding)\nPlanned Features that lead me to believe I may need multi-threading:   \n\nUp to a hundred robots all interpreting python scripts in real time.\nAll robots and their components in physical simulation with their environment.\nA detailed environment is generated in large sections around the player.\nMay need to write files to hard drive while the game runs.\n(In addition to these features, the target platform worries me)\n\nDo I need multi-threading for this project?\n'
+p79
+sI10613102
+S"\nI would to ask if using the Delegate Pattern in Python would lead to circular references and if so, what would be the best way to implement it to ensure the object and its delegate will be garbage collected?\nIn Objective C, the above problem is avoided by using a weak reference to the delegate. In C++, we don't call delete on the delegate. I've found a link to Python's weak reference module here: http://docs.python.org/library/weakref.html. It seems like a plausible approach might be to create a weak reference to refer to the instance variable using this module but I'm not sure.\nAs I've googled this question and was not able to find answers to it, I'm wondering whether this is even a problem in Python or if there is a common solution (without the need for the weakref module) that I'm unaware of? Also, I did search stackoverflow before asking but the questions I found either deal with circular imports or delegate pattern in general and not specific to Python and the problem of circular references.\nThanks in advance for any replies.\nListed below is some code for a toy example to help illustrate my question. I've implemented code in this way and it works but I'm not sure whether memory is garbage collected at the end.\n\nEDIT:\nAfter reading some of the replies, I decided to clarify my question. I understand that Python has garbage collection. What I wasn't sure was whether it will perform garbage collection on circular referenced objects. My worries stems from the following passage from Python's doc:\n\nThe passage in its original form can be found here: http://docs.python.org/reference/datamodel.html The bold setting is mine.\nThe following post provides a clearer explanation on the problem of circular referenced objects and why it would prevent garbage collection on those objects (at least in a typical setting): http://www.electricmonk.nl/log/2008/07/07/python-destructor-and-garbage-collection-notes/.\nFurther, I just came across Alex Martellli's reply to the following question on whether Python users should worry about circular reference: Should I worry about circular references in Python? From his answer, I gather that even though circular referenced objects will eventually be garbage collected BUT there would be overheads. Whether it is significant depends on the program. \nFurther, he mentioned to use Python's weakref module but did not explicitly say how. \nHence, I would like to add the following questions to clarify some unresolved issues:\n\nThe docs say garbaged collection is not guaranteed for circular\nreferenced objects. But from the replies it appears that is not the\ncase. So have I misunderstood the passage or are there further\ndetails that I've missed?\nI suppose using a weak reference, as stated in Alex's reply and my\nquestion, would avoid the overhead the problem entirely?\n\nAgain thanks for the replies.\n"
+p80
+sI10612375
+S"\nFor some reason after my for loops I am not able to read the ouput text file.\nFor example :\n\nIf I comment out the loops, I am able to read the file and print the contents. \nI am very new to coding and guessing this is something obvious that I am missing.However I can't seem to figure it out. I have used google but the more I read the more I feel I am missing something. Any advice is appreciated.\n"
+p81
+sI10615960
+S'\nI am trying to produce a graph and I am having some issues annotating it. \nMy graph has a log scale on the x-axis, showing time. What I want to be able to do is keep the existing (but not predictable) numeric tick labels at 100 units, 1000 units, 10000 units, etc but also add custom tick labels to the x-axis that make it clear where more "human readable" time intervals occur---for instance I want to be able to label \'one week\', \'one month\', \'6 months\', etc. \nI can use matplotlib.pyplot.annotate() to mark the points but it doesn\'t really do what I want. I don\'t really want text and arrows on top of my graph, I just want to add a few extra custom tick marks. Any ideas?\n'
+p82
+sI10611353
+S"\nI have 2 classes, a robot class to move units and a map class to keep track of where they are. There is one atlas class and multiple robot classes in a atlas. How can i use a function in Atlas from class Robot.\n\nI am 14 years old and new to programming. this is a practice program and i canno't find this on google or yahoo. please help\n"
+p83
+sI10619034
+S'\ni am having trouble loading one of my text files into my GUI. I have a load function(on the menubar), and have created a listbox.\nThe code for the loading the menu and the listbox:\n\nThe load file works, but where is the text document being currently loaded? How can i display it on my listbox?\n'
+p84
+sI10619549
+S'\nI have a working pattern for english language but for my native language is not working and it give me headaches. First of all i have opened many question about encoding, and i know that i underestimated it, it was a big problem. I spent some time reading about it, and the problem is still there. So now i am facing a regular expression utf problem. So the pattern is:\n\nIt works for english language. It function is to give me all sentences in a paragraph. So any suggestions?\nI have also tried with encode and decode but noting happens except encoding error.\n'
+p85
+sI10627232
+S"\nI'm new to python and programming in general, so would really appreciate any clarification on this point.\nFor example, in the following code: \n\nThe pure function version seems cleaner and gives the same result.\nIs the primary value of classes that you can create and call a number of methods on an object, e.g. fight or sleep?\n"
+p86
+sI10609313
+S"\nI know how to slice array with numpy, for example\n\nnow I want a function taking as input the slice (1,1,None) and returning v[1,:,:]\nthe problem is that I don't know how to represent ellipses\n"
+p87
+sI10626185
+S"\nusing the 'in' keyword i can find if an element is in an array:\n\nis there a way to return the index of where 'in' found that element?\n"
+p88
+sI10627099
+S"\nFollowing the excellent advice of a poster yesterday I started using the shutil.copyfileobj method to make a copy of a file. \nMy program should make an exact copy of the file, remove the last byte and save the new copy. \nI tested it last night with some very small ASCII text files so I could check it was doing what I asked it too, I have tried it this morning on some actual 'complex' files, a PDF and a JPG and it looks like the copy function is not making a true copy. I looked at the resulting files in a hex editor, and I can see that after ~ offset 0x300 there is something odd going - either data is being added, or data is being changed on copy. I can not tell which. \nMy program iteratively takes off a byte and saves a new version, and I can see that the newly created files are consistently different to original file, (with the exception of the last byte)\n\nI can also see that the newly created objects are significantly smaller than the source file. \n"
+p89
+sI10625190
+S"\nI am looking for a python library for the Github APIv3 suitable for me. \nBackground: I am a python noob with a background primarily rooted in Matlab and C++, and have recently learned to use python-matplotlib.\nI found one library (python-github3) mentioned in the GH API docs. After playing around with it in ipython for an hour or two, I found it really unintuitive to explore/work with. I looked some more, and found there's quite a number of people at least attempting to write such a library. The more promising-looking (at a glance) are PyGithub and another python-github3, which apparently is different from the first one.\nBefore I spend the next days consecutively trying out library after library, I wanted to ask the SO community if there is an accepted, definitive, obvious choice for that library?\nWhat I didn't like about the first library was the (to me) unintuitive way to get at data - some things you get as attributes, some you get as return value of a method, that return value is some complicated object which has to be paged and iterated through, etc. \nIn that regard, PyGithub looks more attractive at first glance - clearly drill down through an object hierarchy, and then arrive at the attribute containing what you want:\nfor repo in g.get_user().get_repos():\n    print repo.name\nSo, any pearls of wisdom to share? I know I don't have skills enough to quickly judge library quality, which is why I'm turning to the SO community.\nedit: fwiw, I ended up using PyGithub. It works well, and the author is really receptive for feedback and bug reports. :-)\n"
+p90
+sI10608809
+S"\nI am attempting to create a raster based on input from another raster.\nIf a raster value is equal to a number included in a set() than I want it to be 1, else 0\nI've attempted the following:\n\nand\n\nNeither of these work. I believe they don't work because the where clause only accepts Map Algebra expressions: ArcGIS Help\nThere are two other ways I can think of doing this. One being converting it to a NumPyArray and working with that. The other is looping through the set and creating a raster object for each value in the set. After the loop has finished merge them.\nDoes anyone have any suggestions or comments on how to go about this?\nThank you\n"
+p91
+sI10613932
+S"\nDoes django consists of a migration concept without south app ?\nIf not why didn't they include it in Django 1.4 ? [ Since, its a must have ]\nPlease help..\n"
+p92
+sI10621615
+S'\nI was playing around with iterables and more specifically the yield operator in Python. While using test driven development to start writing a new iterable, I wondered what is the shortest code that could make this simple test for an iterable to pass:\n\nThe shortest version I could think of was:\n\nIs it possible to write a simpler, shorter or more beautiful (pythonic) version?\n'
+p93
+sI10620593
+S'\nWhen I run the example feature shown on the pypi behave page the output isn\'t quite as I\'d hoped: The Given, When and Then output messages are printed once in grey, once in colour. Also strange characters are printed at the start of each coloured line. \nscreenshot:\n\nWhen I run a feature that uses Selenium, in addition to the above I get the message: No handlers could be found for logger "selenium.webdriver.remote.remote_connection"\nAny thoughts welcome\n'
+p94
+sI10628788
+S"\nAfter completing an assignment to create pascal's triangle using an iterative function, I have attempted to recreate it using a recursive function. I have gotten to the point where I can get it to produce the individual row corresponding to the number passed in as an argument. But several attempts to have it produce the entire triangle up to and including that row have failed. I even tried writing a separate function which iterates over the range of the input number and calls the recursive function with the iterated digit while appending the individual lines to list before returning that list. The desired output should be a list of lists where each internal list contains one row of the triangle. Like so:\n\nInstead it returns a jumbled mess of a nested list completely filled with 1's.\nHere is the recursive function in question, without the second function to append the rows (I really wanted 1 all inclusive function anyway):\n\nTo be clear, I have already completed the assigned task, this is just to provide a deeper understanding of recursion...\nIterative solution:\n\n"
+p95
+sI10628397
+S'\nOurSQL is the MySQL driver for Python, more here. I fail with the connection, I doubt the problem to be with port or host -- more details here about environment vars, I am working with Ubuntu.\n\n'
+p96
+sI10628297
+S"\nI am having a very strange problem.  I have an event set for the modification of a content type I created that has a file field.  The file that will be uploaded is an XLS file and I want to save a copy locally.  \nNow, here's where it gets strange.  When I am in foreground mode, when the event is triggered the file saves without any problems.  However, when I run the instance normally (./bin/instance start) I get an IOError (See below).  Yet, regardless of if I am in foreground or background mode, I tried to create a test 'Hello World' .txt file that works just fine.\nAny thoughts?  Much appreciation in advance!\nPatrick\nI am using Plone 4.0.1 on an SLES 10 server.\nThe error:\n\nThe code:\n\nThis code works:\n\n"
+p97
+sI10633881
+S"\nI have two network buffers defined as:\n\nWhich is the fastest way to move the content from buffer2 to buffer1 without allocating extra memory?\nThe naive way would be to do:\n\nApparently if I do buffer1[:]=buffer2[:] python moves the content, but I'm not 100% sure of it because if I do:\n\nthen len(a)=2. What happens with the missing byte? Can anyone explain how this works or how to move data between buffers?\nThanks.\n"
+p98
+sI10630845
+S"\nI'm learning to use urllib2 and urllib.And I wrote the same script according to the given example at http://docs.python.org/howto/urllib2.html . But it seems doesn't work.Something response is the source code of the login page!And I used the firebug to check if the same source code is returned,the answer is yes!But i can still login into my blog on my browser!What kind of knowledge do I need to know? Http? or ......\n\n"
+p99
+sI10614974
+S"\nI want to get all GET and POST parameters from Web Page. Let's say there is some web page. I can get all links from this page. But if this page takes input parameters (GET and POST) how can I get them? My algorithm is like this:\n\nMy purpose is to write crawler which gets all links, GET and POST parameters from web site and then save it somewhere for further analysis. My algorithm is simple, so I want to know is there any other way (in python)? Can you recommend any python libraries? \n"
+p100
+sI10632383
+S'\nI would like to add batch with csv file to a job in salesforce.com, according to docs. I use the following code to do that, but it does not work (no new objects appear in salesforce):\n\nHow can I attach file to request and send it?\n'
+p101
+sI10627221
+S'\nHaving the bounding box coordinates of a certain polygon, is there a way with Python to calculate the ideal Range-value for the LookAt-element in a KML-file?\nA formula or set of formulas to get from the bounding coordinates to the Range, would already be very helpful.  \n'
+p102
+sI10611393
+S"\nthis is my entire code:\n\nanother thing, Window is a function in the version i'm using, i can't define it because it's predefined. it just opens up a separate window (1000 x 500) pixels where you can draw things. i just need to know how i get text to show up when it's entered under a class. it works for rectangles/points/shapes, but not text. i don't know why.\n"
+p103
+sI10616515
+S'\nI have a hierarchical keyword tree, represented as a list of tuples where the first argument is the "path" and the second is the corresponding keyword:\n\nList connecting \'paths\' and corresponding documents (one doc can have more than one \'path\':\n\nI want to match each document to keywords and produce an outcome like this:\n\nMy question is how to get all the (parent) keyword most effectively? Thank you in advance!\n'
+p104
+sI10617540
+S"\nI'm writing a web application using Python's twisted.web on the server side.\nOn the frontend side I would like to use Ajax for displaying real time updates of events which are happening in the server.\nThere are lots of information out there on how this can be done, so I realized I need to pick a javascript library that would make my life easier.\nsocket.io seems to be a good choice since it supports several browsers and transport mechanisms, but by reading their examples it seems it can only work with node.js?\nSo, does anyone know if it's possible to use socket.io with twisted.web?\nIf so, any links for a good example/tutorial would be also welcome.\n"
+p105
+sI10619481
+S"\nI'm wondering how to dissecting payload according to differents fields type / length using Scapy or in a another way around with impacket/pcapy...\nFor example, I have this => \n\nI would like to divide each part step by step: the first part in 2 bytes / the second part in 4 bytes etc...\nActually, I added a new protocol using Scapy but the last part is very complex to manage, so thats why I choose/try to dissect the last part of payload in this way (above).\n"
+p106
+sI10626096
+S"\nEvery url works fine in both Apache and django runserver except for urls (pointing to views, not real files) like this:\n\nurls.py:\n\nviews.py:\n\nIn development server calling this url outputs me foo\nIn Apache with mod_wsgi, with the same url i get 404\nwsgi conf file (really basic):\n\nClassic urls like /foo/ work as expected.\nWhere is the problem? Is it an apache behaviour that i don't know / recognize? Is it Django routing?\nedit:\nAfter adding apache conf (thanks for the maybe obvious hint), i think that those AliasMatch on *.js are the problem.. i completely forgot them!\n\n"
+p107
+sI10622668
+S"\nI'm trying to figure out how to compile Python modules in C (http://docs.python.org/extending/extending.html), but the Python.h header file appears to be missing.\nI've installed all the python development headers (I have Python-dev, python2.7-dev, python2.6-dev, python-all-dev) but gcc is still reutrning the error:\n\nAny idea where I'm going wrong here? Also is there an argument I need to add to gcc for Python.h (and what is it?).\n"
+p108
+sI10628215
+S"\nI'm relatively new to Python, cgi, and passenger-wsgi, so please bear with me. \nI set up a python script that's not much more than\n\n.. just so I know how long the passenger server has been running. I did this a few days ago, but it's only at about 12 minutes now. \nKeeping track of state isn't important for any of the scripts I currently have, but I'm planning on writing a simple chat page. Keeping track of the various users online and the chat groups will be very important, and I wouldn't want everything to be reset every 12 minutes. \nWhat can I do about this?\nMy only thought is to store any necessary variables inside an object, then serialize that object and store it in a file every time I change it so that if the server restarts again I still have everything. Is this normally how it's done?\n"
+p109
+sI10621644
+S"\nfirst of all I've never done any audio coding at all.\nI'm trying to see how to start on this little side project, \nImagine this, you have an MP3 song split into three chunks, how can I compare the beginning of a file to the end of another file to see if they are supposed to be played in that order.\nSomething like playing an album that is continuous across the playback, but you don't have the track numbers.\nMy idea is to compare the last part of the audio with the beginning of anothe and try to find the match until all pieces have been matched.\ncan anyone point me in the right direction?\n"
+p110
+sI10609358
+S'\nI want my python script to check for an active internet connection and if there is one then continue with the execution. If there is NO connection then continue checking. Basically block the execution in "main()" until the script can reconnect.\npython\n\n'
+p111
+sI10619600
+S"\nI am trying to assign None to a key in a dict, but I am getting a TypeError:\n\nMy code is here:\n\nBefore it would let me assign, but not it won't. It is strange :/\n"
+p112
+sI10617042
+S"\nI had written the code given below: \nIts output datatype is integers, I want these integers to be in list. I'm new to python. Please suggest how to do it.\n\n"
+p113
+sI10627283
+S"\nSo I have two tables within a Ms Access database that have a common GUID field which I can use to link the two.  I would like to create a relationship using the common GUID without having to open up MS Access and create the relationship.  I was hoping I could do this with pyodbc since I'm running a pyodbc query already that needs the relationship in order to work correctly.  Is this even possibly using pyodbc?  \n(Incomplete) DDL for existing objects:\n\nWhat is the syntax for creating a foreign key relationship between the Customer and FileList tables, and how can this relationship be created using pyodbc?\n"
+p114
+sI10621652
+S'\nI am trying to parse the HTML source of a lot of different pages, like this one : \nhttp://www.ielts.org//test_centre_search/results.aspx?TestCentreID=dd50346f-60bc-4a4f-a37f-7e3d34df0bf8\nor www.ielts.org//test_centre_search/results.aspx?TestCentreID=feb563e3-43db-4d40-a6b1-223e2fb7191b\n(I have 800 pages like this)\nThey are all in the same format. I am trying to parse the "Test Fee" value. \n\nAbove is the part of the source which is of interest for us. \nWhat I want to parse is this :\n **<span class="TestCentreViewLabel">Test Fee: </span><span class="TestCentreViewBody">AUD$330</span>**\nThe problem is that we have a lot of different <span> with the same class (TestCentreViewBody) and one some pages you have 5, on others 8 and so on... So I don\'t know how to isolate this ?\nI am looking for a way to isolate this value.\nPS: I\'ve noticed that the <span> before the last one seems to always contain the value that I am looking for. So what I\'ve tried to do is :\n\nBut that doesn\'t seems to work .\n'
+p115
+sI10617045
+S'\nIn C++, I can create a array like...\n\nin python,I just know that I can declare a list,than append some items,or like..\n\nCan I initialize a list by a given size,like c++,and do not do any assignment?\n'
+p116
+sI10615510
+S'\nHow come python did not refer to this so basic scenario?\nhandling multiple modules versions\nHow come i need to deal with it by myself? when in java i have the maven product to do all this work for me???\n'
+p117
+sI10610391
+S"\nI am reading Python Programming by John Zelle and I am stuck on one the exercises shown in the picture below.\nYou can view my code below. I know the code is very ugly. (Any tips are appreciated)\n\nHere's my code so far:\n\nWhen I run the program the regression line never appears to be the real line of best fit. I believe I am interpreting the regression equation incorrectly in my code. What needs to be changed to get the correct regression line?\n"
+p118
+sI10619096
+S"\nI was wondering if it's possible to reserve some of an excisting value, while replacing. Example:\nOriginal:\n\nAfter replacing:\n\nu\\'[w]\\' selects the value properly, however how do I save 'A' to the replacement value?\n"
+p119
+sI10613977
+S'\nWhen I run my python server file simplehttpwebsite.py in the linux shell and I do control+c and run it again I get socket.error: [Errno 98] Address already in use. \nHow do I  make sure the socket closes down when I do ctrl+c?\nsimplehttpwebsite.py\n\n'
+p120
+sI10618586
+S'\nI have a hex string like: \n\nI want to convert this string to a sequence of characters according to the ASCII table.\nThe result should be like:  \n\nCan anyone tell me how to do this?\n'
+p121
+sI10610395
+S"\nI need to override the caret behaviour in a class, but I'm not sure which operator overload applies to it. For example:\n\nThis code errors with:\n\nHow can I construct the class so that I can control the behaviour?\n"
+p122
+sI10628831
+S"\nSuppose we have the following set, S, and the value v:\n\nI want to test if v is the second element of any of the pairs within the set. My current approach is:\n\nI don't really like this, as I have to put it in a separate function and something is telling me there's probably a nicer way to do it. Can anyone shed some light?\n"
+p123
+sI10620130
+S"\nIs there a way to group elements in tkinter under single ID?\nFor example, if I want an 'S' with a line striking through it. Is there a way to store both the line and the character under the same id?\nAlternatively, is there a way to create a costume (simple) shapes for tkinter?\nEdit:\nI wish to do this on a canvas widget\n"
+p124
+sI10632424
+S'\nI have the following list;\n\nI need to get the contents of each item set as a list, so that I can print the items individually. Eg.\n\nAny ideas how I could format the str(item)|s to lists once again?\n'
+p125
+sI10609899
+S'\nI want to set pythonpath, but it doesnt work for other directory.\nMy bashrc:\nexport PYTHONPATH=/usr/lib/python2.7\nexport PYTHONPATH=$PYTHONPATH/plat-linux2:$PYTHONPATH/lib-dynload:$PYTHONPATH/dist-packages:$PYTHONPATH/lib-tk:$PYTHONPATH\nIf I keep only first line(single directory) \nexport PYTHONPATH=/usr/lib/python2.7\nthen, my bash shell takes me to the /usr/lib/python2.7 directory.\nBut when I include multiple directory - \nexport PYTHONPATH=$PYTHONPATH/plat-linux2:$PYTHONPATH/lib-dynload:$PYTHONPATH/dist-packages:$PYTHONPATH/lib-tk:$PYTHONPATH\nIt throws error like \nbash: cd: /usr/lib/python2.7/plat-linux2:/usr/lib/python2.7/lib-dynload:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7: No such file or directory\n'
+p126
+sI10633837
+S'\nI\'m in the process of transferring my brain from PHP + MySQL to Python and at the moment I\'m using sqlite as an intermediary to something else later because it\'s built in.\nWhen I try to set up an initial database to work with, it throws an error on the INSERT statement that INSERTs multiple rows:\n\nWhen I run it, I get:\n\nIt took me quite a while to find exactly which "," it didn\'t like (I mean, really? SQL errors suck!). It is indeed the "," separating INSERT rows.\nWhat stupid thing did I do?\n'
+p127
+sI10625746
+S'\nIs there a way to abbreviate a comparison statement in python so that I don\'t have to write the whole thing out again? For example, instead of :\n\ncould I do something like:\n    if a==(3 or 2):\n        print "hello world"\nI know the above example won\'t work but is there another way i can achieve the desired effect?\n'
+p128
+sI10623727
+S'\nI am trying to add spacing to align text in between two strings vars without using "        " to do so\nTrying to get the text to look like this, with the second column being aligned.\n\nCurrently have it coded like this, just using spaces...\n\nI tried working with string.rjust & srting.ljust but to no avail.\nSuggestions?\n'
+p129
+sI10614000
+S"\nI basically want to know how GAE has implemented its indexing, I'm familiar with indexing such as B+ trees and wonder if e.g. the filter() method uses a B+ tree for its implementation? Can I see this implementation in the appengine code for the SDK since it is Open Source? Is the get() and get_by_id() functions implemented using hashing to make it O(1)`Is the filter function O(log(n)) since one might think it uses a B+ tree where lookups are O(log(n))?\nThanks for any insight\n"
+p130
+sI10618152
+S"\nI'm using wxPython and wxPropertyGrid to create a UI and am having trouble getting a LongStringProperty to behave as I want it to.  The default behaviour is to show line returns tabs etc as they're respective escape sequences in the grid view, which is not what I want...\nLooking at the documentation here: http://docs.wxwidgets.org/2.9.2/classwx_p_g_property.html#wxLongStringProperty I can see that it is supposedly possible to override this behaviour.  The problem is that firstly PG_PROP_NO_ESCAPE doesn't seem to be defined in wxPython, and secondly it requires subclassing.  If my understanding is correct you can't directly subclass in wxPython but rather has to be done using propertygrid.PyProperty which would basically mean creating the whole class again from scratch!  Now I'm not sure if I believe that last statement or if I've just made it up, but either way if PG_PROP_NO_ESCAPE isn't defined I can't set it so it's a moot point. \nSo my question is:  Is it possible to hide escape sequences in LongStringProperties in wxPython without creating the whole class again from scratch, and if so how do you do it?\n"
+p131
+sI10615538
+S"\nI've written the following script for sending email:\n\nNow i want to receive a mail from outlook express , access and open the mail via a python script. I've tried the codes present for pop and imap lib. But i can't seem to make it work correctly.\nCould anyone guide me through this process with any suggestions?\n"
+p132
+sI10612467
+S"\nI've created a custom widget in pyqt4 that I've worked on and tested and now am ready to load it into my main window. Since it doesn't show up in designer, I need to manually add it to my main window manually. \nMy widget uses uic to load the ui file instead of converting it to a py file (it's been quicker less hassle so far) so it looks something like this:\n\nnow in my main class (example for brevity) I create the layout, add the widget to the layout and then add it to the main widget\n\nThere are no errors thrown, and it will make space for the widget, but it simply won't show anything.\nadding in the line window.ui.show() will just pop open a new window overtop the space that it should be occupying on the main window. What am I missing?\n"
+p133
+sI10617198
+S'\nI use virtualenv to create isolated environments for my Python projects. Then i install dependencies with pip - Python package manager. Sometimes i forget to do source venv/bin/activate, and then pip creates build/ directories inside my projects. Why does pip create them? May i delete them, and if not, may i put them in my .hgignore file?\nAs far as i understand, pip stores source of downloaded packages there along a file called pip-delete-this-directory.txt. But when i delete it, everything still works, as the real code is being put into venv/lib/python2.7/site-packages/. Then what is build/ really for?\n'
+p134
+sI10614518
+S"\nI need to read an xlsx file of 10x5324 cells \nThis is the gist of what i was trying to do:\n\nThe code was taking much too long to run then it should (I was performing operations, not printing) and after a while I got impatient and cancelled it.\nAny idea how I can work it in the optimized reader?\nI need to iterate over a range of rows, not over all rows.\nThis is what i tried, but it's wrong:\n\nIs there any way I can do it without the range function?\nI guess one way to do it would be:\n\nbut is there a more elegant solution?\n(that doesn't work either btw)\n"
+p135
+sI10609399
+S"\nI have a main function that contains two dictionaries that I would like to output.  I have omitted how the dictionaries were created.\nhere's my function:\n\nhere's how I'm calling it in the python prompt:\n\nMore or less this is what I'm getting\n\nBut this is what I want:\n\nWhat am I not doing right?\n"
+p136
+sI10635002
+S"\nQuoted from the docs:\n\nI was under the assumption that the return values are always -1, 0, and 1 but the docs don't explicitly say that, only mentioning zero and positive/negative return value.\nAre there any situations when the return value of cmp(x,y) is not -1, 0, or 1?\n"
+p137
+sI10631419
+S'\nMy django app saves django models to a remote database. Sometimes the saves are bursty. In order to free the main thread (*thread_A*) of the application from the time toll of saving multiple objects to the database, I thought of transferring the model objects to a separate thread (*thread_B*) using collections.deque and have *thread_B* save them sequentially.\nYet I\'m unsure regarding this scheme. save() returns the id of the new database entry, so it "ends" only after the database responds, which is at the end of the transaction.\nDoes django.db.models.Model.save() really block GIL-wise and release other python threads during the transaction?\n'
+p138
+sI10614524
+S'\nI\'m a Python-regex newbie, so bear with me...\nI have a long, multiline string, in which I have to replace the directory parts of [[...]] strings with other stuff, but ONLY IF they do not start with \'file://\', so e.g.\n\nI used variations of this (at the moment the replace string is just a check of what I found):\n\nbut I get a "sre_constants.error: unmatched group". Do you know what I\'m doing wrong?\nthanks!\nalessandro\n'
+p139
+sI10624253
+S'\nI\'d like to set a text into Drawing Area object, using pygtk. \nSo, I created a drawing area and set up a callback function using "expose event" signal. \nThen I coded a function to set the text. \nWhat I coded is: \n\nwhere "movie_windows" is a DrawingArea object. \nI got no error, but nothing is written on the drawing area. \nSuggestionS?\nFB\n'
+p140
+sI10624725
+S'\nI am instantiating a class inside another one:\n\nClass B also inherits class F:\n\nThere are properties of F which have been defined in class A, which I need to access inside class B. (a MySQL connection and a logging handler.)\nI would like B to have the properties which have been set to F, when they were instantiated initially in A, so I can use the logging/mysql handlers inside B without re-instantiating them.\nHow can I go about this? Sorry if the question is unclear.\n'
+p141
+sI10626816
+S"\nI'm trying to get this poker program working and it's my first Python program.. I'm having trouble understanding two errors I'm getting as the code looks correct to me.\nUsing Eclipse/PyDev\n\nThe code:\n\n"
+p142
+sI10626817
+S'\nI need to make a detailed (many features) terminal application for a mainframe server. I have found these so far:\n\nJCurses Updated recently, however was not updated since 2002. Also not be able to find examples.\nCharva: Last update 2006, broken in Java 1.6\nLaterna: Last Update May 2012, but not stable, changing and some features are broken\nUrwid: Seems nice, not sure if best choice.\n\nThe language is not imprtant to me, however I want it to be simple. I do not want to re-invent the wheel, I want components like text-box, menus, radio buttons to be easily used. Charva seemed the most detailed one, as it was kinda replacement for most swing components, however it is broken. I am not sure If I am searching with the right terms, I cannot find another frameworks. Are they the only choice? Are there any other better libraries?\nThe similar interfaces I want to build: example1, example2, example3, example4\n'
+p143
+sI10611461
+S"\nCurrently, my code is like this:\n\nWhen I run my code, my lambda function takes control to be the last element in my list of elements, which is not what I expect to happen.\nOddly enough, when I manually run the lambda every loop, it works fine for each loop, but it still has the same problem as before in the end:\n\nMy self.button() function is trivially defined:\n\nI checked for the uniqueness of control and func every loop by printing the output of id(control) and id(func) and they all returned unique numbers. Aside from that, control.objectName() is the correct object name.\nI have a feeling that this is a variable scope problem, as I usually don't use lambdas too often in my code. Does anybody see any blatant mistakes?\n"
+p144
+sI10622214
+S'\nIn pysvn, how do I test if a file is under version control?\n'
+p145
+sI10623751
+S"\nI want to make a function in python were one of the arguments is a variable later...\nas an example it should be like this\n\n(note that var1 and var2 are string never used before)\nthen the program should make\n\ni need this in order make graphs using GNUplot were a variable will be used to set the parameters of the graph\nfor example this should be inside the function\n\ni tried with something like this\n\nand then\n\nor\n\nbut i'm not sure how to implement this in a function\n"
+p146
+sI10630921
+S"\nI was plotting a line graph and a bar chart in matplotlib and both individually were working fine with my script.\nbut i'm facing a problem:\n1. if i want to plot both graphs in the same output window\n2. if i want to customize the display window to 1024*700  \nin 1 st case I was using subplot to plot two graphs in same window but i'm not being able to give both graphs their individual x-axis and y-axis names and also their individual title.\nmy failed code is:\n\nbut with this I am not being able to mark both graphs properly.\nand also please site some idea about how to resize the window to 1024*700.  \n"
+p147
+sI10610445
+S"\nI have a list of lists such that the length of each inner list is either 1 or n (assume n > 1).\n\nI want to transpose the list, but instead of truncating the longer list (as with zip) or filling the shorter lists with None, I want to fill the shorter lists with their own singular value. In other words, I'd like to get:\n\nI can do this with a couple of iterations:\n\nBut is there a better approach? Do I really need to know maxlist in advance to accomplish this?\n"
+p148
+sI10613006
+S'\nSuppose you have a sqlite database with several thousand rows -- each of which either contains or references a sizable, unique blob -- and you want to sparsely sample this collection, pulling rows based on rowid or some equivalent primary key. I find that the first time I attempt to fetch several (500) datapoints after connecting (out of 20k rows), the call takes over 10 seconds to return; and, with every successive iteration, the calls get shorter and shorter, until converging to around 100 milliseconds after 50-100 such queries.\nClearly, either sqlite or its python wrapper must be caching... something. If I clear out inactive memory (I\'m in OS X, but I think Linux has a comparable if-not-identical "purge" command?), the behavior can be replicated exactly. The question is, what is it caching that an index doesn\'t address? And furthermore, is it possible to automatically pull whatever information is accelerating these queries into memory from the start? Or is there something else I\'ve missed entirely?\nA few notes in case someone doesn\'t immediately know the answer... \n\nEach blob is around 40kB, and are a large (ha) source of the problem. I\'ve some code below for anyone who wants to play along at home, but I\'ve had better luck keeping separate tables for sortable information and data. This introduces an inner join, but it\'s generally been better than keeping it all together (although if anyone feels this is wrong, I\'m keen to hear it). Without the inner join / data fetch, things start at 4 seconds and drop to 3 ms in a hurry.\nI feel like this might be a PRAGMA thing, but I fiddled with some settings suggested by others in the wilderness of the web and didn\'t really see any benefit.\nIn-memory databases are not an option. For one, I\'m trying to share across threads (which might not actually be a problem for in-mems...? not sure), but more importantly the database files are typically on the order of 17 GB. So, that\'s out.\nThat being said, there\'s no problem caching a reasonable amount of information. After a few dozen calls, inactive memory gets somewhat bloated anyways, but I\'d rather do it (1) right and (2) efficiently.\n\nOkay, now some code for anyone who wants to try to replicate things. You should be able to copy and paste it into a stand-alone script (that\'s basically what I did, save for formatting).\n\nNow, if you want to replicate things, do the following. On my machine, this creates an 800MB database and produces something like below.\n\nSo... what say you, knowledgable sages?\n'
+p149
+sI10618669
+S'\nI have a dataset of three columns and n number of rows. column 1 contains name, column 2 value1, and column 3 value2 (rank2).\nI want to plot a scatter plot with the outlier values displaying names.\nThe R commands I am using in are: \n\nand I get a figure like this: \nWhat I want is the labels on the lower half should be of one colour and the labels in upper half should be of another colour say green and red respectively.\nAny suggestions, or adjustment in the commands?\n'
+p150
+sI10610960
+S'\nI have a few different notification tables, and I would like to perform a union across all of them to show the user all of their notifications. However, the union is not working as it should.\nPython code\n\nUse: user._get_notifications_query(unconfirmed_only=False).all()\nSQL generated\n\nI expect something along these lines\n\nAlso, is there any way to sort the aggregated union results from SQLAlchemy?\nEDIT\nI should mention that sqlalchemy.sql.union() produces the correct SQL, but I dont know how to make use of that from the ORM (return/count the records).\n'
+p151
+sI10635537
+S"\nI'm working on PyGTK application, that can generate graphs. This achieved by matplotlib. How can I add Copy-To-Clipboard functionality? How to copy figure to clipboard?\n"
+p152
+sI10618132
+S"\nA colleague of mine develops a Java program which I'd like to support it with Python data analysis plugins. The plugins do a calculation (on external SQL data) and return a moderate data volume (for example up to 10000 simple hash maps) once or maybe quick calculations more often.\nCan you suggest a stable, comfortable way to enable this interaction and maybe describe differences? What would you do?\nI can probably google many methods myself (IronPython, sockets, ...), but it's hard to tell the advantages and draw-backs of each method in comparison.\nThe platform is mostly Windows but not restricted to that.\n"
+p153
+sI10620693
+S'\nHow do I set it up with an easy to explain solution, \nhttp://code.google.com/p/modwsgi/wiki/QuickConfigurationGuide\ngives a very technical answer which I can not understand.\n'
+p154
+sI10630736
+S'\nI am new to python can any body please Help\nD:\\python\\sub>python app.py\nTraceback (most recent call last):\n  File "app.py", line 2, in \n    import ImageTk\nImportError: No module named ImageTk\n'
+p155
+sI10620697
+S'\n\nI want to store \'status updates\' in mongodb. Therefore this collection/array can get very big.I think one option would be to save the documents in an array nested in the user/group/... document.(Different collections need their own \'status updates\')The other way would be to create another collection save the messages their and relate the user/group/... to the status updates via another objectId \nI want to know\n\nwhat is faster\nwhat is easier to administrate and query\n\nI think I\'m not going to use an orm/drm just "plain" pymongo. \nI haven\'t found any clear answer in the docs, maybe someone already tested this?\n'
+p156
+sI10635036
+S"\nCan anyone describe me why this code will print '2 1 0 done' instead of expected output '0 1 2 done'? \nAs i can understand, we have some anonymous variables creating during list comprehensions, and they are garbage-collected, using filo principle, on list comprehension uncoverage end.\nBut, they still are referenced in list aa, aren't they?\nWhy the second 'del a' is not calling del magic method in that case?\n\nAlso, advanced questions. Please look at http://codepad.org/niaUzGEy\nWhy there are 5 copies, 3 copies? Musn't this be 1 copy? Why 5 or 3? Dont know, thats why asking it ;)\nThanks for your time!\n"
+p157
+sI10627531
+S'\nI have been experimenting with the Bus breakdown example in the Simpy\nmanual and am really struggling to understand why when I create\nmultiple instances of Bus, the last instance seems to get "of\nsequence" after the first repair.  I have modified the example code in\nthe manual very slightly just below the initialize() statement to\ncreate two instances of Bus (Bus1 and Bus2).  Here is my code:\n\nThe above gives the following output:\n\nNow, the question: at the t=600 point, why does Bus 1 get repaired\nbefore Bus 2 breaks down?  I would have expected that both Buses would\nbreak down and get repaired in "lock step."\nFurther, if I create four Buses, the first three fail and get repaired\nin "lock step" as shown below; however, Bus 4 gets off sequence by 20\nafter the first repair. I cannot figure out why this happens and would\nappreciate any insight that anyone might be able to provide. It always\nhappens to the last instance.\n\nThanks,\nSeymour\n'
+p158
+sI10618144
+S'\nI\'m getting "AttributeError: \'NoneType\' object has no attribute \'string\'" when I run the following. however, when the same tasks are performed on a block string variable; it works. \nAny Ideas as to what I\'m doing wrong?\n\n'
+p159
+sI10622753
+S"\nI do see a few methods of downloading a file from HTTP/HTTPS in Python, but for all of these you need to know the exact URL.  I'm trying to download from a web service and the URL has methods and post arguments that are sent in order to download the file, I can't figure out what the URL is to send.  This is the code snippet:\n\nThe print statement looks as though it's reading the PDF, but I want to save it somewhere and can't find any way to do that?  Here is the beginning of the print response:\n\n"
+p160
+sI10631055
+S"\nI have to write a function crossing that given \na country name and n (the desired number of steps) gives you the set of countries \nI can reach crossing n countries starting from the given country. \nNote that:\n\nin zero steps you can't exit from the starting country;\nin one step you get only in the border countries;\nthe path must always be minimal, e.g., from Italy you can get in Belgium crossing Switzerland \nand Germany or only France the second is the one to choose;\nyou can't cross a country twice or more or get back, e.g., Italy \xe2\x86\x92 Switzerland \xe2\x86\x92 Italy \nor Italy \xe2\x86\x92 Switzerland \xe2\x86\x92 France are wrong.\n\nThis is my map:\n\nthe test main is:\n\nand the execution of that:\n\nAnyone have some suggestion?\nI tried to write:\n\n"
+p161
+sI10628861
+S"\nI'm still learning to work with objects. I defined vertices() as a method to return the vertices (initialized as vs) in Graph. I know that there is a more concise, elegant way to write vertices() but exactly how is escaping me. \nAlso specifically this relates to exercise 2.5 in Think Complexity: http://greenteapress.com/complexity/html/book003.html#toc12\n\n"
+p162
+sI10632927
+S'\nIs there a way to generate a form based on a model object in turbogears? I came across that facility in Django - ModelForm where it generate the form based on the definition of the given model class. That is the exact feature I need in turbogears.\n'
+p163
+sI10616104
+S'\nI am having a little trouble with a server / client design and\nwonder if anyone had any advice.\nI have a Thrift server that abstracts a data store.  The idea is that\nthere will be a number of clients that are essentially\nout of process plugins that use the interface provided by the server\nto receive, manipulate the underlying data store and also provide\ntheir own data.\nThere will be a number of other clients which simply access the data\nprovided by the server and its "plugins".\nThe  problem case is when one of these "plugins" wishes to provide its\nown data and provide an interface to that data.\nThe server should have no knowledge of the plugins data or interface.\nI would ideally like all clients to access functionality through the\nmain thrift server so it acts as a facade for the plugins. If a client\nrequested some data provided by a plugin the main server could\ndelegate to the plugin to provide that data. I guess this would mean\nhave each plugin being a thrift client and server. I have written the\nserver in python so could probably handle thrift calls that are not\nyet defined but would it be possible to forward these calls another\nthrift server IE act as a proxy ?\nAn alternative is maybe have the plugins be clients only and push data\nto the server. But the format of these messages\nwould unknown to the server and would have to be generic enough to\naccommodate different types of data. I not sure how I would provide a\nuseful interface to this data to other clients.\nAs far as I can see only the plugins knows how to store and manipulate\nthe data it owns so this idea probably would not work.\nThanks for any advice. Any suggestions welcomed.\n'
+p164
+sI10629929
+S"\nI'm on Chapter 4: Templates of the Django tutorial, and I'm trying to run the following in an Emacs inferior mode using Python:\n\nBut I get the error here.   \nA quick search suggests that I should do be setting my DJANGO_SETTINGS_MODULE like so:\n\nHowever, I run into this error:\n\nI'm using Fedora 16. How do I correctly resolve this problem?\n"
+p165
+sI10630442
+S"\n\nThis question already has an answer here:\n\n\nIndexError: list assignment index out of range\n\r\n                    8 answers\r\n                \n\n\n\n\nError: \n\nI remember assigning values by index in javascript, it doesn't work in python?\n"
+p166
+sI10615084
+S'\nI have a bootstrap script that performs syncdb and migrate:\n\nPre-Requisites:\n\ndjango-south for migrations.\n\nProcess happening:\n\ninitial_data fixture contains data for a model that is created by migrations.\nsyncdb is executed it creates all the tables except for those apps where migrations exists.\nPost syncdb it tries to load initial_data and raises error of db not found because the table for app with migrations were not created by syncdb.  [ Problem ]\nThen it performs migration which creates the db.\nPost migration it automatically loads initial_data successfully this time.\n\nProblem:\n\nHow can I get rid of the error, when it tries to load fixture for the table that is not yet created ?\nCan I edit the above script in a way so that it loads initial_data only after performing the migration ?\n\n'
+p167
+sI10609965
+S"\nI want to make a script that will take a file, strip off the last byte of a file. The file can be anything, not just text. \nI have been playing around with the seek() and tell() methods, but I can't find a way of dealing with the file that allows me to do this. \nI figured it should be relatively trivial, but perhaps Python is not an appropriate tool for this? \n\nThis method errors, and tells me I can not subscript the f=f[:fsize-2] line\n"
+p168
+sI10635052
+S'\nI have a python dictionary dict1 with more than 20,000 keys and I want to update it with another dictionary dict2. The dictionaries look like this:\n\nIf I use\n\nthen the keys of dict1 which are similar to keys of dict2 will have their values overwritten by values of dict2. What I want is if a key is already present in dict1 then the value of that key in dict2 should be appended to value of dict1. So\n\nshould result in \n\nA naive method would be iterating over keys of dict2 for each key of dict1 and insert or update keys. Is there a better method? Does python support a built in data structure that supports this kind of functionality?\n'
+p169
+sI10610991
+S"\nI'm trying to set up celeryd with django and rabbit-mq. So far, I've done the following:\n\nInstalled celery from pip\nInstalled rabbitmq via the debs available from their repository\nAdded a user and vhost to rabbitmq via rabbitmqctl, as well as permissions for that user\nStarted the rabbitmq-server \nInstalled django-celery via pip\nSet up django-celery, including its tables\nConfigured the various things in settings.py  (BROKER_HOST, BROKER_PORT, BROKER_USER, BROKER_PASSWORD, BROKER_VHOST, as well as importing djecelery, calling the setup function and adding it to the INSTALLED APPS). I've double checked and all of these values are correct (at least, user, password and vhost are correct).\n\nSo now, when I run python manage.py celeryd -l info I get connection errors (see below). Anyone have any idea why?\n\n"
+p170
+sI10631473
+S'\nI would like to read some characters from a string and put it into other string  (Like we do in C).\nSo my code is like below \n\nIn C the code may be\n\nHow can I implement the same in Python?\n'
+p171
+sI10614066
+S'\nI have a list of countries in a file as follows,\n\nI would like to display only the full names of countries in my drop down list and also save only the full name in the model. \nRight now my models.py is\n\nand forms.py is\n\n'
+p172
+sI10609460
+S"\nDoes anybody know of a python function for performing two-way, repeated-measures ANOVAs for mixed experimental design (2 groups, 4 conditions)?  I looked at scipy.statistics, but they don't seem to have what I need (unless I missed it...)\nThanks\n"
+p173
+sI10614069
+S'\nI have implemented a lambda function to sort a list. now i want to remove all the negative objects from the list by using lambda functions . \n\nany one know a way to write the lambda expression to do it? I could not find a proper tutorial\n'
+p174
+sI10620809
+S"\nI know this has been asked before, but for my circumstance, I can't seem to figure out why this is being thrown\nWhen I try to run my calculations, I am given this error from my console:\nValueError: invalid literal for int() with base 10: ''\nand it is saying its coming from\n\nDoes anyone know why this could be happening?\nHere is my ajax.py where that code is located:\n\n"
+p175
+sI10609976
+S'\nI need to add a couple fields to Group model in django contrib.auth app using:\n\nMy issue is while creating the migrations with South, since they are created in the "migrations" directory inside the auth app and, since the system is already in production, I\'m not allowed to alter the current django installation in the server in order to migrate auth.\nDoes anyone know how to create and load such migrations?\nThanks in advance for your help.\n'
+p176
+sI10614068
+S'\nIm looking for a game or challenge which is similar to RoboCode or Scalatron. I am not interested in challenges like Project Euler where i get points for solving a specific problem. I am looking for the direct competition. I am aware of http://sumost.ca/steve/games/ but sadly there are no python based projects. If you have any recommendations please share them with me.\n'
+p177
+sI10615098
+S'\nI have a password-protected private key in a .pem file; I want to use it to sign requests to a remote server. I\'m able to load the key and enter the passphrase after being prompted for it:\n\nHowever, I need this for a server process which is restarted every morning, and thus the passphrase must be passed automatically somehow.  The load_key method supports a callback argument for this purpose, so I tried several variants of:\n\n(replace "..." by "lib/python2.4/site-packages")\nWhat am I doing wrong?\n'
+p178
+sI10631391
+S'\nI downloaded mod_wsgi-3.3 code and build it successfully. I have the mod_wsgi.so library successfully created and copied it to Apache modules folder:\n\nI added the below line in httpd.conf\nLoadModule python_module modules/mod_wsgi.so\nBut still I get the below error:\n\nBut \n\nPlease help?\nOK issue is resolved regarding the Load rule. It should be\nLoadModule wsgi_module modules/mod_wsgi.so\nBut on browser side I keep seeing "\n\n" to which I am running the Apache? Where can I see the Apache logs or why browser is waiting for so long time?\n'
+p179
+sI10608956
+S"\n\nI would like to able to define a lambda function such as the one in TestClass and have it alter an instance variable. It would seem that the way the lambda is constructed means that it does not modify the original value. I suspect that this to do with Python's reference strategy which I do more or less understand.\nSo accepting the flaws in what I have done, is there a similar way to get similar functionality? I ultimately need to define many methods like x and intend to keep them in a dictionary as they will form a simple instruction set. As far as I can tell I need either to use lambdas or exec to do what I want.\n"
+p180
+sI10631553
+S"\nI have a file that contains this:\n\nI have two dictionaries that contain:\n\nHow would I find every time it says one of the words in one of the dictionaries and convert it to its alternative term? \ni.e. if it encounters 'JC0' then it would translate it to 'b'\n"
+p181
+sI10608960
+S"\nsay I have a string n = '22' and another number a = 4 so that n is a str and a is an int. I would like to create a group of lists like:\n\nI am struggling on how to start this. Maybe you can give me an idea of how to approach this problem?\nBy the way if a condition cannot be satisfied, then only n will be on that list. say n = '20', a = 4:\n\nAlso this is for a school project, for indexes in a list which has list items. I can't think of a better way to approach the problem.\n"
+p182
+sI10620737
+S"\nOn a mac in python 2.7 when walking through directories using os.walk my script goes through 'apps' i.e. appname.app, since those are really just directories of themselves. Well later on in processing I am hitting errors when going through them. I don't want to go through them anyways so for my purposes it would be best just to ignore those types of 'directories'.\nSo this is my current solution:\n\nAs you can see, the second for loop will run for every iteration of subdirs, which is unnecessary since the first pass removes everything I want to remove anyways.\nThere must be a more efficient way to do this. Any ideas?\n"
+p183
+sI10635074
+S"\nI have a page, where a user gives some data in a simple form.\nThis is posted to bottle, it does its magic and generates a lot more data. Then I need user input on selecting just some of the generated data, so I pass the relevant aspect of data to user and show it with a plot. Then a user chooses by clicking on a plot. When I have the users choice, I can resume working with data. But I don't want to pass all the generated data to the user, just to get the same data back, because the user should evaluate just one aspect of it, and there probably is some chance in loosing some data in the way.\nHow should I get the users evaluation without passing the data generated in step one to the user? I need to pass data from one @route to another, without it going to the user, is this possible?\n"
+p184
+sI10613131
+S'\nI have a list \n\nHow to access each element of this list?\n'
+p185
+sI10623302
+S'\nPython doc says that slicing a list returns a new list.\nNow if a "new" list is being returned I\'ve the following doubts related to "Assignment to slices"\n\nNow the output would be:\n\n\nHow can something that is returning something come on the left side of expression.\nYes, I read the docs and it says it is possible, now since slicing a list returns a "new" list,why is the original list being modified, I am not able to understand the mechanics behind it.\n\n'
+p186
+sI10632520
+S'\nIn javascript the code below returned \neec097af19ad461ac825ccce57a012543da33c986e4607475e1fe5c6dc098d0a \n\nIn python same logic returned some weird characters like \xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbdF\xef\xbf\xbd%\xef\xbf\xbd\xef\xbf\xbdW\xef\xbf\xbdT=\xef\xbf\xbd<\xef\xbf\xbdnFG^\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd   \xef\xbf\xbd\n\nI think they should return same hash as i have used same algorithm for both. Any suggestions ? Thanks\n'
+p187
+sI10625865
+S'\nI\'ve been trying to learn how to write C-extensions for Python and want to be sure I understand how PyArg_ParseTupleAndKeywords works. \nI believe that the first argument is a PyObject pointer that points to an array of the arguments being passed into the C-extension function in the order they were passed. The second argument is a list of keywords that were passed, the positions at which they were passed and, very likely, some sort of indicator flag telling at which position the keywords begin and position becomes irrelevant. \nPyArg_ParseTupleAndKeywords then uses its list of keywords (4th argument) to map between arguments specified with a keyword and both the format string (3rd argument) and addresses of C variables (5th & + arguments) to which the appropriate values should be copied.\nIs my understanding correct? When I read through the online documentation, all I see are references to "positional arguments and keyword arguments", which leave me feeling a little bit in the dark. Where is the file for the Python interpreter that handles PyArg_ParseTupleAndKeywords?\n'
+p188
+sI10632415
+S"\nI'd like to add only servers currently doesn't exist at file\nMy current code :\n\nThanks in advance\n"
+p189
+sI10622795
+S"\nI have a following structure of python modules: \n\nin foo.py I have the following code:\n\nBut as the result I'm getting the following error: \n\nWhy python is trying to find the file at /module/bar.py but not module/submodule/bar as I stated in import?\n"
+p190
+sI10617656
+S'\nI am looking for a nice "pythonic" and "SQL-Injection-free" solution for a problem with reserved words in MySQL.\nI have the following code:\n\nThe problem occurs when column name is something like \'index\', \'int\', \'limit\' ....\nIn MySQL shell I can do: \n\nor\n\nbut not\n\nHow can I achieve that with Python and MySQLdb? \n'
+p191
+sI10610007
+S'\nI am somewhat new to Python. I need two functions. The first is supposed to get the current date and then return the starting and ending dates of that month e.g if current date is 02/12/2012, it should return 02/01/2012 and 02/29/2012. The second function does something similar but instead returns the beginning & ending dates of the previous month. Please how can I do that in Python?  Thanks in anticipation\n'
+p192
+sI10623833
+S'\nI have python2.6, python2.7 and python3 in my /usr/lib/\nI am trying to run a file which has line given below in it as its first line\n\nafter trying to run it it gives me following error \n\nmy default version on python is 2.7.\nHow I can run the file without changing the default version of python.\n'
+p193
+sI10618714
+S"\nI'm trying to make a request to a protected webpage, so therefore I'm trying to authenticate with help from QAuthenticator(). However, I get the following error:\n\nThis is a part of my script:\n\nWhat am I doing wrong here?\n"
+p194
+sI10627215
+S"\nThis question is about the odeint function in the scipy.integrate module.\nI'm simulating interacting galaxies on the following principle: I let two nuclei move in a Kepler orbit and then I take every star in the galaxies to be without a mass.\nI'm working in the reference frame of 1 galaxy so I'm using two classical Newton gravity forces + 1 centrifugal force.\nAll this is integrated with odeint (scipy.integrate module), which works great. I'm having a problem with the speed odeint is integrating my stars tho:\nEvery star takes about 10-15 seconds to be integrated in about 100 time steps (~1 billion year), but this equals to a few hours to integrate for in total 1000 stars. According to my professor, HIS program runs about 5 minutes, doing those number of stars. I don't even have a clue how I can improve this speed, since I cannot change the equations, and odeint is really taking 99% of the running time. \nSo long story short, how I can improve my odeint calculation time?\nThanks \n"
+p195
+sI10609500
+S'\nI\'m writing a Python script that will automatically logon users from a list. This script will be run once a month to prevent accounts from being disabled due to low activity. Below is the working code:\n\nMy question is, would the win32security.LogonUser() update the "last logged on" timestamp in Active Directory? Is there another way to achieve this without having administrative rights to the Active Directory server?\nThanks\nWole\n'
+p196
+sI10627898
+S'\nI have an index.html on the folder where SimpleHTTPServer is running, but depending on the value of a URL GET parameter I want to show a directory listing instead. Is that possible? I was trying to query the root directory using ajax, but it returns index.htmlby default. \nI guess one possible option is to rename index.html to something like main.html and never use index.html.\n'
+p197
+sI10617182
+S"\nI'm using Python's LXML library to run an XSLT against an XML document. This transformation uses the exsl:document functions to split my XML into smaller XML documents. Here's what my command looks like:\n\nMy script script.py and the transformation transform.xsl are in the same directory. When the transformation is run, the XML gets split successfully but the resultant files are created in the current working directory. Is there a way I could specify the output directory in LXML?\nThanks\n"
+p198
+sI10625376
+S'\nI am reading an html file from storage directory, making some alterations with beautiful soup and then outputting the result using HttpResponse. My problem is that some of the characters such as the <> symbols are being returned as ascii codes instead of symbols e.g. < instead of <\nTo remove any chance that changes I am making using BeautifulSoup I simplified it down to the basics.  This works:\n\nThis does not:\n\nThis by no means represents my only attempt at this.  I have combed through the BeautifulSoup documentation and tried several different encoding methods, but with the same result.\n'
+p199
+sI10625378
+S'\nHell, Hello! I want to crawl web page with python, the problem is with relative paths, I have the following functions which normalize and derelativize urls in web page, I can not implement one part of derelativating function. Any ideas? :\n\nthe problem is: I do not know how to get main url, they can be in many formats:\n\n'
+p200
+sI10634811
+S"\nI'm trying to write data to the system log on Windows 7 using Pythons (2.7) logging.handlers.NTEventLogHandler. This does not work as there is apparently some registry access being denied. The software will be run without any special access rights. Is there any way to make this work?\nHere is the exception I get:\n\n"
+p201
+sI10609508
+S'\nIf I assign an object to a property of another object, what is the natural way to also get the first object given the second? I think this is sort of like what foreign keys do in databases.\n\nI\'d like to also achieve this with one-to-one, and many-to-many relationships. Is this possible?\nI have been keeping a global collection of all "things" at the moment, and then providing a property on the "box", so that the information of what belongs to what is only in one place. However, the collection of things is so huge, that I\'d like to place the pointers to the "thing" objects in the "box" object itself.\n'
+p202
+sI10627943
+S"\nI've just cloned a Django project using Mercurial to a Windows machine that I have set up Python 2.7 on. When I try to run manage.py (with or without a command), I get the following error:\n\nI understand that manage.py is supposed to set that environment variable. I also understand that I might be getting this error because the project is not in the python path... but adding it manually seems like it shouldn't be necessary. Isn't manage.py supposed to resolve this issue as well?\nEdit: I've just tested and found that it does the exact same thing under Linux.\nEdit: Here's a useful discovery: I only get this error if I install Django via PIP, it works fine if I install the python-django package on Ubuntu. So there's something that the debian package is doing that PIP isn't. Maybe the debian package sets some environment variables? I need to figure that out, since I'm trying to develop on Windows.\nEdit: I think I've found the problem, but not a solution. Working on an Ubuntu machine, when I install Django via PIP (pip install django), this project doesn't work with the error I gave. If I create a new project (django-admin startproject testproject) and try that it works, and it consists of manage.py in the created folder, with another folder that contains everything else. Like this:\n\nWhen I install the Debian package (apt-get install python-django) the project I'm trying to work on works, and if I create a test project (django-admin startproject testproject) it has a folder structure like this:\n\nNotice the difference: the PIP Django package seems to put the manage.py outside of the python module that is the app, while the Debian package puts manage.py inside the module. I assume that this is due to the two packages being of a different version of Django, in between which they changed the structure, because the two packages doing this differently doesn't make any sense.\nSo my problem is that the project I'm trying to develop was originally generated using the version that's been Debian packaged, while on my Windows machine I'm trying to use the version of Django from pip.\nThe trouble is that I'm not certain how to fix the problem. Naively moving the manage.py up a directory so it's above the project folder doesn't work, because this 'debian-package version' manage.py tries to just import settings, which fails if it's not in the same folder as settings.py. But somewhere else in Django, something seems to be expecting the project itself to be at //settings.py (as would be the case if the pip version of django-admin was used) rather than at /settings.py (as is the case if the debian-package version is used).\nIf I look it up, the version in the Ubuntu repositories is 1.3.1, while the version in PyPI is 1.4. Look at the release notes for 1.4, and hey:\n\nBut... shouldn't projects generated with the 1.3 layout still work under 1.4..?\n"
+p203
+sI10624360
+S"\nSo I'm using pyodbc to take a Date Time field from MS Access add to a Python list.  When I do this, it pyodbc instantly converts the data to this format datetime.datetime(2012, 1, 1,0,0).   I'm only interested in obtaining the year 2012 in this case.  How can I parse the year out of my List when it uses this format?  Maybe pyodbc has some syntax I could use before it evens gets into the List?  \n"
+p204
+sI10622268
+S'\nIs there an easy way to access variables in the IPython interactive namespace.  While implementing a project that has a slow load command, I would like to run a script to load the data into the interactive work space, then call a second script that uses the data, like is possible with MATLAB.\nIn this simple case, what I want to do is\n\nwhere tst.py is just\n\nThe idea is that I want to run the loading script once, then just work on tst.py.\nThanks!\n'
+p205
+sI10626766
+S"\nI'm quite new to algorithms and i was trying to understand the minimax, i read a lot of articles,but i still can't get how to implement it into a tic-tac-toe game in python.\nCan you try to explain it to me as easy as possible maybe with some pseudo-code or some python code?. \nI just need to understand how it works. i read a lot of stuff about that and i understood the basic, but i still can't get how it can return a move.\nIf you can please don't link me tutorials and samples like (http://en.literateprograms.org/Tic_Tac_Toe_(Python)) , i know that they are good, but i simply need a idiot explanation.\nthank you for your time :)\n"
+p206
+sI10621804
+S"\nI'm using PyQt 4.9.1 on Ubuntu 12.04 (amd64) (tried with both python 2.6 and 2.7) to make a headless browser, but i'm getting: Program received signal SIGSEGV, Segmentation fault.\nHere is a simplified version of the program (still long a bit):\n\nNow as far as I can tell the problem is in storing the instances of these HeadlessBrowser classes, I use a dict to store them, and in the real implementation I'm reusing them by a custom session_id, but I faked here an instance_counter just to show how it works. I think regardless that I store them in the dict, looks like the instances are garbage collected or I'm not sure why the problem happens.\nAnyway if I drop the usage of dict, and make it to store just one instance on the xmlrpc class as a class attribute the problem does not happen.\nThis is a sample client for it:\n\nAny suggestions?\nUPDATE: Added backtrace:\n\n"
+p207
+sI10611566
+S"\nI would like to change the function and text of a button based on which radio-button is selected. Right now what's happening is that both commands are run at the same time as soon as the application is launched rather than it being based upon which radio-button is selected.\n\n"
+p208
+sI10620784
+S'\nwe include an iFrame inside a pyramid webpage.\nThe iFrame is a local html file which is not a pyramid webpage.\nEverytime the HTML contents (=the iFrame) gets updated and I refresh or load the pyramid webpage with the iFrame again, the iFrame contents do not get updated. If I force a refresh with my browser then the iFrame has the new contents. \nHow to solve this issue?\n'
+p209
+sI10622834
+S'\nHy there!\nI am actually working on some geodata datasets. I am using python and pygrib to read the original data. pygrib returns wonderfull longitude/latitude values for my "rotated" grid (see plot). What i have to do is to bring the data onto an orthogonal geo-longitude/latitude (so a meshgrid). \nIt is no problem to do it by hand BUT i think that python has a package which does it for me? If yes i hanvt found any good hint in the web.\npygrib seems to know enough about the projection to compute my latlons. So i guess that there is a package somewhere which transforms (with interpolation) my data into another projection? :)\nProbably there is someone out there which can give me some hints and/or links. Would be great! \nThanks and best wishes\nReto Stauffer, Austria\n\n'
+p210
+sI10613619
+S"\nI have 2 boxes. One with setup and another where I have recently setup-ed. \nThe box in which setup is already available I see my program output via below curl command:\n\nwhere runreport.py is a python script that hits DB, gets data and prints it in formatted XML format.\nIn the another box I recently installed / config Apache 2.4.1 and get my project first page when I hit to the box via a browser. But the same backend script is having issues. I tried testing the output via same curl in the new dev setup box:\n\nSurprisingly I get the runreport.py content dump as against the program output dump as in setup box? What's Apache config should I enable to dump output same as setup box?\nThanks in advance\n"
+p211
+sI10622324
+S'\n\nWhat I want to do is, within the Bar function is call the Foo function. How would I do that?\n'
+p212
+sI10626807
+S"\nI'm deploying a Python app on Windows for the first time (Apache & mod_wsgi/Flask/Sqlalchemy). \nI'd like to use pyodbc to get Sqlalchemy talking to mssql. \nI was able to install a binary build of pyodbc with no problem, and it works when I use it from the command line. However, mod_wsgi is logging import errors when it hits import pyodbc\nThis thread on the pyodbc issue tracker describes my issue exactly, and seems to implicate Windows manifests. However, I can't figure out how to use mt.exe to resolve it. \nIn PowerShell:\n\nIn cmd:\n\nWhat am I doing wrong?!\n"
+p213
+sI10632427
+S'\nCircumstances\nI have a procedure which will construct a matrix using the given list of values!\nand the list starts growing bigger like 100 thousand or million values in a list, which in turn, will result in million x million size matrix.\nin the procedure, i am doing some add/sub/div/multiply operations on the matrix, either based on the row, the column or just the element.\nIssues\nsince the matrix is so big that i don`t think doing the whole manipulation in the memory would work.\nQuestions\ntherefore, my question would be: \nhow should i manipulate this huge matrix and the huge value list?\nlike, where to store it, how to read it etc, so that i could carry out my operations on the matrix and the computer won`t stuck or anything.\n'
+p214
+sI10625918
+S'\nSo I have some code that is being somewhat troublesome to rewrite:\n\nNow I want to create an iteration in a func_B such that, for each run-through in an interation, func_B uses the x value that func_A generates to do things.\nHowever, I want to avoid making x a global variable.\nMy first thought was to make the first line of the def of func_B x=func_A(), but this would run the randomizer twice and the value of x would be changed.\nHow do I reference the same x that func_A produces in func_B without running the randomizer again (until the next iteration in func_B) and without using global variables?\n'
+p215
+sI10622613
+S'\nI am trying have a set of python scripts report their status to a set of micro controllers.\nSo my idea for this is to have the python scripts each create their own webpage that can be viewed by the micro controllers, but is there anyway to have the script itself keeping the page served, i.e. an apache library so that if the script crashes or is not running the page is not served or a way to make the page have a default value if the script is not running.\n'
+p216
+sI10609025
+S"\nI am relatively new with Python. Here is my problem:\nMy environment was python2.6 with MacOs 10.6.8. I recently had to update my system with Python2.7 and some other stuff (Eclipse 3.6 and GoogleAppEngine). Python works fine within Eclipse, however, I want to keep the shell-mode in being able to quickly test small stuff on the commandline. I am getting this error message, and I need this to get rid of asap:\n\nAnyway, this was the python version that my macbook was shipped with at buying time. I don't think i want to waste time on removing, re-stalling etc. an apple-approved python version. Does anybody know how I can get my system back to run properly? And why does this error occur at all? Thanks for quick help!\n"
+p217
+sI10629815
+S'\nI am working in selenium automation project. Here i am using python language for selenium automation instead of Java.\nI am facing an issue,handling multiple windows\nScenario is when I click a link in home page a new window opens.In the newly opened window I cannot perform any actions because the control is still in the home page web driver.\nCan anybody paste some code here to set focus the control from the background window to the newly opened window.\nA possible solution is self.driver.switchtowindow() is there in the library.But it requires a window name.How to find the window name? If this is wrong can anybody give some codes to perform this action?\n'
+p218
+sI10617731
+S'\nI have huge data in a directory tree format like:\nc:/user/name/class/std/section I to VI [all section has individual folder i.e. 6 folder in total and all folder have 100+ files to be processed]\nI wrote a script in which if I give the folder containing the files e.g.Section I then it would process files inside using glob.iglobfunction.\nIs it possible to write a script which can walk along directories by just entering one directory > processing file > leaving directory > entering different directory > and so on.\nplease help.\n'
+p219
+sI10618756
+S'\nI have a django application which uses a library.py file :\nlibrary.py\n\nView 1:\n\nOn a certain event after updating the library.py file and change a=10\nView 2:\n\nThen I again execute view 1:\n\nCan someone explain, since it should have printed 10, since I updated the value and reloaded the library that was in a shared memory for a python manage.py runserver\n'
+p220
+sI10618247
+S"\nI'm writing a socket server in python. It needs to send acknowledgement to the client module. Quote from the protocol description: \n\nI implemented this in python as:\n\nIt isn't working, so I checked the java implementation of the server:\n\nI wonder whether it's the same or not?\nThe System.out.write(answer); doesn't seem to output a thing to the console.\n"
+p221
+sI10610056
+S'\nCode runs.  But for some reason when I am prompted to enter Sam, I get back "Your name isn\'t Sam."\n\nI am working in Python 3.2.  Any help would be appreciated.  Thanks!\n'
+p222
+sI10617737
+S'\nIn Python 3 the attempt to order a string and an int (e.g. 1 > "1") throws a TypeError.\nWhy does comparing a string with an int for equality not throw an error? (e.g. 1=="1")\nWhat is an example where comparing a string with an int makes sense?\nWhy do JavaScript and SQL take a different approach?\nRelated:\nHow does Python compare string and int? \n'
+p223
+sI10610570
+S"\nI'm some way into building a fairly complex wxPython app using ode for physical modelling, openGL for rendering, and wx for UI. Everything was going swimmingly until the application started to crash. After a few days of making no progress I finally noticed that my application was leaking memory. I was able to distill into a smallish example script something that leaks at a quite extraordinary rate:\n\nThe example creates a frame, and places a wxPropertyGrid into it. It derives a property that display a 3d co-ordinate value, creates a thousand of them, and then from a timer running at 100Hz it updates each to a random value. This leaks somewhere close to 10Mb/sec, and eventually crashes. It usually crashes at shutdown too.\nI'm using python 2.7 & wx 2.9.3.1 msw (classic) on Windows 7.\nIf I replace my derived CoordProperty with a built-in property, such as wxpg.FloatProperty, and modify the code accordingly, the leak goes away.\nAny ideas? Or should I submit a wx bug? I can even remove the definition of the function ValueToString in the derived property class and the app still leaks.\n"
+p224
+sI10615691
+S'\nI\'m trying to import visa in Python and interface with GPIB to control a device.\nThe name of device I\'m using is "GPIB0::9::INSTR", and I think there should be no problem with this.\nI ran the following code in 2.7.3 Python Shell\n\nAbove is the error the system gave me. \nActually at the beginning, I set the Timeout to be 3, it shows this errot. But after I changed the value to be 20 as shown above, it still didn\'t work.\nCan somebody help me?\n'
+p225
+sI10621324
+S"\nI am trying to extract a background image from a video so I can detect moving objects in it.\nI have found functions like  cv2.BackgroundSubtractorMOG(), however I just can't get it to work.\nDoes someone have some experience using this ?\nI have created object mog = cv2.BackgroundSubtractorMOG(300,-1,-1,-1)\nThen I try mog.apply(Nmat,Nforemat,-1), but that doesnt seem to work, I get the following\nerror: \n\nNmat and N foremat are numpy arrays because i was also getting an error if they weren't.\nHere is work in progress...\n\n"
+p226
+sI10610573
+S'\nI would like to add the login feature of the reddit API, but the cookie is not being saved. The following code is being called in a custom Authentication Backend, which is installed higher in the stack than Django\'s own ModelBackend.\n\nprinting cookie[\'reddit_session\'] returns a Morsel (obfuscated)\n\nThis Cookie, however, is nowhere found in my browser. When the page is reloaded, my reddit session is gone, and I can not use other reddit API calls unless I create this session again.\nWhen I use the Chrome developer tools to look at my cookies, I see an entry under Resources > Cookies called "blank". When I click this, all I get is a white page with "This site has no cookies"\nI am doing this in django-1.4, with \n\nenabled in settings.py. I tried it without with the same results.\nAm I missing something here? I\'ve tried using narwa as well, and the cookie is not being saved either. My cookies are definitely enabled in my browser as the same Django session is saving the django_language and session_id cookies.\nAny pointers or answers are appreciated.\n'
+p227
+sI10624681
+S"\nI would like to write a script which can search for and report on Personally Identifiable Information like card numbers, etc in a file system. I would like to find it in txt as well as xls word and PDF files.\nAny starting tips or which lib to use are welcome.\nI'd also like advice on an efficient way to scan large files for patterns like credit cards etc.\n"
+p228
+sI10629119
+S'\nWhen i type import pygame, i get an error that reads:\n\nDoes anybody know what this means?\n'
+p229
+sI10633105
+S"\nI'm trying to build an admin panel where users can populate the database with some rules; every user can see and edit, for certain entity/models, only own data.\nfor do this I'm inheriting a modelAdmin class in this way\n\nwhen I'm trying to add a Variant I get this error\n\nmaybe is a stupid problem, where is the mistake? Am I giving to the function all the needing parameters?\n"
+p230
+sI10614673
+S'\nI\'m trying to catch an input error - where the only valid input is an integer. \nIf a non integer is input, I want it to return to the start of func and try again:\n\nThis method works if the first input is valid, and returns to the start of the func if a non valid input is made, but it does not seem to pass the correct valid back to the main func. I checked in the sub func that it sees the correct variable, and of the correct type (int) and it does appear to, but I get an error:\n\nI do not see this error if the first input is valid (e.g. "10") only if the first input is not valid (e.g. "a" followed by "10") \n'
+p231
+sI10632597
+S"\nI am from Java programming, new to Python. Should I consider integer, float and string literals also as object of python programming? \neg: 2, 4.3, 'stackoveflow'\n"
+p232
+sI10612630
+S"\nI have a wxpython program which uses two separate OpenGL windows (or more specifically two separate tabs in a notebook). Each window has it's own instance of wx.glcanvas.GLCanvas. On MS Windows, the two windows behave independently, as would be expected. On linux, however, opengl commands issued in one window seem to effect the other in a not entirely obvious way (some bits draw on one window, some on the other and some not at all, with lighting and alpha blending settings seeming to be applied to both. I'm calling SetCurrent in the OnPaint handler  of each of the canvases before issuing any OpenGL commands which should direct them to the current window and context. Noteably this does seem to work on windows.\nI've got a nVidia graphics card if that is likely to make a difference.\n"
+p233
+sI10629273
+S"\nI have zip archives containing many UTF-8 xml files.  These files have mostly English tags and text but a few tags contain non-English text.  I have no problem with opening the zip file, and parsing the xml files inside of it, but the non-English text looses it's encoding.\nWhen an xml file is extracted and opened in Notepad++ the non-English text looks like:\n\nWhen it is extracted and read in Python (on a linux box) the text looks like:\n\nMy code looks like:\n\nI have tried decoding/encoding the text from cfp and wrapping it with codecs.EncodedFile() and input encoding of utf_8 and utf_8_sig with no change.  What can I do to fix the non-English text?\n"
+p234
+sI10624920
+S"\nI'm a somewhat new to python and was looking through the Django source code.  I came across utils.py, and was somewhat confused about what this iterator method does:\n\nWhat would this be used for?\n"
+p235
+sI10610074
+S"\nI have a file in which there is the following info:\n\nI'm looking for a way to match the colon and append whatever appears afterwards (the numbers) to a dictionary the keys of which are the name of the animals in the beginning of each line. \n"
+p236
+sI10611099
+S"\nI want to install libz.1.2.3.dylib to use for building an iPhone app. OS X 10.7.4 has libz.1.2.5.dylib. But, the server I'm sending the gzipped data to has zlib 1.2.3 (used by Python). And, when it tries to decompress the gzipped data, it gets an error:\n\nBut, it works with the Python on my local machine.\nSo, I'm guessing that building the iOS app with libz.1.2.3.dylib will fix things. If that's the best way, how do I install that? Otherwise, is there a way to make zlib 1.2.5 (on OS X 10.7) play nice with libz 1.2.3 (on server)? \n"
+p237
+sI10615196
+S'\nI have a list of elements (integers) and what I need to do is to quickly check how many elements from this list fall within a specified range. The example is below.\nrange is from 34 to 566\nl = [9,20,413,425]\nThe result is 2.\nI can of course use a simple for loop for the purpose and compare each element with the min and max value (34 < x < 566) and then use a counter if the statement is true, however I think there might be a much easier way to do this, possibly with a nice one-liner.\n'
+p238
+sI10626202
+S"\nI have two seperate Python List that have common key names in their respective dictionary.  The second list called recordListhas multiple dictionaries with the same key name that I want to append the first list clientList.  Here are examples lists:\n\nSo the end result would be something like this so the records are now in a new list of multiple dictionaries within the clientList.  \n\nSeems simple enough but I'm struggling to find a way to iterate both of these dictionaries using variables to find where they match.  \n"
+p239
+sI10610592
+S'\nI have several different input files, saved with case numbers ".1", ".2", etc to differentiate them. I am building a script that operates on these files, and I would like to use argparse to allow the user to specify the particular case number to operate on, or use "_" to specify the last saved case (i.e. the input file with the largest case number). Something like;\n\nIs there a way I can specify "any integer" as one choice and "_" as the second choice? Something like;\n\n'
+p240
+sI10627490
+S'\nI am working on a Python backend web server that grabs realtime data from a paid 3rd party API.\nI need to query this API very fast (about 150 queries per 10 seconds). Therefore, I created a small proof of concept that spawns 200 threads and writes urls to a queue. The threads then read from the url from the queue and send the HTTP request. The 3rd party API returns a value called delay, which is how long it took their server to process the request.\nHere is the POC code that just downloads all the urls (not repeatedly).\n\nWhen I run this, the first few results are returned with a reasonable delay:\n\nHowever, after about 10-20 seconds I get these kinds of things:\n\nIn other words, even though the server returns with a small delay, my threads take longer to complete...\nHow do I test to see where the other 21 running seconds are spent? \nThanks!\n'
+p241
+sI10631067
+S"\nI am displaying multiple QLabels on a QFrame, placed into a QScrollArea. \nI am able to tell QScrollArea to make any of the QLabels visible with QScrollArea.ensureWidgetVisible(QLabel), but I cannot seem to find a method to find out whether the child widget is currently visible or not. I would expect something like QScrollArea.isWidgetVisible(QWidget). \nI tried using the child's own method, i.e. QLabel.isVisible() but no matter whether the QLabel is visible or not in the QScrollArea, it always returns True (see example below). What's the solution to this?\n\n"
+p242
+sI10631077
+S'\nI am running a crawler,its working fine in MAC and Ubunut system.\nWhen I am running it in windows it results following stack trace:\n\nAny hints?\n'
+p243
+sI10628337
+S'\nI have to interface a Python program with a C library. The particular function I need to call takes an array and returns a double. The following function has the same signature and is easier to understand than my own:\n\nMy current solution is:\n\nBut I use the array module a lot in my code and it seemed to me that using them with the C code should be more straight forward as it is a typed array. So I tried to feed the C function directly with an array but it did not work. To make it work, I wrapped array like this:\n\nwhere TYPES map the typecode from the array to ctypes types:\n\nIs there a way to replace _as_parameter_ by something that does not create another array?\nThanks\n'
+p244
+sI10630056
+S'\nI would like  to trigger a mail as reminder for an event, 2 days before the actual event occurs. How do I achieve this. Is there any sample code for the same which I could access.I am using Plone 4.1 with default zope. In short it should be a time based event.\n'
+p245
+sI10624937
+S"\nI see a lot on converting a datetime string to an datetime object in Python, but I want to go the other way.\nI've got datetime.datetime(2012, 2, 23, 0, 0) and I would like to convert it to string like '2/23/2012'.\n"
+p246
+sI10621021
+S'\nI am a newbie to python,everywhere I read about list methods I see one thing\nThe slice method returns a "new" list\nWhat is here meant by "new" list,and why is it faster then changing the original list?\nDoes it really matter if python manipulates the original list,I mean I cant use it anyway.\n'
+p247
+sI10612652
+S'\nIs there a shortcut in python for applying the same function multiple times to a variable (and its output)?\nSomething like:\n\ninstead of \n\n'
+p248
+sI10621170
+S"\nI'm using python to read a text file with the segment below\n(can't post a screenshot since i'm a noob) but this is what is looks like in notepad++:\n\nerror:\n\nOpening the file as binary:\n\ngives me the text as binary \n\nbut how do I get the text as ascii ? And whats the easiest/pythonic way of handling this ? \n"
+p249
+sI10614702
+S'\nI have a list of tuples, say:\n\nI need to get correspoding values for any (unique) second element in a tuple. For example as a dictionary. \nOutput:\n\nWhats the most pythonic way of doing it? Help much appriciated!\n'
+p250
+sI10614703
+S'\nI have to add some lines in the beginning of the file to specific file in the directory like\n(*.c or *.h).\nI wrote the codes like below.\n\nIt takes all the file in the directory and updates it.\nBut I need it should update some specific file.\nHow to do that\n'
+p251
+sI10627507
+S"\nWhat would be a way I could implement a fade over time between two colors for the background of a label in Tkinter? I want the color of a label for my timer to change as it counts down. These are the snippets I'm working with currently, (to clarify what I'm doing).\n\n"
+p252
+sI10633111
+S"\nI want to patch python popen2 which tries to close all open filehandres by having a loop on [3, SC_OPEN_MAX]. \nThis means that if someone increases the upper limit using ulimit to a huge value like 1,000,000 it will make any python aplication that uses popen to effectevly block.\nThe who point of the question is: how can you get the list of opened file handler of your process. The solution should work on linux and Windows, at least.\nNote: that's for re-fixing http://bugs.python.org/issue1663329\n"
+p253
+sI10618805
+S'\nI make use of PyCLIPS to integrate CLIPS into Python. Python methods are registered in CLIPS using clips.RegisterPythonFunction(method, optional-name). Since I have to register several functions and want to keep the code clear, I am looking for a decorator to do the registration.\nThis is how it is done now:\n\nand this is how I would like to do it:\n\nIt keeps the coding of the methods and registering them in one place.\nNB: I use this in a multiprocessor set-up in which the CLIPS process runs in a separate process like this:\n\n'
+p254
+sI10615225
+S'\nHI i have made a code to store the current user in a simple cookie made by python \n\nand i want to retrieve the object which i stored inside the cookie and access its elements from another handler and this is what I have done.\n\nIt gives an error  . Can any one tell me how to get this thing done?\n'
+p255
+sI10635195
+S'\nI am a new python programmer and I am trying to use the ImageEnhance module to create a set of images that increase sharpness over time. \nThe script below works with one problem: the new images are being save to a temporary directory that quickly deletes the files. \nHow do I alter the save function to point to a proper directory.\nThanks in advance. \n\n'
+p256
+sI10629838
+S"\nI'm trying to do something like this:\n\nIn this example, get_type is a filter that would return obj_type_1 or obj_type_2 -- ie, the name of the macro to call for obj. I don't want to mark up obj with configuration output because right now obj is used in several templates as structural data, to be rendered with different markup depending on the context.\nI know the syntax here is a bit tortured, but I think that's because what I want to do isn't immediately possible in Jinja templates. I'm trying to replace a big damn schwack of if/elif/else crap in some config generation code with templates, but this bit seems to be a sticking point.\n"
+p257
+sI10634693
+S'\nI have hit another "wall"... I have the following script, which appears to work fine on Windows, however when I move it to Linux it seems to lose functionality.\nNote: I added the print line(s) statements for troubleshooting.\nThe following script outputs the contents of the hostsFile when I print lines, and then prints each line in turn when I print line. But when it reaches the ping execution, it appears to jump straight to the last host in the file. I was wondering if I have missed something clearly obvious (I am still learning python as a newbie).\n\nAny thoughts/help is appreciated.\nMany thanks in advance.\nRegards,\nMHibbin\nEDIT: Thanks to Wooble for the help... the correct code should be (notice the spacing):\n\n'
+p258
+sI10617286
+S"\nI'm developing an application in python with django. User can upload a CSV file. I use file upload to get the file. But, it's not stored any where. I try to take it from request to process the file. While I'm trying to open the file, it gives an error. I use the CSV library exists in python to process. Form elements and attributes used as per django. Request object which I try to take the uploaded file is also django designed object.\n\nThis below line gives the error.\n\nThe given error is : \n\nPlease kindly give your suggestion if you got any idea on this.\nThanks in advance.\n"
+p259
+sI10629037
+S'\n\ni am trying to find a dictionary with the most frequent appeared person as the key, and the list of shows of that person as the values. keeping this list index out of range error.\n'
+p260
+sI10613194
+S"\nI use python BaseHTTPServer,it can handle do_GET,do_POST methods,in do_POST method,i execute linux shell using os.system,when i kill the python script,but the listening port still occupied,so i can't run the script again, the netstat -antp|grep 80 show that the bash/tail is occupied the port 80\n\n"
+p261
+sI10625527
+S"\nI have the following two ValueQuerySets from Django.\n\nHow can I merge the two ValueQuerySet so that I can get the following:\n\nHow would I do this?  I have thought about converting these back into a Python list of dictionaries, but I'm not sure exactly how to approach it even it that works.\n"
+p262
+sI10620364
+S"\nI am trying to use the memory_profiler module to profile the memory usage of a large Python program.  There seems to be a memory leak somewhere in my program, so I'm hoping this module will help me find the leak.\nI installed memory_profiler using pip and tested it with the sample code provided here.  This works perfectly.\nWhen I try to use it with my program, I add the @profile decorator to my main() function and run the profiler from the command line the same way: \n\nI get the following error, and my program fails to run (everything hangs):\n\nAny ideas what I might be doing wrong?\n"
+p263
+sI10613198
+S'\nI have this very simple view:\n\nwith these very simple models:\n\nthe print is the only thing that shows in my error.log:\n\nbut the Item model instance is not created!\nI can manually create one in the admin or in the shell:\n\nbut trying to save one in the view just... fails. Silently. WHYYYY??!!!\n'
+p264
+sI10615247
+S'\nI would like to access to SQL server with python to do some data manipulation.\nThe SQL Server is on a Small Business Server SBS2011 and contains a Database that is used by the company with all business data that our ERP uses.\nI have installed pyodbc and readed the example:\n\nBut the problem is that i have no idea of what to use as SERVER and DATABASE parameters... code example are general...\nShould I put the directory of the local net SBS2011 server? Should it be the IP:port like 192.168.0.3:1441?\nWhere I can find them?\nAny clue? \nThanks in advance\n\nI could retrieve this info into the server surfing into the software "Microsoft SQL Server Management Studio"\nI didn\'t understand the mechanism that underlines the connection but this works:\n\n'
+p265
+sI10615249
+S'\ni have a list of languages in my data store for a country which is stored like this :\n\ni want the output as:\nfa-AF, ps, uz-AF, tk\nor\nfa-AF - ps, uz-AF - tk\ni have tried a couple of things but have not succeeded yet. seems like the data that has been imported to the datastore was not imported properly. Any help Regarding this would be greatly appreciated.\nAlso, i would like your suggestions on how to display the language name with these codes.\nfor example if we have "en-US" then we would like to display it as English (United States)\n(Note: we do not have the language names stored in the datastore.)\n'
+p266
+sI10627538
+S"\nI'm using: https://github.com/GoodCloud/django-ajax-uploader with AWS backend (s3 boto). My file uploads are all 0 bytes, but they upload and the correct filename shows up on the correct bucket. Any thoughts on why the files are all 0 bytes though? I am looking for some higher level considerations.\nHere's s3 backend code:\nhttps://github.com/GoodCloud/django-ajax-uploader/blob/master/ajaxuploader/backends/s3.py\n"
+p267
+sI10613203
+S'\nI\'m having a problem getting this program to work and it\'s about 2:00am here so I really just want to get it over with. Anyways, I\'m required to create a program in which the total sum and average of donations over several weeks (input by the user) is calculated and displayed. This program uses nested loops to collect data and calculate the average. \nThe way it works is: \n\nThe program asks for the number of weeks\nAn outer loop iterates once every week\nAn inner loop iterates 5 times per week\nEach iteration of the inner loop asks the user for an amount of donation\nAfter all iterations, the sum of the donations and the average of the donations over each week is displayed\n\nThere are three main problems that I have in creating this program. The first is that my nesting of loops is not working the way I want it to. \n\nFor example if the user inputs 3 weeks, I expect the program to get the amount 5 times per week, so 15 times. But it doesn\'t, and instead only asks for an amount twice. \nSecond problem is when the user inputs 1 week or 0 weeks, an error occurs which states \n"NameError: name \'amount\' is not defined"\nThe final problem is something I actually haven\'t touched on yet in the coding, which is how I will calculate the week\'s total (week_total) if the user inputs different amounts each day. I only state amount as one variable when really, there are 5 amount variables for 5 days of the week. \nAgain, I\'m very new to python and my instruction guide really don\'t touch upon specifics like these. I\'ve been trying rearranging and changing this program for two hours or so now, and I\'m still pretty stuck. Hoping someone here can share their knowledge. Much thanks. \n'
+p268
+sI10633173
+S"\nI need to make mobile app using  sencha as client  and  django as server\nI am sending request as follows to server\n\nI need to query request.META.get('HTTP_AUTHORIZATION') with the password in the database.\nrequest.META.get('HTTP_AUTHORIZATION') return encrypted value for the password like  ea121221rtrtrt7878237878787  which is irreversible\nAny ideas?\nThank you\n"
+p269
+sI10627030
+S"\nI'm looking to store time-based counters using Redis, in a Python project.  I want to store cumulative rolling counters for various events occurring in recent time periods (1, 5, 15, 30, 60 minutes or longer etc.) for a potentially large universe of data without resorting to SQL-based solutions.\nI found a Ruby-based library that seems to offer exactly what I want.  But I'm working with Python, so I'm hoping someone knows of a similar solution for us Pythonistas.  I'd rather not reinvent the wheel, after all.  I can port the Ruby library to Python, or roll my own if there aren't any existing solutions.\nSo, ever heard of such a thing?\nEdit:  Why Redis?  I'm running a WSGI web app with multiple instances, so I need to share the data across process boundaries.  I know how to do what I want using SQL tables and queries, but I'm trying to keep recent event statistics in (something like) Redis rather than SQL (as an optimization.)\n"
+p270
+sI10623448
+S'\nFirstly my maths is limited, so this question may have a simple answer. So, I am using the following equation to make guassian distributions:\n\nWhen I make gussians with the above equation where is the width of the peak applied? Is it at full width half maximum? I made the following gaussian with the following values:\n\n\nWhen I then calculate the FWHM it is 16.6510941453 so the peak width cannot be applied at the FWHM. Where is it applied?\nI am trying to constrain the FWHM so the FWHM is 10x smaller than that of the mean. So in the above example I would of liked the gaussian to have a FWHM of 10 at the mean of 100 at a peak height of 5.\n'
+p271
+sI10635226
+S"\ni use python on mac osx, i want use an extended ascii #219 like in this table :\nhttp://www.theasciicode.com.ar/extended-ascii-code/graphic-character-ascii-code-178.html\nThe problem, i found out that 'block' character doesn't exist in mac ascii... i'm not sure.\nCan anyone help me ? try to print using unichr(219) giving me different result. it will output -> \xc3\x9b. what i want is -> \xe2\x96\x88\nThanx\n"
+p272
+sI10628064
+S"\nI have a very simple CherryPy webservice that I hope will be the foundation of a larger project, however, I need to get NLTK to work the way I want.\nMy python script imports NLTK and uses the collocation (bigram) function of NLTK, to do some analysis on pre-loaded data.\nI have a couple of questions:\n1) Why is the program not returning the collocations to my browser, but only to my console?.\n2) Why if I am specifying from nltk.book import text4, the program imports the whole set of sample books (text1 to text9)?\nPlease, keep in mind that I am a newbie, so the answer might be in front of me, but I don't see it.\nMain question: How do I pass the collocation results to the browser (webservice), instead of console?\nThanks\n\n"
+p273
+sI10628407
+S'\nLet\'s say that I have two teams, "red" and "black". And let\'s say that I have a Story class, which presents similar information in two very different ways, depending on your team:\n\nI\'m happy with the getter function, but I feel like I should be able to refactor the code which created the fields in the first place. I\'d like a function that looks something like this:\n\nBut self and __dict__ are meaningless while the class is first defined, and I think Django requires that database fields be class variables rather than instance variables.\nSo... is there some way to create this make_fields function within Django, or am I out of luck?\n'
+p274
+sI10631650
+S'\nI want to populate a field before validation in admin.\nmodels.py\n\nadmin.py\n\neventually I wanna generate that whole "code" field, but I\'m still getting the error in admin that the field is empty although I can see the value of it ("dadad") in the shell.\nI also tried\n\nand it wasn\'t calling that function at all.\nand I also tried\n\nin the AdAdmin class but it wasn\'t calling that either.\nso what should I do?\n'
+p275
+sI10628262
+S'\nI am starting to depend heavily on the IPython notebook app to develop and document algorithms.  It is awesome; but there is something that seems like it should be possible, but I can\'t figure out how to do it:\nI would like to insert a local image into my (local) IPython notebook markdown to aid in documenting an algorithm.  I know enough to add something like <img src="image.png"> to the markdown, but that is about as far as my knowledge goes.  I assume I could put the image in the directory represented by 127.0.0.1:8888 (or some subdirectory) to be able to access it, but I can\'t figure out where that directory is.  (I\'m working on a mac.)  So, is it possible to do what I\'m trying to do without too much trouble?\n'
+p276
+sI10634321
+S'\nI have a question regarding the usage of self variable in Python. Please look at the following example:\n\nThe result, as in my understanding, should be:\n\nHowever, what I got is as follows:\n\nIt seems to me that within the While loop, when I try to create a new instance of IntClass, that new instance has modified the values stored in props attribute of the instances created in the previous loop, which at the end, cause the holder contains all instances with the same data.\nAnyone can point me to the answer? Look like there is something wrong with self variable but I have no glue on how to fix it.\nThanks a lot,  \n'
+p277
+sI10619880
+S"\nI'm using reportlab with django for one of my project to generate dynamic PDF report. I'm using  tag in Paragraph.\nI'm getting the output correctly, but if change the image from django admin page then image in report is not changing.\nIs it Caching problem?\nIf so how can i resolve it?\n"
+p278
+sI10629004
+S"\nThis question is an extension of a question I asked earlier: Python Delegate Pattern - How to avoid circular reference? After reading the replies, I decided to clarify my question, but was requested to post it separately. \nHere goes:\n\nA passage in the Python docs (reproduced below) states that garbaged collection is not guaranteed for circular\nreferenced objects. A post I found here suggests the same thing. But the replies to my earlier question disagrees. So, have I misunderstood the passage or are there further\ndetails that I've missed?\nI suppose using a weak reference, as stated in Alex Martelli's reply to the question Should I worry about circular references in Python? would avoid the overhead for garbage collecting circular referenced objects  mentioned in his reply entirely? If so how does it work?\n\nThe relevant Python docs that suggests conflicting following passage from Python's doc:\n\nThe passage in its original form can be found here: http://docs.python.org/reference/datamodel.html The bold setting is mine.\nThanks in advance for any replies.\n"
+p279
+sI10610158
+S'\n\nExample:\n\nbecomes\n\nIs it a combination of split and slicing? \n'
+p280
+sI10627055
+S"\njava's System.nanoTime() seems to give a long: 1337203874231141000L\nwhile python time.time() will give something like 1337203880.462787\nhow can i convert time.time()'s value to something match up to System.nanoTime()?\n"
+p281
+sI10623474
+S"\nI'm using Python's csv.reader to bring a set of dates & coordinates from a file into a list. Here's a sample line from the .csv and the code:\n\n\nThe problem is that for some reason, when the date is put into the list, the string is being changed from an ISO format to a calendar format:\n\nAny thoughts on what is happening here? Is it something csv.reader that is changing the strings? What can I do to prevent it or change it back to the ISO format?\n"
+p282
+sI10613236
+S'\nI was looking through some of the Django source code and came across this.  What exactly does: encoding = property(lambda self: self.file.encoding) do?\n'
+p283
+sI10618366
+S"\nFor my homework, I need to isolate the most frequent 50 words in a text. I have tried a whole lot of things, and in my most recent attempt, I have done a concordance using this: \n\nWhat I would like to know is whether I can sort the subsequent concordance in order of most frequently used word to least frequently used word, and then isolate and print the top 50? I am not permitted to import any modules other than re and sys, and I'm struggling to come up with a solution. \n"
+p284
+sI10632694
+S'\nEDIT: If I explicity change the backend for matplotlib from \'Qt4Agg\' to just \'Agg\' then I am able to run my code with no errors. I assume this is a bug in the backend? \nI am writing some code for processing a fairly large amount of data automatically. The code first of all parses my data files and stores all of the relevant bits. I then have different functions for producing each of the graphs I need (there are about 25 in all). However, I keep running into some kind of memory error and I think it is because Matplotlib / PyPlot are not releasing the memory correctly. \nEach plotting function ends with a pyplot.close(fig) command and since I just want to save the graphs and not look at them immediately they do not include a pyplot.show(). \nIf I run the plotting functions individually in an interpreter then I don\'t get any problems. However, if I make a separate function which calls each plotting function in turn then I run into a "MemoryError: Could not allocate memory for path". \nHas anyone came across a problem like this? It would seem to be related to Matplotlib runs out of memory when plotting in a loop but pyplot.close() doesn\'t fix my problem. \nThis is what a typical plot function looks like in my code:\n\nIf I now run in a terminal\n\nThen I don\'t get any errors. The same is true for all of my plot functions. \nIf I make a new function which does this:\n\nThen it runs through about half of the graphs and then I get "MemoryError: Could not allocate memory for path".\n'
+p285
+sI10620585
+S'\nI am trying to set up the latest version of Python through the latest version of Apache HTTP server and I am clueless as to what I should do next?\n'
+p286
+sI10623481
+S'\nI am working on writing a quick REST service to manage email accounts for our domain and have ran into a strange behavior I can\'t explain.\nI am using mysql to authenticate email accounts, and our REST service manages the maildirs and inserts or updates auth credentials using a web interface.  The queries for inserting users as well as updating their passwords both use the encrypt mysql command.\nWhat is strange is that inserted users won\'t work for authentication until the password is changed on the REST interface at least once.  This means that encrypt is setting the right value for an update, but something wrong for an insert.  \nI have tried logging everything in the GET/POST params on the rest service side and it seems like something is going wrong in the database tier.  The REST service logs correct params for passwords at both endpts.  Something in the execution of the queries is different.\nMy queries look like such (using MySQLdb in Python):\nADD_USER = "INSERT INTO users (id,name,maildir,crypt) VALUES (%s,%s,%s,encrypt(%s));"\nCHANGE_PASS = "UPDATE users SET crypt = encrypt(%s) WHERE id=%s"\nAgain, ADD_USER is entering a bad hash where CHANGE_PASS succeeds with the exact same HTTP parameters for crypt passed into them (as strings).  Is there any reason why the data tier would do different encryption, or am I barking up the wrong tree?\n'
+p287
+sI10612218
+S"\nSo I have an std::map<KeyType, std::shared_ptr<ValueType>> exposed up to python using map_indexing_suite.  \nIn other places in the code I store references to the ValueType objects in the map using raw pointers, ValueType*, because those containers don't own the ValueType objects, the map does.  \nMy question is, how can I expose the raw pointer to python in a way it can compare that reference to the shared pointer? Something like this:\n\n"
+p288
+sI10614267
+S"\nHere is a mini version of problem\n\nso if level 1 is [] and level 2 is [[]], then what i'm trying to do is test ever list to see if there level 2's match (regardless of order) so in this case b,c are equivalent. \ni'm using unittesting and nosetests to run them\nIf i wanted to just test one table against another i would do something like:\nthe function truth() creates my tables\n\nbut My goal is to test all tables against all other tables i have created (about 20 and growing). Some issues i can't work out (i'm not sure if i need to read unittest docs or nosetests or don't even need them!)\nmy guess is to just use more for loops to pull out ever possibility. But using \n\nwith a \n\njust stops at the first error, which isn't what i want. i need to scan and collect info on which lists are equivalent at (regardless of order or the nested lists). maybe i should just create something and forget about unittests?\nso my preferred output would be something like\n\nor probable more useful and shorter would just be\n\nHere is the code i have currently, almost everything is just a integer there expect truth() which makes the truth table (nested list):\n\n"
+p289
+sI10617342
+S'\nI am trying to make an application that displays a PDF file, using PyQt4 and python-poppler-qt4.\nSo far I have managed to display the entire document by loading pixmaps generated with Poppler, set on a QLabel and appended to a QFrame. The QFrame is displayed in a QScrollArea.\nIt looks pretty good, until implementing zooming, which is done by regenerating the pixmaps all over again, with an incremented resolution. This process requires the entire document to be rendered into pixmaps, which obviously takes time and results into an unwanted lag.\nLogic wants that I should display images of the pages I am seeing only (it sounds like quantum physics). I have two options in mind:\n\ncreate blank pages with QLabels and load the image onto them when they become visible in the scroll area;\ncreate only one page and add or remove precedent or subsequent pages right before it should be displayed.\n\nI am not sure I am on the right track or whether there is an alternative. \nThe first option seems more feasible, because the visibility of a blank page determines when the pixmap has to be uploaded (although I have no idea how to delete that pixmap when the page is hidden). Yet I am not sure that zooming will be faster this way, since a document of, say, 600 pages, will have to be regenerated, albeit with blank pages.\nThe second option should definitely improve zooming since 1 to 4 pages at a time would have to be regenerated when zooming. In that second case however, I am not sure how to trigger the construction of pages.\nWhat would you suggest? \n'
+p290
+sI10624511
+S'\nI recently installed Python 2.7.3 on a CentOS machine by compiling from source. Python 2.7.3 is installed at /opt/python2.7 and when I installed it I just changed /usr/bin/python to point to the new version. This apparently is wrong though because when I did it it broke yum. I would get the following.\n\nI changed /usr/bin/python to point back to the python 2.6.6 but now 2.6.6 is the default version of python. Any idea how to fix this?\n'
+p291
+s.

@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+'''
+    Скрипт который парсит вопросы с сайта Reddit 
+    с помощью API и модуля praw   
+    Какие данные для аргументов метода и работы модуля 
+    псмотреть можно здесь 
+    https://praw.readthedocs.io/en/latest/getting_started/authentication.html
+'''
+
 import psycopg2
 import praw
 from datetime import datetime
@@ -28,14 +36,14 @@ def save_to_db(submis):
 
 
 
-conn = psycopg2.connect("dbname='diplom' user='postgres' host='localhost' password='77896499'")
+conn = psycopg2.connect("dbname='dbname' user='db_user' host='host' password='password'")
 curs = conn.cursor()
 
-reddit = praw.Reddit(   client_id     = 'NEADcG3-PzvVSw', 
-                        client_secret = "lBPTI4IoH9eUFyyxn3RSZrDwE0o",
-                        password      = '77896499Alex',
-                        user_agent    = 'alexsad95_app',
-                        username      = 'Alexsad95')
+reddit = praw.Reddit(   client_id     = "client_id", 
+                        client_secret = "client_secret",
+                        password      = "password",
+                        user_agent    = "user_agent",
+                        username      = "username")
 
 subreddit = reddit.subreddit('flask')
 
@@ -44,10 +52,7 @@ hot_python = subreddit.hot(limit=1200)
 for i,submis in enumerate(hot_python):
     if submis.is_self:
         save_to_db(submis)
-        # print i,"  Title:", submis.title
-        # print "    Url:", submis.url
-        # print "    CreationDate:", datetime.utcfromtimestamp(submis.created_utc)
-        # print "    FromTimestamp:", datetime.fromtimestamp(submis.created_utc)
-print u"Всего записанных вопросов:", count
+
+print('Всего записанных вопросов:', count)
 curs.close()
 conn.close()
